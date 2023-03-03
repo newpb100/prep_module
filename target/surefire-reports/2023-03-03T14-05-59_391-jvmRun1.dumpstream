@@ -1,0 +1,206 @@
+# Created on 2023-03-03T14:06:02.450
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: reset attribute= "false".'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: reset attribute= "false".'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.454
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Threshold ="null".'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Threshold ="null".'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.456
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Level value for root is  [info].'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Level value for root is  [info].'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.457
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: root level set to INFO'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: root level set to INFO'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.459
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Class name: [org.apache.log4j.RollingFileAppender]'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Class name: [org.apache.log4j.RollingFileAppender]'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.516
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Setting property [file] to [demoApplication.log].'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Setting property [file] to [demoApplication.log].'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.518
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.542
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.574
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: setFile called: demoApplication.log, true'.
+
+# Created on 2023-03-03T14:06:02.575
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: setFile ended'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: setFile ended'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.577
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Adding appender named [fileAppender] to category [root].'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Adding appender named [fileAppender] to category [root].'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.579
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Class name: [org.apache.log4j.ConsoleAppender]'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Class name: [org.apache.log4j.ConsoleAppender]'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.580
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.583
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Setting property [conversionPattern] to [%d [%t] %-5p %c - %m%n].'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Setting property [conversionPattern] to [%d [%t] %-5p %c - %m%n].'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:02.584
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'log4j: Adding appender named [console] to category [root].'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'log4j: Adding appender named [console] to category [root].'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:511)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:209)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:176)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2023-03-03T14:06:14.648
+ForkStarter IOException: 284 [main] INFO  Sample - inside constructor
+653 [main] INFO  com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+656 [main] INFO  com.codeborne.selenide.impl.FileHelper - Creating folder: C:\repo\prep_module\build\downloads\1677841564654_19160_1
+300 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+332 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sergey.Amelchenko\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+765 [main] INFO  com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1366x768
+943 [main] INFO  com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=110.0.5481.178 Platform=WINDOWS
+943 [main] INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.19.0
+944 [main] INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+944 [main] INFO  com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (3e5c0fc6153382d902e8fabb7df36c7c)
+750 [main] INFO  Sample - shifted value of a = 4
+181 [Thread-0] INFO  com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 31 -> ChromeDriver: chrome on WINDOWS (3e5c0fc6153382d902e8fabb7df36c7c)...
+184 [Thread-1] INFO  com.codeborne.selenide.impl.FileHelper - Deleted empty folder: C:\repo\prep_module\build\downloads\1677841564654_19160_1
+094 [Thread-0] INFO  com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 31 in 913 ms.
+org.apache.maven.plugin.surefire.booterclient.output.MultipleFailureException: 284 [main] INFO  Sample - inside constructor
+653 [main] INFO  com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+656 [main] INFO  com.codeborne.selenide.impl.FileHelper - Creating folder: C:\repo\prep_module\build\downloads\1677841564654_19160_1
+300 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+332 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sergey.Amelchenko\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+765 [main] INFO  com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1366x768
+943 [main] INFO  com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=110.0.5481.178 Platform=WINDOWS
+943 [main] INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.19.0
+944 [main] INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+944 [main] INFO  com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (3e5c0fc6153382d902e8fabb7df36c7c)
+750 [main] INFO  Sample - shifted value of a = 4
+181 [Thread-0] INFO  com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 31 -> ChromeDriver: chrome on WINDOWS (3e5c0fc6153382d902e8fabb7df36c7c)...
+184 [Thread-1] INFO  com.codeborne.selenide.impl.FileHelper - Deleted empty folder: C:\repo\prep_module\build\downloads\1677841564654_19160_1
+094 [Thread-0] INFO  com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 31 in 913 ms
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.<init>(ThreadedStreamConsumer.java:58)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer.<init>(ThreadedStreamConsumer.java:110)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:596)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:533)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:278)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:244)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1149)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:978)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+
+
