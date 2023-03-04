@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demoApplication.log" beforeDir="false" afterPath="$PROJECT_DIR$/demoApplication.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheckWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/CheckWebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/ServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ams/main/dto/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ams/main/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CheckWebTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Sample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ams/test/service/UserServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +51,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -53,23 +66,11 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ams.test.sandbox" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheckWeb.AssertLists">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceTest">
     <configuration name="CheckWeb.AssertLists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pr-mav-006-uata-deps" />
       <option name="PACKAGE_NAME" value="" />
@@ -121,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest.usersSizeIfUserAdded" />
         <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserServiceTest.usersSizeIfUserAdded" />
         <item itemvalue="JUnit.UserServiceTest.usersEmptyIfNoUserAdded" />
         <item itemvalue="JUnit.CheckWeb.AssertLists" />
         <item itemvalue="JUnit.CheckWeb.RunSelenide" />
@@ -168,7 +169,8 @@
       <workItem from="1632928425662" duration="819000" />
       <workItem from="1677263358333" duration="16391000" />
       <workItem from="1677839093438" duration="856000" />
-      <workItem from="1677840100781" duration="1660000" />
+      <workItem from="1677840100781" duration="4012000" />
+      <workItem from="1677945410914" duration="301000" />
     </task>
     <servers />
   </component>

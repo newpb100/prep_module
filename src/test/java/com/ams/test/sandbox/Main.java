@@ -1,3 +1,5 @@
+package com.ams.test.sandbox;
+
 public class Main {
 
     public static void main(String[] args) {

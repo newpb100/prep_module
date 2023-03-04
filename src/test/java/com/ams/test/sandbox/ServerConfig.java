@@ -1,3 +1,5 @@
+package com.ams.test.sandbox;
+
 import org.aeonbits.owner.Config;
 
 

@@ -1,3 +1,5 @@
+package com.ams.test.sandbox;
+
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Description;
 import io.qameta.allure.Story;
