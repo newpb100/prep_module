@@ -2,15 +2,22 @@ package com.ams.test.service;
 
 import com.ams.main.dto.User;
 import com.ams.main.service.UserService;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+
+@TestInstance(TestInstance.Lifecycle.PER_METHOD)
+//@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class UserServiceTest {
 
     private UserService userService;
+
+    @BeforeAll
+    static void init(){
+        System.out.println("Before all");
+    }
 
     @BeforeEach
     void  prepare(){
@@ -35,12 +42,17 @@ public class UserServiceTest {
         userService.add(new User());
 
         var users = userService.getAll();
-        assertEquals(2, users.size());
+        assertEquals(3, users.size());
     }
 
     @AfterEach
     void deleteDataFromDatabase(){
         System.out.println("After each : " + this);
+    }
+
+    @AfterAll
+    static void closeConnectionPool(){
+        System.out.println("After all");
     }
 
 }
