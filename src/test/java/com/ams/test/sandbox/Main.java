@@ -1,19 +1,19 @@
 package com.ams.test.sandbox;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        Sample sm = new Sample("test string",1);
+        //Step01.doStep01();
 
-        //lombock
-        String s = sm.getF1();
-        sm.setA(100);
+        //Step02Types.doStep02Types();
 
-        System.out.println("f1 value = " + s);
-        System.out.println("a value = " + sm.getA());
+        Step03Scanner.doStep03();
 
-        sm.useOwnerToCreateCfg();
+        //new Step04KPR();
+
 
     }
 

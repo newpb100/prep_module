@@ -149,3 +149,4 @@ buildNumber.properties
 
 allure-results/
 build/
+.idea/workspace.xml
