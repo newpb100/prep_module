@@ -1,4 +1,4 @@
-package com.ams.test.sandbox;
+package com.ams.train;
 
 import java.text.MessageFormat;
 import java.util.Date;

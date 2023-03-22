@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step02Types.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step03Scanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step04KPR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/StepTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demoApplication.log" beforeDir="false" afterPath="$PROJECT_DIR$/demoApplication.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/CheckWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/CheckWebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/ServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/ServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step02Types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step02Types.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step03Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step04KPR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step04KPR.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,17 +66,18 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ams.train" />
       <recent name="com.ams.test.sandbox" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.StepTests.checkScanner">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ams.test.sandbox.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.ams.train.Main" />
       <module name="prep_module" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ams.test.sandbox.*" />
+          <option name="PATTERN" value="com.ams.train.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,6 +111,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StepTests.checkScanner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prep_module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ams.test.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ams.test.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="com.ams.test.sandbox.StepTests" />
+      <option name="METHOD_NAME" value="checkScanner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prep_module" />
       <option name="PACKAGE_NAME" value="com.ams.test.service" />
@@ -114,16 +134,6 @@
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.usersEmptyIfNoUserAdded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prep_module" />
-      <option name="PACKAGE_NAME" value="com.ams.test.service" />
-      <option name="MAIN_CLASS_NAME" value="com.ams.test.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="usersEmptyIfNoUserAdded" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,16 +152,16 @@
       <item itemvalue="Application.TestLauncher" />
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.UserServiceTest" />
-      <item itemvalue="JUnit.UserServiceTest.usersEmptyIfNoUserAdded" />
       <item itemvalue="JUnit.UserServiceTest.usersSizeIfUserAdded" />
+      <item itemvalue="JUnit.StepTests.checkScanner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StepTests.checkScanner" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestLauncher" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.usersSizeIfUserAdded" />
-        <item itemvalue="JUnit.UserServiceTest.usersEmptyIfNoUserAdded" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +208,7 @@
       <workItem from="1677945410914" duration="6924000" />
       <workItem from="1678209311217" duration="21255000" />
       <workItem from="1678950054590" duration="7942000" />
-      <workItem from="1679296247262" duration="3931000" />
+      <workItem from="1679296247262" duration="5917000" />
     </task>
     <servers />
   </component>

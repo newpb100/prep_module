@@ -1,9 +1,9 @@
-package com.ams.test.sandbox;
+package com.ams.train;
 
 import java.util.Scanner;
 
 public class Step03Scanner {
-    public static void doStep03() {
+    public static float doStep03() {
 
         // Scanner
         /*
@@ -13,7 +13,7 @@ public class Step03Scanner {
         System.out.println("Print ur age: ");
         int age = sc.nextInt();
          */
-        
+
         String inputStr = "100;2,0;200";
         Scanner sc = new Scanner(inputStr);
         int a3 = 0;
@@ -31,6 +31,8 @@ public class Step03Scanner {
 
         float a4 = sc.nextFloat();
         System.out.println("scanner res : " + (a3 + a4));
+
+        return (a3 + a4);
 
 
     }

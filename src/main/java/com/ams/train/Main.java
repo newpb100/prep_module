@@ -1,6 +1,4 @@
-package com.ams.test.sandbox;
-
-import java.util.Scanner;
+package com.ams.train;
 
 public class Main {
 

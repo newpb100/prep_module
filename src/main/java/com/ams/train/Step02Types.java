@@ -1,4 +1,4 @@
-package com.ams.test.sandbox;
+package com.ams.train;
 
 public class Step02Types {
 
