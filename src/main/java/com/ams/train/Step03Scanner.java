@@ -1,5 +1,7 @@
 package com.ams.train;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class Step03Scanner {
@@ -31,6 +33,8 @@ public class Step03Scanner {
 
         float a4 = sc.nextFloat();
         System.out.println("scanner res : " + (a3 + a4));
+
+        sc.close();
 
         return (a3 + a4);
 

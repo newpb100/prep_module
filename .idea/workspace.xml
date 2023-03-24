@@ -5,17 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/StepTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03Readers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoApplication.log" beforeDir="false" afterPath="$PROJECT_DIR$/demoApplication.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/CheckWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/CheckWebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/ServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/ServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step02Types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step02Types.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step03Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox/Step04KPR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step04KPR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/07c1b8a0-ee66-434e-bf6c-26ed7bf33c1c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0e25d6a5-a61b-4670-8527-2201956609da-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2f1b0259-1363-4772-9a68-d59819fb4fed-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3566bbdb-4580-4627-b5c8-841881f8ef0b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3be36302-ae67-46ba-ba11-4bec5b6107e9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5fc35db5-f178-467a-a8c5-d85694126581-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7b6c9abb-72e7-4ade-ad1e-9a0fcf025af6-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ac6d1939-9beb-4cf8-8f29-4d844ba51d69-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c0cef51c-607b-4b51-94d8-182bc13863b9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/cf50ab19-882a-42e4-94d8-69ddf7e470f2-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d34ed819-c013-43ce-9eb9-a6504e558f6f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/db690506-2678-4cbd-a9fe-f13e8dc67ea1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-03T14-05-59_391-jvmRun1.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-03T14-06-02_321.dumpstream" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +46,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
@@ -71,7 +91,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StepTests.checkScanner">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ams.train.Main" />
       <module name="prep_module" />
@@ -157,8 +177,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StepTests.checkScanner" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StepTests.checkScanner" />
         <item itemvalue="Application.TestLauncher" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.usersSizeIfUserAdded" />
@@ -208,7 +228,7 @@
       <workItem from="1677945410914" duration="6924000" />
       <workItem from="1678209311217" duration="21255000" />
       <workItem from="1678950054590" duration="7942000" />
-      <workItem from="1679296247262" duration="5917000" />
+      <workItem from="1679296247262" duration="19055000" />
     </task>
     <servers />
   </component>
@@ -242,6 +262,16 @@
           <url>jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar!/org/junit/platform/launcher/core/SessionPerRequestLauncher.class</url>
           <line>60</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ams/train/Step03File.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ams/train/Step03File.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar!/org/junit/platform/launcher/core/SessionPerRequestLauncher.class</url>
