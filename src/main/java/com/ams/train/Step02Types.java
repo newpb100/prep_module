@@ -48,5 +48,30 @@ public class Step02Types {
         int a2 = 5;
         String str5 = a2 + a2 + "" + a2;
         System.out.println("print str5 = " + str5);   // 105 !
+
+        // operations from right to left for =
+        a2 = 5;
+        int a3 = 6;
+        int a4 = 7;
+        int a5 = a2 = a3 = a4;
+        System.out.println("a5 = " + a5 + " a4 = " + a4 +" a3 = " + a3 +" a2 = " + a2);   // 7 7 7 7
+
+        // increment/decrement , postfix and prefix
+        int a6 = 10;
+        int y = a6++;
+        System.out.println("postfix y = " + y + " ; a6  = " + a6);  // 10 11
+        y = ++a6;
+        System.out.println("prefix y = " + y + " ; a6  = " + a6);   // 12 12
+
+        //combine
+        y += a6;
+        System.out.println("combine add y = " + y);      // 12 + 12 = 24
+        y /= a6;
+        System.out.println("combine division y = " + y); // 24 / 12 = 2
+
+        //logic , has lower priority as compare ops
+        System.out.println(" && : " + ( 100 > 2 && 100 < 100 )); // false
+        System.out.println(" || : " + ( 100 > 2 || 100 < 100 )); // true
+
     }
 }

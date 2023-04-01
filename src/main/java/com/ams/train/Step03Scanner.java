@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 public class Step03Scanner {
-    public static float doStep03() {
+    public static float Step03Scanner() {
 
         // Scanner
         /*
@@ -33,6 +33,15 @@ public class Step03Scanner {
 
         float a4 = sc.nextFloat();
         System.out.println("scanner res : " + (a3 + a4));
+
+        // if operator simple trap, 100 and 2.0
+        if (a3 < a4)
+            if (a3 < 10)
+                System.out.println("point 1 ");
+        else
+            System.out.println("not reached: point 2");
+
+        System.out.println("control point out of IF: point 3");
 
         sc.close();
 

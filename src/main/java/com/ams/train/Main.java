@@ -10,13 +10,17 @@ public class Main {
 
         //Step02Types.doStep02Types();
 
-        //Step03Scanner.doStep03();
+        //Step03Scanner.Step03Scanner();
 
         //Step03Readers.doStep03Readers();
 
-        Step03File.doStep03File();
+        //Step03File.doStep03File();
 
         //new Step04KPR();
+
+        //Step05BoolTernar.doStep05();
+
+        Step06Compare.doStep06Compare();
 
 
     }
