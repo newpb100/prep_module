@@ -5,6 +5,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
+        String[] aa = null;
 
         //Step01.doStep01();
 
@@ -21,6 +22,8 @@ public class Main {
         //Step05BoolTernar.doStep05();
 
         Step06Compare.doStep06Compare();
+
+        Step07Compare2.main(aa);
 
 
     }

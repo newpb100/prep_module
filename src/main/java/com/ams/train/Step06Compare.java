@@ -13,8 +13,23 @@ public class Step06Compare {
         int a = 1;
         int b = 1;
         if (a == b){
-            System.out.println("integers are equal");
+            System.out.println("primitive integers are equal");
         }
+        // but
+        Integer a1 = 1;
+        Integer a2 = 1;
+        System.out.println(a1 == a2 ? "Integers with direct assignment are equal" : "Integers with direct assignment are not equal");
+            // equal
+        // but
+        Integer a11 = new Integer(1);
+        Integer a12 = new Integer(1);
+        System.out.println(a11 == a12 ? "new Integer(1) == new Integer(1) are equal" : "new Integer(1) == new Integer(1) are not equal");
+            // not equal
+        // but
+        Integer a111 = new Integer(1);
+        Integer a112 = new Integer(a1);
+        System.out.println(a111 == a112 ? "new Integer(1) == new Integer(a1) are equal" : "new Integer(1) == new Integer(a1) are not equal");
+            // not equal
 
 
         // 2. comparsion of real numbers
@@ -87,20 +102,19 @@ public class Step06Compare {
         System.out.println(str.equalsIgnoreCase(str2) ? "str and str2 are equal by content IGNORE CASE" : "not equal");
 
         // 5. Important moment
-        String str5 = "новая строка";
+        String str5  = "новая строка";
         String str6 = "новая строка";
         System.out.println(str5 == str6 ? "внезапно указатели равны" : "не равны");
 
-        str5 = "новая строка";
         String str7 = new String("новая строка");
-        String str8 = new String(str5);
-        System.out.println(str5 == str7 ? "with str7: а вот так уже не равны" : "все равно равны");
-        System.out.println(str5 == str8 ? "with str8: а вот так уже не равны" : "все равно равны");
-
-
-
-
-
+        String str8 = new String("новая строка");
+        String str9 = new String(str5);
+        System.out.println(str5 == str7 ? "str5 == str7 : равны" : "str5 == str7 : НЕ равны");
+            // НЕ равны
+        System.out.println(str7 == str8 ? "str7 == str8 : равны" : "str7 == str8 : НЕ равны");
+            // НЕ равны
+        System.out.println(str8 == str9 ? "str8 == str9 : равны" : "str8 == str9 : НЕ равны");
+            // НЕ равны
 
     }
 
