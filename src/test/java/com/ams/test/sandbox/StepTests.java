@@ -8,6 +8,6 @@ public class StepTests {
 
     @Test
     public void checkScanner(){
-        Assertions.assertEquals(Step03Scanner.doStep03(), 102.0);
+        Assertions.assertEquals(Step03Scanner.Step03Scanner(), 102.0);
     }
 }

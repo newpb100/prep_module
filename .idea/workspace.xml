@@ -5,29 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03Readers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step07Compare2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/ViewBorderParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step03Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/07c1b8a0-ee66-434e-bf6c-26ed7bf33c1c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/0e25d6a5-a61b-4670-8527-2201956609da-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/2f1b0259-1363-4772-9a68-d59819fb4fed-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/3566bbdb-4580-4627-b5c8-841881f8ef0b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/3be36302-ae67-46ba-ba11-4bec5b6107e9-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/5fc35db5-f178-467a-a8c5-d85694126581-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/7b6c9abb-72e7-4ade-ad1e-9a0fcf025af6-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/ac6d1939-9beb-4cf8-8f29-4d844ba51d69-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/c0cef51c-607b-4b51-94d8-182bc13863b9-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/cf50ab19-882a-42e4-94d8-69ddf7e470f2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/d34ed819-c013-43ce-9eb9-a6504e558f6f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/db690506-2678-4cbd-a9fe-f13e8dc67ea1-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-03T14-05-59_391-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-03T14-06-02_321.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/FirstProgTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +38,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1pYzf0I1luEirIgz0rNgb4H76dy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -71,13 +51,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-module-11/pom.xml" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -85,13 +65,16 @@
       <recent name="com.ams.junit.service" />
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\repo\prep_module\test-module" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ams.train" />
       <recent name="com.ams.test.sandbox" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ViewBorderParamsTest.viewBorderParamsTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ams.train.Main" />
       <module name="prep_module" />
@@ -105,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ams.test.TestLauncher" />
+    <configuration name="Step07Compare2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step07Compare2" />
       <module name="prep_module" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ams.test.*" />
+          <option name="PATTERN" value="com.ams.train.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,57 +114,114 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepTests.checkScanner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prep_module" />
+    <configuration name="NewProbeInPack.doSomthNewProbe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-module-11" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ams.test.sandbox.*" />
+          <option name="PATTERN" value="com.ams.mod11.pack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ams.test.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="com.ams.test.sandbox.StepTests" />
-      <option name="METHOD_NAME" value="checkScanner" />
+      <option name="PACKAGE_NAME" value="com.ams.mod11.pack" />
+      <option name="MAIN_CLASS_NAME" value="com.ams.mod11.pack.NewProbeInPack" />
+      <option name="METHOD_NAME" value="doSomthNewProbe" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prep_module" />
-      <option name="PACKAGE_NAME" value="com.ams.test.service" />
-      <option name="MAIN_CLASS_NAME" value="com.ams.test.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="" />
+    <configuration name="ViewBorderParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ams.mod2.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ams.mod2.selenium" />
+      <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.ViewBorderParamsTest" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.usersSizeIfUserAdded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prep_module" />
-      <option name="PACKAGE_NAME" value="com.ams.test.service" />
-      <option name="MAIN_CLASS_NAME" value="com.ams.test.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="usersSizeIfUserAdded" />
+    <configuration name="ViewBorderParamsTest.viewBorderParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ams.mod2.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ams.mod2.selenium" />
+      <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.ViewBorderParamsTest" />
+      <option name="METHOD_NAME" value="viewBorderParamsTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="test-module-2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="test-module-2" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestLauncher" />
+      <item itemvalue="Application.Step07Compare2" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.UserServiceTest" />
-      <item itemvalue="JUnit.UserServiceTest.usersSizeIfUserAdded" />
-      <item itemvalue="JUnit.StepTests.checkScanner" />
+      <item itemvalue="JUnit.NewProbeInPack.doSomthNewProbe" />
+      <item itemvalue="JUnit.ViewBorderParamsTest" />
+      <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.StepTests.checkScanner" />
-        <item itemvalue="Application.TestLauncher" />
-        <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.usersSizeIfUserAdded" />
+        <item itemvalue="JUnit.ViewBorderParamsTest" />
+        <item itemvalue="Application.Step07Compare2" />
+        <item itemvalue="JUnit.NewProbeInPack.doSomthNewProbe" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +269,8 @@
       <workItem from="1678209311217" duration="21255000" />
       <workItem from="1678950054590" duration="7942000" />
       <workItem from="1679296247262" duration="19055000" />
+      <workItem from="1679872041591" duration="29146000" />
+      <workItem from="1680525241541" duration="4655000" />
     </task>
     <servers />
   </component>
@@ -239,29 +281,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar!/org/junit/platform/launcher/core/LauncherFactory.class</url>
-          <line>68</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar!/org/junit/platform/launcher/core/SessionPerRequestLauncher.class</url>
           <line>80</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar!/org/junit/platform/launcher/core/DefaultLauncher.class</url>
-          <line>48</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar!/org/junit/platform/launcher/core/SessionPerRequestLauncher.class</url>
-          <line>57</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar!/org/junit/platform/launcher/core/SessionPerRequestLauncher.class</url>
-          <line>60</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ams/train/Step03File.java</url>
@@ -272,14 +294,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/ams/train/Step03File.java</url>
           <line>82</line>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar!/org/junit/platform/launcher/core/SessionPerRequestLauncher.class</url>
-          <line>56</line>
-          <properties class="org.junit.platform.launcher.core.SessionPerRequestLauncher" method="execute">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
