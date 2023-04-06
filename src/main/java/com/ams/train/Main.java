@@ -21,9 +21,11 @@ public class Main {
 
         //Step05BoolTernar.doStep05();
 
-        Step06Compare.doStep06Compare();
+        //Step06Compare.doStep06Compare();
 
-        Step07Compare2.main(aa);
+        //Step07Compare2.main(aa);
+
+        Step08Fractions.main(null);
 
 
     }
