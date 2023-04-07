@@ -150,3 +150,7 @@ buildNumber.properties
 allure-results/
 build/
 .idea/workspace.xml
+
+
+### Other ####
+/repo/prep_module/test-module-2/src/test/resources/conf.properties
