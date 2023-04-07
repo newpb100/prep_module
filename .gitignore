@@ -153,4 +153,4 @@ build/
 
 
 ### Other ####
-/repo/prep_module/test-module-2/src/test/resources/conf.properties
+test-module-2/src/test/resources/conf.properties
