@@ -23,9 +23,11 @@ public class Main {
 
         //Step06Compare.doStep06Compare();
 
-        //Step07Compare2.main(aa);
+        //Step07CompareObjects.main(aa);
 
-        Step08Fractions.main(null);
+        //Step08Fractions.main(null);
+
+        Step09CompareStrings.main(null);
 
 
     }

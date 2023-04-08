@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test-sandbox/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-sandbox/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step07Compare2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/ViewBorderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/FirstProgTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  </component>
   <component name="ProjectId" id="1pYzf0I1luEirIgz0rNgb4H76dy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,9 +51,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-sandbox/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-module-11/pom.xml" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
@@ -57,7 +62,6 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ams.mod2.selenium" />
       <recent name="com.ams.test.sandbox" />
       <recent name="com.ams.junit.service" />
       <recent name="" />
@@ -112,7 +116,7 @@
       </method>
     </configuration>
     <configuration name="NewProbeInPack.doSomthNewProbe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-sandbox" />
+      <module name="test-module-11" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ams.mod11.pack.*" />
