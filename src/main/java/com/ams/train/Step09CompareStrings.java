@@ -59,5 +59,9 @@ public class Step09CompareStrings {
         System.out.println(some == some2 ? "some == some2 : равны" : "some == some2 : НЕ равны");
         System.out.println(some == some2.intern() ? "some == some2.intern() : равны" : "some == some2.intern() : НЕ равны");
 
+        // 7. Repeat string
+        System.out.println("This is repeatable string".repeat(5));
+
+
     }
 }

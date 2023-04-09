@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step07Compare2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/ViewBorderParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step08Fractions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/FirstProgTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
   </component>
   <component name="ProjectId" id="1pYzf0I1luEirIgz0rNgb4H76dy" />
   <component name="ProjectViewState">
@@ -75,7 +71,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ViewBorderParamsTest.viewBorderParamsTest">
+  <component name="RunManager" selected="Application.Step08Fractions">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ams.train.Main" />
       <module name="prep_module" />
@@ -102,6 +98,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Step08Fractions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step08Fractions" />
+      <module name="prep_module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ams.train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -111,22 +120,6 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewProbeInPack.doSomthNewProbe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-module-11" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ams.mod11.pack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ams.mod11.pack" />
-      <option name="MAIN_CLASS_NAME" value="com.ams.mod11.pack.NewProbeInPack" />
-      <option name="METHOD_NAME" value="doSomthNewProbe" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,17 +205,17 @@
     <list>
       <item itemvalue="Application.Step07Compare2" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.NewProbeInPack.doSomthNewProbe" />
       <item itemvalue="JUnit.ViewBorderParamsTest" />
       <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
+      <item itemvalue="Application.Step08Fractions" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Step08Fractions" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ViewBorderParamsTest" />
         <item itemvalue="Application.Step07Compare2" />
-        <item itemvalue="JUnit.NewProbeInPack.doSomthNewProbe" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +264,7 @@
       <workItem from="1678950054590" duration="7942000" />
       <workItem from="1679296247262" duration="19055000" />
       <workItem from="1679872041591" duration="29146000" />
-      <workItem from="1680525241541" duration="4655000" />
+      <workItem from="1680525241541" duration="13756000" />
     </task>
     <servers />
   </component>
@@ -297,6 +290,13 @@
           <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
