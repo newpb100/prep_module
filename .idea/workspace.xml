@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="" />
+    <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/SpektrUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/ViewBorderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/ViewBorderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ams.mod2.selenium" />
       <recent name="com.ams.test.sandbox" />
       <recent name="com.ams.junit.service" />
       <recent name="" />
