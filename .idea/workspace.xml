@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step08Fractions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step09CompareStrings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step07Compare2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step07CompareObjects.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ams.train" />
       <recent name="com.ams.test.sandbox" />
       <recent name="com.ams.junit.service" />
       <recent name="" />
@@ -71,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Step08Fractions">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ams.train.Main" />
       <module name="prep_module" />
@@ -85,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Step07Compare2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step07Compare2" />
+    <configuration name="Step07CompareObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step07CompareObjects" />
       <module name="prep_module" />
       <extension name="coverage">
         <pattern>
@@ -203,19 +206,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Step07Compare2" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Step08Fractions" />
       <item itemvalue="JUnit.ViewBorderParamsTest" />
       <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
-      <item itemvalue="Application.Step08Fractions" />
+      <item itemvalue="Application.Step07CompareObjects" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Step08Fractions" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ViewBorderParamsTest" />
-        <item itemvalue="Application.Step07Compare2" />
+        <item itemvalue="Application.Step07CompareObjects" />
       </list>
     </recent_temporary>
   </component>
@@ -297,9 +300,6 @@
     <select />
   </component>
 </project>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>

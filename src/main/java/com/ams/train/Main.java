@@ -27,9 +27,11 @@ public class Main {
 
         //Step08Fractions.main(null);
 
-        Step09CompareStrings.main(null);
+        //Step09CompareStrings.main(null);
 
         //Step10Cycles.main(null);
+
+        Step11DoubleOperations.main(null);
 
 
     }
