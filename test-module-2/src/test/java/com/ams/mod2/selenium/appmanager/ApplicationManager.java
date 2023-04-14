@@ -1,5 +1,6 @@
-package com.ams.mod2.selenium;
+package com.ams.mod2.selenium.appmanager;
 
+import com.ams.mod2.selenium.tests.SpektrUser;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 

@@ -1,8 +1,8 @@
-package com.ams.mod2.selenium;
+package com.ams.mod2.selenium.tests;
 
+import com.ams.mod2.selenium.appmanager.ApplicationManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.openqa.selenium.By;
 
 public class TestBase {
 

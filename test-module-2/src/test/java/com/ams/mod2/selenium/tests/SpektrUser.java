@@ -1,4 +1,4 @@
-package com.ams.mod2.selenium;
+package com.ams.mod2.selenium.tests;
 
 public class SpektrUser {
     private final String login;

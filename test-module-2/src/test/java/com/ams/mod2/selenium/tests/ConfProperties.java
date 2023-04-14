@@ -1,4 +1,4 @@
-package com.ams.mod2.selenium;
+package com.ams.mod2.selenium.tests;
 
 import java.io.FileInputStream;
 import java.io.IOException;

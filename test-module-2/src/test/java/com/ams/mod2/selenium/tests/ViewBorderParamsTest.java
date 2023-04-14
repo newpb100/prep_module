@@ -1,4 +1,4 @@
-package com.ams.mod2.selenium;
+package com.ams.mod2.selenium.tests;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
