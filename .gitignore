@@ -1,4 +1,5 @@
 # User-specific stuff
+.idea/workspace.xml
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -154,3 +155,5 @@ build/
 
 ### Other ####
 test-module-2/src/test/resources/conf.properties
+/.idea/workspace.xml
+.idea/workspace.xml
