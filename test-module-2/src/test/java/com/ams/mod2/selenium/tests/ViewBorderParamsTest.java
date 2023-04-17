@@ -10,11 +10,11 @@ public class ViewBorderParamsTest extends TestBase {
 
     @Test
     void viewBorderParamsTest() throws InterruptedException {
-        app.login(new SpektrUser());
-        app.openProject("Февраль 2023");
-        app.openSettings("Воргенское");
+        app.getSessionHelper().login(new SpektrUser());
+        app.getSettingsHelper().openProject("Февраль 2023");
+        app.getSettingsHelper().openSettings("Воргенское");
         app.openSection();
-        app.logout();
+        app.getSessionHelper().logout();
     }
 
 
