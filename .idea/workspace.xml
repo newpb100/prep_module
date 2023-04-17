@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step09CompareStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step10Cycles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step06Compare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step07Compare2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step07CompareObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step09CompareStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step09CompareStrings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Step07CompareObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step07CompareObjects" />
+    <configuration name="Step08Fractions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step08Fractions" />
       <module name="prep_module" />
       <extension name="coverage">
         <pattern>
@@ -101,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Step08Fractions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step08Fractions" />
+    <configuration name="Step10Cycles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step10Cycles" />
       <module name="prep_module" />
       <extension name="coverage">
         <pattern>
@@ -210,15 +209,15 @@
       <item itemvalue="Application.Step08Fractions" />
       <item itemvalue="JUnit.ViewBorderParamsTest" />
       <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
-      <item itemvalue="Application.Step07CompareObjects" />
+      <item itemvalue="Application.Step10Cycles" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Step10Cycles" />
         <item itemvalue="Application.Step08Fractions" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
         <item itemvalue="JUnit.ViewBorderParamsTest" />
-        <item itemvalue="Application.Step07CompareObjects" />
       </list>
     </recent_temporary>
   </component>
@@ -299,6 +298,7 @@
     <expand />
     <select />
   </component>
+</project>
 </project>
     <expand />
     <select />
