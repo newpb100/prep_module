@@ -1,6 +1,5 @@
 package com.ams.mod2.selenium.appmanager;
 
-import com.ams.mod2.selenium.tests.SpektrUser;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -30,6 +29,8 @@ public class ApplicationManager {
         js = (JavascriptExecutor) driver;
     }
 
+    // is it need to be relocated into separate Helper?
+    // if it will be done , methods isElementPresent, isAlertPresent, closeAlertAndGetItsText also need to be relocated
     public void openSection() throws InterruptedException {
         // open section
         driver.findElement(By.xpath("/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[7]/div/div/itsk-grid-expand")).click();
