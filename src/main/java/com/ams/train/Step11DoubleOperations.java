@@ -39,23 +39,5 @@ public class Step11DoubleOperations {
         System.out.println("(int)2.7 = " + ((int)2.7));
 
 
-        // 6. Accurance for float in dec-system
-
-        float f = 0.0f;
-        for (int i = 1; i <= 8; i++){
-            f = f + 0.11111111111111111111111111111f;
-        }
-        System.out.println("float f = " + f);   // float f = 0.8888889  only 7 digits after point
-
-        // 7. Range of float
-        // 1.4e-45f до 3.4e+38f
-
-        // f = 1.4e-46f;  err : floating point too small
-        f = 1.4e-45f;
-        System.out.println("minimum float f = " + f);
-        System.out.println("Float.MAX_VALUE = " + Float.MAX_VALUE);
-        System.out.println("Float.MAX_VALUE = " + (2 - Math.pow(2, -23))*Math.pow(2, 127));
-
-
     }
 }
