@@ -1,5 +1,6 @@
 package com.ams.mod2.selenium.appmanager;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class SettingsHelper extends HelperBase {
@@ -8,7 +9,7 @@ public class SettingsHelper extends HelperBase {
         super(driver);
     }
 
-    public void openSettings(String field_name_rus) throws InterruptedException {
+    public void openSettingsOfFieldByName(String field_name_rus) throws InterruptedException {
         int treeIndex = 0;
         // open settings
         click("/html/body/app-root/div/app-extraction-project-outlet/div/div/div[1]");
@@ -36,4 +37,19 @@ public class SettingsHelper extends HelperBase {
         click("(.//*[normalize-space(text()) and normalize-space(.)='Отмена'])[1]/following::button[1]");
     }
 
+    public void openSectionDostrely() throws InterruptedException {
+        // open section
+        click("/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[7]/div/div/itsk-grid-expand");
+        Thread.sleep(2000);
+    }
+
+    public void moveToOptions() throws InterruptedException  {
+        click("//span[@id='calcOptions']/span");
+        Thread.sleep(2000);
+    }
+
+    public void openOptionsDostrely() throws InterruptedException {
+        click("(.//*[normalize-space(text()) and normalize-space(.)='ОПТ (10)'])[1]/following::*[name()='svg'][1]");
+        Thread.sleep(2000);
+    }
 }

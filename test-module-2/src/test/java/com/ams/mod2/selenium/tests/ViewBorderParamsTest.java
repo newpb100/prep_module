@@ -12,8 +12,18 @@ public class ViewBorderParamsTest extends TestBase {
     void viewBorderParamsTest() throws InterruptedException {
         app.getSessionHelper().login(new SpektrUser());
         app.getSettingsHelper().openProject("Февраль 2023");
-        app.getSettingsHelper().openSettings("Воргенское");
-        app.openSection();
+        app.getSettingsHelper().openSettingsOfFieldByName("Воргенское");
+        app.getSettingsHelper().openSectionDostrely();
+        app.getSessionHelper().logout();
+    }
+
+    @Test
+    void viewOptions() throws InterruptedException {
+        app.getSessionHelper().login(new SpektrUser());
+        app.getSettingsHelper().openProject("Февраль 2023");
+        app.getSettingsHelper().openSettingsOfFieldByName("Валынтойское");
+        app.getSettingsHelper().moveToOptions();
+        app.getSettingsHelper().openOptionsDostrely();
         app.getSessionHelper().logout();
     }
 
