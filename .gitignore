@@ -1,4 +1,5 @@
 # User-specific stuff
+.idea/workspace.xml
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -149,4 +150,10 @@ buildNumber.properties
 
 allure-results/
 build/
+.idea/workspace.xml
+
+
+### Other ####
+test-module-2/src/test/resources/conf.properties
+/.idea/workspace.xml
 .idea/workspace.xml
