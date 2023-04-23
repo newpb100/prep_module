@@ -33,7 +33,9 @@ public class Main {
 
         //Step11DoubleOperations.main(null);
 
-        Step12ExploreFloat.main(null);
+        //Step12ExploreFloat.main(null);
+
+        Step13StrictFP.main(null);
 
 
 
