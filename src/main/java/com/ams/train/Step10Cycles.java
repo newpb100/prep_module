@@ -67,5 +67,13 @@ public class Step10Cycles {
         }
 
 
+        // foreach
+        String[] cars = {"audi", "haval", "lada", "ford"};
+
+        for(String s: cars){
+            System.out.println("car is " + s);
+        }
+
+
     }
 }
