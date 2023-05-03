@@ -1,6 +1,7 @@
 package com.ams.train;
 
 public class Step10Cycles {
+    public static final String a = "";
 
     public static void main(String[] args) {
 
@@ -67,12 +68,75 @@ public class Step10Cycles {
         }
 
 
-        // foreach
+        // 7. foreach
         String[] cars = {"audi", "haval", "lada", "ford"};
 
         for(String s: cars){
-            System.out.println("car is " + s);
+            System.out.println("foreach: car is " + s);
         }
+        // foreach classic alternative
+        for (i = 0; i < cars.length ; i++){
+            System.out.println("alternative: car is " + cars[i]);
+        }
+
+        System.out.println();
+
+        // 8. for for multilayer arrays
+        int[][] array = {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+        };
+        for (i = 0; i < array.length; i++){
+            for (int j = 0; j < array[i].length ; j++){
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // 9. Trick
+        //for (i = 0 ; i > -1; i++){
+        //    if (i % 1e7 == 0) System.out.println(i);
+        //}
+        //System.out.println("will this string reached? i = " + i); // will this string reached? i = -2147483648
+
+        System.out.println();
+
+        // 10. More than 1 counter/argument
+        int j;
+        for (i = 0, j = 10; i != j ; i++, j--){
+            System.out.println("i = " + i + " ; j = " + j);
+        }
+
+        int a = 0;
+        int b = 1;
+        int c = 0;
+        for (i = 0; i < 5 ; i++ , a += 2, b *=10 , c--){
+            System.out.println(i + " ; a = " + a + " ; b = " + b + " ; c = " + c);
+        }
+
+        // 10. Example for debug
+        /*
+        for (i = 0, j = 10; i != j ; i++, j-=2){
+            System.out.println("i = " + i + " ; j = " + j);
+
+            if (j < i){
+                throw new RuntimeException("now j is less than i");
+            }
+        }
+         */
+
+        //10.2
+        /*
+        int[] ar = new int[10];
+        ar[11] = 2;
+
+         */
+
+
+
+
+
 
 
     }
