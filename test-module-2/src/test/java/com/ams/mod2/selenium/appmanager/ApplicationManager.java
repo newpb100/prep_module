@@ -2,6 +2,9 @@ package com.ams.mod2.selenium.appmanager;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,15 +15,27 @@ public class ApplicationManager {
     private SettingsHelper settingsHelper;
 
     WebDriver driver;
+    String browserType;
 
     boolean acceptNextAlert = true;
     JavascriptExecutor js;
     private String baseUrl;
     private StringBuffer verificationErrors = new StringBuffer();
 
+    public ApplicationManager(String browserType) {
+        this.browserType = browserType;
+    }
+
     public void init() {
-        System.setProperty("webdriver.chrome.driver", "C://Windows//system32//chromedriver.exe");
-        driver = new ChromeDriver();
+        if  (browserType.equals(BrowserType.CHROME)) {
+            driver = new ChromeDriver();
+        }else if (browserType.equals(BrowserType.FIREFOX)) {
+            driver = new FirefoxDriver();
+        }else if (browserType.equals(BrowserType.EDGE)) {
+            System.setProperty("webdriver.edge.driver", "C://work//bin//drivers//msedgedriver.exe");
+            driver = new EdgeDriver();
+        }
+
         driver.manage().window().maximize();
 
         sessionHelper = new SessionHelper(driver);
