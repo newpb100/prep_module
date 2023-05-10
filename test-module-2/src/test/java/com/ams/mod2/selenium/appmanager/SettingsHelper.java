@@ -1,6 +1,5 @@
 package com.ams.mod2.selenium.appmanager;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class SettingsHelper extends HelperBase {

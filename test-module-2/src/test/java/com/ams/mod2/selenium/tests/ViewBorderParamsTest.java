@@ -7,7 +7,6 @@ import org.junit.jupiter.api.TestInstance;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class ViewBorderParamsTest extends TestBase {
 
-
     @Test
     void viewBorderParamsTest() throws InterruptedException {
         app.getSessionHelper().login(new SpektrUser());
