@@ -39,9 +39,9 @@ public class Main {
 
         //Step14Arrays.main(null);
 
-        Step15ArrayBubbleSort.main(null);
+        //Step15ArrayBubbleSort.main(null);
 
-
+        (new Step16SelectionSort()).main();
 
 
     }
