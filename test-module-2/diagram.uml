@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="168.26136363636363" y="104.0">com.ams.mod2.selenium.appmanager.HelperBase</node>
+    <node x="159.16666666666669" y="422.0">com.ams.mod2.selenium.appmanager.ApplicationManager</node>
+    <node x="0.0" y="230.0">com.ams.mod2.selenium.appmanager.SettingsHelper</node>
+    <node x="286.0" y="263.0">com.ams.mod2.selenium.appmanager.SessionHelper</node>
+    <node x="360.625" y="0.0">com.ams.mod2.selenium.tests.ConfProperties</node>
+    <node x="388.625" y="104.0">com.ams.mod2.selenium.tests.SpektrUser</node>
+    <node x="200.66666666666669" y="659.0">com.ams.mod2.selenium.tests.TestBase</node>
+    <node x="197.16666666666669" y="785.0">com.ams.mod2.selenium.tests.ViewBorderParamsTest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ams.mod2.selenium.appmanager.SessionHelper" target="com.ams.mod2.selenium.appmanager.HelperBase">
+      <point x="-55.33333333333337" y="-38.0" />
+      <point x="313.66666666666663" y="205.0" />
+      <point x="277.0113636363636" y="205.0" />
+      <point x="21.75" y="38.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.appmanager.SettingsHelper" target="com.ams.mod2.selenium.appmanager.HelperBase">
+      <point x="-66.5" y="-71.0" />
+      <point x="66.5" y="205.0" />
+      <point x="190.01136363636363" y="205.0" />
+      <point x="-65.25" y="38.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.tests.ViewBorderParamsTest" target="com.ams.mod2.selenium.tests.SpektrUser">
+      <point x="69.33333333333331" y="-38.0" />
+      <point x="370.5" y="760.0" />
+      <point x="484.625" y="760.0" />
+      <point x="32.0" y="38.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.appmanager.ApplicationManager" target="com.ams.mod2.selenium.appmanager.SettingsHelper">
+      <point x="-90.41666666666666" y="-93.5" />
+      <point x="177.25000000000003" y="402.0" />
+      <point x="44.333333333333314" y="402.0" />
+      <point x="-88.66666666666667" y="71.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.tests.SpektrUser" target="com.ams.mod2.selenium.tests.ConfProperties">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.tests.TestBase" target="com.ams.mod2.selenium.appmanager.ApplicationManager">
+      <point x="-33.5" y="-38.0" />
+      <point x="234.16666666666669" y="634.0" />
+      <point x="213.41666666666669" y="634.0" />
+      <point x="-54.25" y="93.5" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.appmanager.SessionHelper" target="com.ams.mod2.selenium.tests.SpektrUser">
+      <point x="55.333333333333314" y="-38.0" />
+      <point x="424.3333333333333" y="205.0" />
+      <point x="420.625" y="205.0" />
+      <point x="-32.0" y="38.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.tests.ViewBorderParamsTest" target="com.ams.mod2.selenium.tests.TestBase">
+      <point x="0.0" y="-38.0" />
+      <point x="33.5" y="38.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.appmanager.ApplicationManager" target="com.ams.mod2.selenium.appmanager.SessionHelper">
+      <point x="18.083333333333314" y="-93.5" />
+      <point x="285.75" y="402.0" />
+      <point x="313.6666666666667" y="402.0" />
+      <point x="-55.333333333333314" y="38.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7763904653802497" x="272.5" y="430.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

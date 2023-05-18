@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/diagram.uml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-sandbox/test-sandbox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test-sandbox/test-sandbox.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/ams/test/sandbox" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-sandbox/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-module-2" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
@@ -77,20 +75,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ViewBorderParamsTest.viewBorderParamsTest (1)">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ams.train.Main" />
-      <module name="prep_module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ams.train.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ViewBorderParamsTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -107,6 +92,37 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DiscriminantTest" />
       <option name="METHOD_NAME" value="checkNoDicisions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ViewBorderParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ams.mod2.selenium.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ams.mod2.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.tests.ViewBorderParamsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ViewBorderParamsTest.viewBorderParamsTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ams.mod2.selenium.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ams.mod2.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.tests.ViewBorderParamsTest" />
+      <option name="METHOD_NAME" value="viewBorderParamsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,19 +177,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
-      <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest (1)" />
       <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
       <item itemvalue="JUnit.DiscriminantTest.checkNoDicisions" />
+      <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest (1)" />
+      <item itemvalue="JUnit.ViewBorderParamsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ViewBorderParamsTest" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest (1)" />
         <item itemvalue="JUnit.DiscriminantTest.checkNoDicisions" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
