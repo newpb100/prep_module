@@ -15,26 +15,34 @@ public class TestBase {
 
     @BeforeAll
     public static void setUp() throws Exception {
-    //public void setUp() throws Exception {
+        //public void setUp() throws Exception {
 
         app.init();
         System.out.println("setUp");
+
+        //just a sample of hook
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+                    System.out.println("inside addShutdownHook step 1");
+                    System.out.println("inside addShutdownHook step 2");
+                })
+        );
+    }
+
+   @BeforeEach
+    public void doSuite(){
+        System.out.println("inside beforeEach-method");
+        if (suite == null){
+            suite = "== suite field, that initialized as a singleton, class : " + this.getClass().getName();
+        }else{
+            System.out.println(suite);
+        }
     }
 
     @AfterAll
     public static void tearDown() throws Exception {
-    //public void tearDown() throws Exception {
+        //public void tearDown() throws Exception {
         app.stop();
         System.out.println("tearDown");
-    }
-
-    @BeforeEach
-    public void doSuite(){
-        if (suite == null){
-            suite = "=== field that initialized as a singleton === " + this;
-        }else{
-            System.out.println(suite);
-        }
     }
 
 }

@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/MockTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/diagram.uml" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/diagram.uml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/diagram.uml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +76,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ViewBorderParamsTest">
+  <component name="RunManager" selected="JUnit.com.ams.mod2.selenium.tests in test-module-2">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -83,16 +84,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscriminantTest.checkNoDicisions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-sandbox" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DiscriminantTest" />
-      <option name="METHOD_NAME" value="checkNoDicisions" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ViewBorderParamsTest.viewBorderParamsTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ViewBorderParamsTest.doMock1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-module-2" />
       <extension name="coverage">
         <pattern>
@@ -122,23 +113,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ams.mod2.selenium.tests" />
       <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.tests.ViewBorderParamsTest" />
-      <option name="METHOD_NAME" value="viewBorderParamsTest" />
+      <option name="METHOD_NAME" value="doMock1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ViewBorderParamsTest.viewBorderParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ViewBorderParamsTest.doMock2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-module-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ams.mod2.selenium.*" />
+          <option name="PATTERN" value="com.ams.mod2.selenium.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ams.mod2.selenium" />
-      <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.ViewBorderParamsTest" />
-      <option name="METHOD_NAME" value="viewBorderParamsTest" />
+      <option name="PACKAGE_NAME" value="com.ams.mod2.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.tests.ViewBorderParamsTest" />
+      <option name="METHOD_NAME" value="doMock2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,20 +167,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.ams.mod2.selenium.tests in test-module-2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-module-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ams.mod2.selenium.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ams.mod2.selenium.tests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
-      <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
-      <item itemvalue="JUnit.DiscriminantTest.checkNoDicisions" />
-      <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest (1)" />
       <item itemvalue="JUnit.ViewBorderParamsTest" />
+      <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
+      <item itemvalue="JUnit.ViewBorderParamsTest.doMock1" />
+      <item itemvalue="JUnit.ViewBorderParamsTest.doMock2" />
+      <item itemvalue="JUnit.com.ams.mod2.selenium.tests in test-module-2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ViewBorderParamsTest" />
-        <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest (1)" />
-        <item itemvalue="JUnit.DiscriminantTest.checkNoDicisions" />
+        <item itemvalue="JUnit.com.ams.mod2.selenium.tests in test-module-2" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
-        <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParamsTest" />
+        <item itemvalue="JUnit.ViewBorderParamsTest.doMock2" />
+        <item itemvalue="JUnit.ViewBorderParamsTest.doMock1" />
+        <item itemvalue="JUnit.ViewBorderParamsTest" />
       </list>
     </recent_temporary>
   </component>
