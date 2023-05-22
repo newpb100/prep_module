@@ -26,7 +26,7 @@ public class ViewBorderParamsTest extends TestBase {
         app.getSettingsHelper().openSettingsOfFieldByName("Валынтойское");
         app.getSettingsHelper().moveToOptions();
         // check how works ShutdownHook
-        System.exit(0);
+        //System.exit(0);
         app.getSettingsHelper().openOptionsDostrely();
         app.getSessionHelper().logout();
         System.out.println("this = " + this);
