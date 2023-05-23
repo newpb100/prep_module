@@ -5,6 +5,12 @@ public class Step10Cycles {
 
     public static void main(String[] args) {
 
+        int k = 0;
+        for (; k < 4; k++) {
+            if (k == 13) break;
+        }
+        System.out.println(" k = " + k);
+
         int i = 0;
         // 1. For with bool
         for(boolean flag=true; flag;){

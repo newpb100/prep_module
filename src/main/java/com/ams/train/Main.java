@@ -43,6 +43,8 @@ public class Main {
 
         (new Step16SelectionSort()).main();
 
+        Step17InsertionSort.main(null);
+
 
     }
 

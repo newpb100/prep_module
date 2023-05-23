@@ -14,12 +14,14 @@ public class Step16SelectionSort {
 
         /* внешним циклом походим только до предпоследнего элемента, до "4", а вот внутренний всегда идет до конца
            внутренний можно сразу стартовать с left+1, иначе первое сравнение элемента себя с самим, просто не нужно
+
+           Внешним циклом двигаем левую границу
         */
         for (int left = 0; left < arr.length-1; left++) {
             System.out.println("start compare elem index " + left + ": " + Arrays.toString(arr));
             isSwap = false;
             minInd = left;
-            for (int i = left+1; i < arr.length; i++) {
+            for (int i = left+1; i < arr.length; i++) {     // Внутренним ищем самый минимальный, который есть справа от левой границы
                 if (arr[i] < arr[minInd]) {
                     minInd = i;
                     isSwap = true;
