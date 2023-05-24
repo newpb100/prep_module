@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step16SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step17InsertionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step15ArrayBubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step15ArrayBubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step10Cycles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step10Cycles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step16SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step16SelectionSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Step15ArrayBubbleSort">
+  <component name="RunManager" selected="Application.Step17InsertionSort">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ams.train.Main" />
       <module name="prep_module" />
@@ -100,19 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Step11DoubleOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step11DoubleOperations" />
-      <module name="prep_module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ams.train.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Step15ArrayBubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ams.train.Step15ArrayBubbleSort" />
       <module name="prep_module" />
@@ -128,6 +116,19 @@
     </configuration>
     <configuration name="Step16SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ams.train.Step16SelectionSort" />
+      <module name="prep_module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ams.train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Step17InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ams.train.Step17InsertionSort" />
       <module name="prep_module" />
       <extension name="coverage">
         <pattern>
@@ -199,18 +200,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Step10Cycles" />
-      <item itemvalue="Application.Step11DoubleOperations" />
       <item itemvalue="Application.Step16SelectionSort" />
       <item itemvalue="Application.Step15ArrayBubbleSort" />
+      <item itemvalue="Application.Step17InsertionSort" />
+      <item itemvalue="Application.Step10Cycles" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Step17InsertionSort" />
+        <item itemvalue="Application.Step10Cycles" />
         <item itemvalue="Application.Step15ArrayBubbleSort" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Step16SelectionSort" />
-        <item itemvalue="Application.Step11DoubleOperations" />
-        <item itemvalue="Application.Step10Cycles" />
       </list>
     </recent_temporary>
   </component>
@@ -292,11 +293,10 @@
     <expand />
     <select />
   </component>
-</project>
-    <select />
-  </component>
-</project>
-    <select />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/prep_module$Step10Cycles.ic" NAME="Step10Cycles Coverage Results" MODIFIED="1684776299644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ams.train.*</FILTER>
+    </SUITE>
   </component>
 </project>
 </project>

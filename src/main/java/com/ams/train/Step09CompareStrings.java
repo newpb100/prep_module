@@ -40,8 +40,19 @@ public class Step09CompareStrings {
         // 5. Important moment
         String str5  = "новая строка";
         String str6 = "новая строка";
-        System.out.println(str5 == str6 ? "внезапно указатели равны" : "не равны");
+        System.out.println(str5 == str6 ? "внезапно указатели равны" : "не равны");   // равны, компилятор это понял еще на этапе компиляции
 
+        // 5.1. Compare with expression
+        String s12 = "abc 2.0";
+        String s13 = "abc " + Math.sqrt(4.0);
+
+        if (s12 == s13){
+            System.out.println("abc 2.0 == abc + Math.sqrt(4.0)");
+        } else{
+            System.out.println("abc 2.0 != abc + Math.sqrt(4.0)"); // <- потому что на этапе компиляции компилятор не вычисляет выражение
+        }
+
+        // 5.2.
         String str7 = new String("новая строка");
         String str8 = new String("новая строка");
         String str9 = new String(str5);
@@ -61,7 +72,6 @@ public class Step09CompareStrings {
 
         // 7. Repeat string
         System.out.println("This is repeatable string".repeat(5));
-
 
     }
 }
