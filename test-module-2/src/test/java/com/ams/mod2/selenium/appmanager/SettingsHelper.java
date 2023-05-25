@@ -1,5 +1,6 @@
 package com.ams.mod2.selenium.appmanager;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class SettingsHelper extends HelperBase {
@@ -50,5 +51,15 @@ public class SettingsHelper extends HelperBase {
     public void openOptionsDostrely() throws InterruptedException {
         click("(.//*[normalize-space(text()) and normalize-space(.)='ОПТ (10)'])[1]/following::*[name()='svg'][1]");
         Thread.sleep(2000);
+    }
+
+    public void checkBorderParams() {
+
+        //if (isElementPresent(new By.ByXPath("/html/body/app-root/div/app-extraction-project-outlet/app-extraction-expertise-conditions/app-expertise-conditions-wrapper/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/app-grid-conditions/div/itsk-grid/itsk-grid-body/div/div[9]/itsk-grid-cell[4]/itsk-default-cell/span"))){
+        if (isElementPresent(new By.ByXPath("/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[10]/itsk-grid-cell[4]/itsk-default-cell/span"))){
+            System.out.println("element found");
+        }else{
+            System.out.println("no such elementttttttttttt");
+        }
     }
 }

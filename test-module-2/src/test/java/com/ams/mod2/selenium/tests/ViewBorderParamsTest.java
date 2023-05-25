@@ -15,6 +15,7 @@ public class ViewBorderParamsTest extends TestBase {
         app.getSettingsHelper().openProject("Февраль 2023");
         app.getSettingsHelper().openSettingsOfFieldByName("Воргенское");
         app.getSettingsHelper().openSectionDostrely();
+        app.getSettingsHelper().checkBorderParams();
         app.getSessionHelper().logout();
         System.out.println("this = " + this);
     }

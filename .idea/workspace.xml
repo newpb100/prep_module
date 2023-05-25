@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ThreadLocalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/SettingsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/SettingsHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +76,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ThreadLocalTest">
+  <component name="RunManager" selected="JUnit.ViewBorderParamsTest.viewBorderParams">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -100,22 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ViewBorderParamsTest.doMock1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-module-2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ams.mod2.selenium.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ams.mod2.selenium.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.tests.ViewBorderParamsTest" />
-      <option name="METHOD_NAME" value="doMock1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ViewBorderParamsTest.doMock2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-module-2" />
       <extension name="coverage">
@@ -132,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ViewBorderParamsTest.viewBorderParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ViewBorderParamsTest.viewBorderParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-module-2" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +129,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ams.mod2.selenium.tests" />
       <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.tests.ViewBorderParamsTest" />
-      <option name="METHOD_NAME" value="viewBorderParamsTest" />
+      <option name="METHOD_NAME" value="viewBorderParams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,18 +167,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
-      <item itemvalue="JUnit.ViewBorderParamsTest.doMock1" />
       <item itemvalue="JUnit.ViewBorderParamsTest.doMock2" />
       <item itemvalue="JUnit.com.ams.mod2.selenium.tests in test-module-2" />
       <item itemvalue="JUnit.ThreadLocalTest" />
+      <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParams" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParams" />
         <item itemvalue="JUnit.ThreadLocalTest" />
         <item itemvalue="JUnit.com.ams.mod2.selenium.tests in test-module-2" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
         <item itemvalue="JUnit.ViewBorderParamsTest.doMock2" />
-        <item itemvalue="JUnit.ViewBorderParamsTest.doMock1" />
       </list>
     </recent_temporary>
   </component>
@@ -274,5 +261,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/prep_module$Step10Cycles.ic" NAME="Step10Cycles Coverage Results" MODIFIED="1684776299644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ams.train.*</FILTER>
+    </SUITE>
   </component>
 </project>
