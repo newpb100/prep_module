@@ -1,5 +1,6 @@
 package com.ams.mod2.selenium.appmanager;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -54,12 +55,22 @@ public class SettingsHelper extends HelperBase {
     }
 
     public void checkBorderParams() {
+        String[][] xpathBordersArr = {
+                {"150", "Минимальное Рпл, Атм", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[9]/itsk-grid-cell[4]/itsk-default-cell/span"},
+                {"51", "Максимальный остановочный дебит, т/сут", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[10]/itsk-grid-cell[4]/itsk-default-cell/span"}
+        };
+        By by;
 
-        //if (isElementPresent(new By.ByXPath("/html/body/app-root/div/app-extraction-project-outlet/app-extraction-expertise-conditions/app-expertise-conditions-wrapper/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/app-grid-conditions/div/itsk-grid/itsk-grid-body/div/div[9]/itsk-grid-cell[4]/itsk-default-cell/span"))){
-        if (isElementPresent(new By.ByXPath("/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[10]/itsk-grid-cell[4]/itsk-default-cell/span"))){
-            System.out.println("element found");
-        }else{
-            System.out.println("no such elementttttttttttt");
+        for (int i = 0; i < xpathBordersArr.length; i++) {
+            by = new By.ByXPath(xpathBordersArr[i][2]);
+            if (isElementPresent(by)){
+                System.out.println("border element found ; value = " + driver.findElement(by).getText());
+                Assert.assertTrue("Border element "+ xpathBordersArr[i][1] + " not equal to default value", (driver.findElement(by).getText()).equals(xpathBordersArr[i][0]));
+            }else{
+                System.out.println("no such border element!");
+            }
+
         }
+
     }
 }
