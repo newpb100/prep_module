@@ -1,6 +1,6 @@
 package com.ams.mod2.selenium.tests;
 
-import org.junit.jupiter.api.AfterAll;
+import com.ams.mod2.selenium.dto.SpektrUser;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
@@ -12,10 +12,11 @@ public class ViewBorderParamsTest extends TestBase {
     @Test
     void viewBorderParams() throws InterruptedException {
         app.getSessionHelper().login(new SpektrUser());
-        app.getSettingsHelper().openProject("Февраль 2023");
+        //app.getSettingsHelper().openProject("Февраль 2023");
+        app.getSettingsHelper().openProject("Май 2023");
         app.getSettingsHelper().openSettingsOfFieldByName("Воргенское");
         app.getSettingsHelper().openSectionDostrely();
-        app.getSettingsHelper().checkBorderParams();
+        app.getSettingsHelper().checkBorderParamsList();
         app.getSessionHelper().logout();
         System.out.println("this = " + this);
     }

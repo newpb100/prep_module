@@ -1,4 +1,6 @@
-package com.ams.mod2.selenium.tests;
+package com.ams.mod2.selenium.dto;
+
+import com.ams.mod2.selenium.tests.ConfProperties;
 
 public class SpektrUser {
     private final String login;

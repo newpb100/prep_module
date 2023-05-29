@@ -1,10 +1,17 @@
 package com.ams.mod2.selenium.appmanager;
 
+import com.ams.mod2.selenium.dto.BorderParam;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SettingsHelper extends HelperBase {
+
+    private By by;
+    private List<BorderParam> listBP;
 
     public SettingsHelper(WebDriver driver) {
         super(driver);
@@ -59,7 +66,6 @@ public class SettingsHelper extends HelperBase {
                 {"150", "Минимальное Рпл, Атм", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[9]/itsk-grid-cell[4]/itsk-default-cell/span"},
                 {"51", "Максимальный остановочный дебит, т/сут", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[10]/itsk-grid-cell[4]/itsk-default-cell/span"}
         };
-        By by;
 
         for (int i = 0; i < xpathBordersArr.length; i++) {
             by = new By.ByXPath(xpathBordersArr[i][2]);
@@ -72,5 +78,25 @@ public class SettingsHelper extends HelperBase {
 
         }
 
+    }
+
+    public void checkBorderParamsList() {
+        fillBorderParamList();
+
+        for (BorderParam bp: listBP) {
+            by = new By.ByXPath(bp.getXpath());
+            if (isElementPresent(by)) {
+                System.out.println("border element found ; value = " + driver.findElement(by).getText());
+                Assert.assertTrue("Border element "+ bp.getBorderName() + " not equal to default value", (driver.findElement(by)).getText().equals(bp.getBorder()));
+            } else {
+                System.out.println("no such border element!");
+            }
+        }
+    }
+
+    private void fillBorderParamList() {
+        listBP = new ArrayList<BorderParam>();
+        listBP.add(new BorderParam("150", "Минимальное Рпл, Атм", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[9]/itsk-grid-cell[4]/itsk-default-cell/span"));
+        listBP.add(new BorderParam("50", "Максимальный остановочный дебит, т/сут", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[10]/itsk-grid-cell[4]/itsk-default-cell/span"));
     }
 }
