@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/dto/BorderParam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/SessionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/SessionHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/SettingsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/SettingsHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/SpektrUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/dto/SpektrUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" afterDir="false" />
     </list>
@@ -79,7 +76,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ViewBorderParamsTest.viewBorderParams">
+  <component name="RunManager" selected="JUnit.ViewBorderParamsTest.checkNavigationLinks">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -106,17 +103,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ViewBorderParamsTest.doMock2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ViewBorderParamsTest.checkNavigationLinks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-module-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ams.mod2.selenium.dto.*" />
+          <option name="PATTERN" value="com.ams.mod2.selenium.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ams.mod2.selenium.tests" />
       <option name="MAIN_CLASS_NAME" value="com.ams.mod2.selenium.tests.ViewBorderParamsTest" />
-      <option name="METHOD_NAME" value="doMock2" />
+      <option name="METHOD_NAME" value="checkNavigationLinks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,18 +167,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
-      <item itemvalue="JUnit.ViewBorderParamsTest.doMock2" />
       <item itemvalue="JUnit.com.ams.mod2.selenium.tests in test-module-2" />
       <item itemvalue="JUnit.ThreadLocalTest" />
       <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParams" />
+      <item itemvalue="JUnit.ViewBorderParamsTest.checkNavigationLinks" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ViewBorderParamsTest.checkNavigationLinks" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParams" />
         <item itemvalue="JUnit.ThreadLocalTest" />
         <item itemvalue="JUnit.com.ams.mod2.selenium.tests in test-module-2" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
-        <item itemvalue="JUnit.ViewBorderParamsTest.doMock2" />
       </list>
     </recent_temporary>
   </component>

@@ -22,6 +22,16 @@ public class ViewBorderParamsTest extends TestBase {
     }
 
     @Test
+    void checkNavigationLinks() throws InterruptedException {
+        app.getSessionHelper().login(new SpektrUser());
+        app.getSettingsHelper().openProject("Май 2023");
+        app.getSettingsHelper().openSettingsOfFieldByName("Воргенское");
+        app.getSettingsHelper().checkNavigationLinks();
+        app.getSessionHelper().logout();
+        //System.out.println("this = " + this);
+    }
+
+    @Test
     void viewOptions() throws InterruptedException {
         app.getSessionHelper().login(new SpektrUser());
         app.getSettingsHelper().openProject("Февраль 2023");

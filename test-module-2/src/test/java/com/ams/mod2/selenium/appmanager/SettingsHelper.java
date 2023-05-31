@@ -99,4 +99,20 @@ public class SettingsHelper extends HelperBase {
         listBP.add(new BorderParam("150", "Минимальное Рпл, Атм", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[9]/itsk-grid-cell[4]/itsk-default-cell/span"));
         listBP.add(new BorderParam("50", "Максимальный остановочный дебит, т/сут", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[10]/itsk-grid-cell[4]/itsk-default-cell/span"));
     }
+
+    public void checkNavigationLinks() {
+        by = new By.ByClassName("nav-link");
+        int beforeNavLinksCount = (driver.findElements(by)).size();
+        System.out.println("beforeNavLinksCount = " + beforeNavLinksCount);
+        int afterNavLinksCount = (driver.findElements(by)).size();
+        System.out.println("afterNavLinksCount = " + afterNavLinksCount);
+
+        /*
+        by = new By.ByClassName("nav-link123123");
+        int noSuchElemsCount = (driver.findElements(by)).size();  // findElements - особенность - он просто ждет неявное ожидание и потом не выкидывает эксепшн, а возвращает пустой список
+        System.out.println("noSuchElemsCount = = " + noSuchElemsCount);
+        */
+
+        Assert.assertTrue("Amount of nav links at start of test NOT equal to amount at the end of the test", beforeNavLinksCount == afterNavLinksCount);
+    }
 }
