@@ -4,6 +4,7 @@ import com.ams.mod2.selenium.dto.BorderParam;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,6 @@ import java.util.List;
 public class SettingsHelper extends HelperBase {
 
     private By by;
-    private List<BorderParam> listBP;
 
     public SettingsHelper(WebDriver driver) {
         super(driver);
@@ -81,7 +81,7 @@ public class SettingsHelper extends HelperBase {
     }
 
     public void checkBorderParamsList() {
-        fillBorderParamList();
+        List<BorderParam> listBP = fillBorderParamList();
 
         for (BorderParam bp: listBP) {
             by = new By.ByXPath(bp.getXpath());
@@ -94,17 +94,35 @@ public class SettingsHelper extends HelperBase {
         }
     }
 
-    private void fillBorderParamList() {
-        listBP = new ArrayList<BorderParam>();
+    private List<BorderParam> fillBorderParamList() {
+        List<BorderParam> listBP = new ArrayList<BorderParam>();
         listBP.add(new BorderParam("150", "Минимальное Рпл, Атм", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[9]/itsk-grid-cell[4]/itsk-default-cell/span"));
         listBP.add(new BorderParam("50", "Максимальный остановочный дебит, т/сут", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[10]/itsk-grid-cell[4]/itsk-default-cell/span"));
+        return listBP;
     }
 
-    public void checkNavigationLinks() {
+    // for educational purposes, no business value
+    public void compareBorderParamsList() {
+        List<BorderParam> listBP_1 = fillBorderParamList();
+        List<BorderParam> listBP_2 = fillBorderParamList();
+        System.out.println(listBP_1.toString());
+        System.out.println(listBP_2.toString());
+        Assert.assertEquals("Objects are NOT equal", listBP_1, listBP_2);
+    }
+
+
+    // for educational purposes, no business value
+    public void checkNavigationLinks() throws InterruptedException {
         by = new By.ByClassName("nav-link");
-        int beforeNavLinksCount = (driver.findElements(by)).size();
+        List<WebElement> navListBefore = driver.findElements(by);
+        int beforeNavLinksCount = navListBefore.size();
+
         System.out.println("beforeNavLinksCount = " + beforeNavLinksCount);
-        int afterNavLinksCount = (driver.findElements(by)).size();
+        /*  some logic here */
+
+        List<WebElement> navListAfter = driver.findElements(by);
+        List<WebElement> navListAfter2 = new ArrayList<WebElement>();
+        int afterNavLinksCount = navListAfter.size();
         System.out.println("afterNavLinksCount = " + afterNavLinksCount);
 
         /*
@@ -114,5 +132,17 @@ public class SettingsHelper extends HelperBase {
         */
 
         Assert.assertTrue("Amount of nav links at start of test NOT equal to amount at the end of the test", beforeNavLinksCount == afterNavLinksCount);
+
+        Assert.assertEquals("Objects are NOT equal", navListBefore, navListAfter);
+        // Assert.assertEquals("Objects are NOT equal", navListBefore, navListAfter2);  <- test fail
+
+        //check all nav tabs
+        for (int i = 0; i < navListAfter.size(); i++) {
+            navListAfter.get(i).click();
+
+            Thread.sleep(1000);
+        }
     }
+
+
 }

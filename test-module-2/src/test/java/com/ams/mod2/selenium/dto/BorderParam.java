@@ -1,5 +1,7 @@
 package com.ams.mod2.selenium.dto;
 
+import java.util.Objects;
+
 public class BorderParam {
 
     private String xpath;
@@ -22,5 +24,26 @@ public class BorderParam {
 
     public String getXpath() {
         return xpath;
+    }
+
+    @Override
+    public String toString() {
+        return "BorderParam{" +
+                "borderName='" + borderName + '\'' +
+                ", border='" + border + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        BorderParam that = (BorderParam) o;
+        return borderName.equals(that.borderName) && Objects.equals(border, that.border);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(borderName, border);
     }
 }

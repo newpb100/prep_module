@@ -17,8 +17,9 @@ public class ViewBorderParamsTest extends TestBase {
         app.getSettingsHelper().openSettingsOfFieldByName("Воргенское");
         app.getSettingsHelper().openSectionDostrely();
         app.getSettingsHelper().checkBorderParamsList();
+        app.getSettingsHelper().compareBorderParamsList();        // for educational purposes, no business value
         app.getSessionHelper().logout();
-        System.out.println("this = " + this);
+        //System.out.println("this = " + this);
     }
 
     @Test
@@ -26,7 +27,7 @@ public class ViewBorderParamsTest extends TestBase {
         app.getSessionHelper().login(new SpektrUser());
         app.getSettingsHelper().openProject("Май 2023");
         app.getSettingsHelper().openSettingsOfFieldByName("Воргенское");
-        app.getSettingsHelper().checkNavigationLinks();
+        app.getSettingsHelper().checkNavigationLinks();         // for educational purposes, no business value
         app.getSessionHelper().logout();
         //System.out.println("this = " + this);
     }
