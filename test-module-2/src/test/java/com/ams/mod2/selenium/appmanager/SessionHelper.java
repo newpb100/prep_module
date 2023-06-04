@@ -1,6 +1,6 @@
 package com.ams.mod2.selenium.appmanager;
 
-import com.ams.mod2.selenium.tests.SpektrUser;
+import com.ams.mod2.selenium.dto.SpektrUser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="164.0" y="0.0">com.ams.mod2.selenium.appmanager.HelperBase</node>
+    <node x="461.0" y="313.0">com.ams.mod2.selenium.appmanager.ApplicationManager</node>
+    <node x="0.0" y="126.0">com.ams.mod2.selenium.appmanager.SettingsHelper</node>
+    <node x="286.0" y="159.0">com.ams.mod2.selenium.appmanager.SessionHelper</node>
+    <node x="173.0" y="582.0">com.ams.mod2.selenium.tests.ConfProperties</node>
+    <node x="0.0" y="582.0">com.ams.mod2.selenium.tests.SpektrUser</node>
+    <node x="136.0" y="313.0">com.ams.mod2.selenium.tests.TestBase</node>
+    <node x="208.0" y="461.0">com.ams.mod2.selenium.tests.ViewBorderParamsTest</node>
+    <node x="0.0" y="472.0">com.ams.mod2.selenium.tests.MockTest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ams.mod2.selenium.appmanager.SessionHelper" target="com.ams.mod2.selenium.appmanager.HelperBase">
+      <point x="0.0" y="-38.0" />
+      <point x="369.0" y="101.0" />
+      <point x="294.5" y="101.0" />
+      <point x="43.5" y="38.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.appmanager.SettingsHelper" target="com.ams.mod2.selenium.appmanager.HelperBase">
+      <point x="0.0" y="-71.0" />
+      <point x="133.0" y="101.0" />
+      <point x="207.5" y="101.0" />
+      <point x="-43.5" y="38.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.tests.MockTest" target="com.ams.mod2.selenium.tests.TestBase">
+      <point x="0.0" y="-27.0" />
+      <point x="94.0" y="436.0" />
+      <point x="169.5" y="436.0" />
+      <point x="-33.5" y="49.0" />
+    </edge>
+    <edge source="com.ams.mod2.selenium.tests.ViewBorderParamsTest" target="com.ams.mod2.selenium.tests.TestBase">
+      <point x="0.0" y="-38.0" />
+      <point x="312.0" y="436.0" />
+      <point x="236.5" y="436.0" />
+      <point x="33.5" y="49.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7763904653802497" x="272.5" y="481.46783625730995" />
+  <SelectedNodes>
+    <node>com.ams.mod2.selenium.appmanager.SettingsHelper</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
