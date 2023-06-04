@@ -27,10 +27,12 @@ public class ViewBorderParamsTest extends TestBase {
         app.getSessionHelper().login(new SpektrUser());
         app.getSettingsHelper().openProject("Май 2023");
         app.getSettingsHelper().openSettingsOfFieldByName("Воргенское");
-        app.getSettingsHelper().checkNavigationLinks();         // for educational purposes, no business value
+        app.getSettingsHelper().compareListsAfterChanges();                   // for educational purposes, no business value
+        //app.getSettingsHelper().checkNavigationLinks();         // for educational purposes, no business value
         app.getSessionHelper().logout();
         //System.out.println("this = " + this);
     }
+
 
     @Test
     void viewOptions() throws InterruptedException {

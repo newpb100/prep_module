@@ -42,6 +42,7 @@ public class TestBase {
     public static void tearDown() throws Exception {
         //public void tearDown() throws Exception {
         app.stop();
+        System.out.println();
         System.out.println("tearDown");
     }
 

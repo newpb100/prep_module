@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/SettingsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/appmanager/SettingsHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/dto/BorderParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/dto/BorderParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/java/com/ams/mod2/selenium/tests/ViewBorderParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test-module-2/src/test/resources/conf.properties" afterDir="false" />
     </list>
@@ -176,10 +177,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ViewBorderParamsTest.checkNavigationLinks" />
+        <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
         <item itemvalue="JUnit.ViewBorderParamsTest.viewBorderParams" />
         <item itemvalue="JUnit.ThreadLocalTest" />
         <item itemvalue="JUnit.com.ams.mod2.selenium.tests in test-module-2" />
-        <item itemvalue="JUnit.ViewBorderParamsTest.viewOptions" />
       </list>
     </recent_temporary>
   </component>

@@ -8,6 +8,18 @@ public class BorderParam {
     private String borderName;
     private String border;
 
+    public void setBorderName(String borderName) {
+        this.borderName = borderName;
+    }
+
+    public void setBorder(String border) {
+        this.border = border;
+    }
+
+    public void setXpath(String xpath) {
+        this.xpath = xpath;
+    }
+
     public BorderParam(String border, String borderName, String xpath){
         this.border = border;
         this.borderName = borderName;

@@ -98,6 +98,9 @@ public class SettingsHelper extends HelperBase {
         List<BorderParam> listBP = new ArrayList<BorderParam>();
         listBP.add(new BorderParam("150", "Минимальное Рпл, Атм", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[9]/itsk-grid-cell[4]/itsk-default-cell/span"));
         listBP.add(new BorderParam("50", "Максимальный остановочный дебит, т/сут", "/html/body/app-root/div/app-extraction-project-outlet/app-expertise-conditions/div[1]/div[1]/div[1]/div/div/div[2]/itsk-tabs/div[2]/div/itsk-grid/itsk-grid-body/div/div[10]/itsk-grid-cell[4]/itsk-default-cell/span"));
+        listBP.add(new BorderParam("53", "С-буква", "xpath3"));
+        listBP.add(new BorderParam("54", "Р-буква", "xpath4"));
+        listBP.add(new BorderParam("55", "Т-буква", "xpath5"));
         return listBP;
     }
 
@@ -112,13 +115,38 @@ public class SettingsHelper extends HelperBase {
 
 
     // for educational purposes, no business value
+    public void compareListsAfterChanges(){
+        List<BorderParam> ls1 = fillBorderParamList();
+        //System.out.println("ls1 = " + ls1.toString());
+        for(BorderParam bp: ls1){
+            System.out.print(bp.getBorder() + ":" + bp.getBorderName() + " ; ");
+        }
+        // полностью модифицируем 2-й элемент , чтобы проверить, будет ли от этого изменение порядка элементов в списке, т.е. изменятся ли индексы элементов
+        ls1.get(2).setBorder("63");
+        ls1.get(2).setXpath("//sf/sdf/sf/sf/sdf/sd/fsdf/sdf/s/df/sdf/sd/f/sdf/sd/f/sdf/sd/f/sdf/sd/fsd/fs/df");
+        ls1.get(2).setBorderName("Новое название для бордер элемента с индексом 2");
+        // еще немного 3-й элемент
+        ls1.get(3).setXpath("//gdfg/df/g/dfg/d/fg//dfg/d/fg///j/t/yjmy/t/m/tym/ty/m/t////tyuty/u/ty/ut/yu/ty/u/ty/ut/yu/t");
+        // при печати видно, что порядок не меняется
+        //System.out.println("ls1 = " + ls1.toString());
+        System.out.println();
+        for(BorderParam bp: ls1){
+            System.out.print(bp.getBorder() + ":" + bp.getBorderName() + " ; ");
+        }
+    }
+
+
+    // for educational purposes, no business value
     public void checkNavigationLinks() throws InterruptedException {
         by = new By.ByClassName("nav-link");
         List<WebElement> navListBefore = driver.findElements(by);
         int beforeNavLinksCount = navListBefore.size();
 
         System.out.println("beforeNavLinksCount = " + beforeNavLinksCount);
+
+        /*                  */
         /*  some logic here */
+        /*                  */
 
         List<WebElement> navListAfter = driver.findElements(by);
         List<WebElement> navListAfter2 = new ArrayList<WebElement>();
@@ -136,7 +164,7 @@ public class SettingsHelper extends HelperBase {
         Assert.assertEquals("Objects are NOT equal", navListBefore, navListAfter);
         // Assert.assertEquals("Objects are NOT equal", navListBefore, navListAfter2);  <- test fail
 
-        //check all nav tabs
+        //check all nav tabs with click
         for (int i = 0; i < navListAfter.size(); i++) {
             navListAfter.get(i).click();
 
