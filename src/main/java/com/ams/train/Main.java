@@ -21,9 +21,29 @@ public class Main {
 
         //Step05BoolTernar.doStep05();
 
-        Step06Compare.doStep06Compare();
+        //Step06Compare.doStep06Compare();
 
-        Step07Compare2.main(aa);
+        //Step07CompareObjects.main(aa);
+
+        //Step08CompareFractions.main(null);
+
+        Step09CompareStrings.main(null);
+
+        //Step10Cycles.main(null);
+
+        //Step11DoubleOperations.main(null);
+
+        //Step12ExploreFloat.main(null);
+
+        //Step13StrictFP.main(null);
+
+        //Step14Arrays.main(null);
+
+        //Step15ArrayBubbleSort.main(null);
+
+        //(new Step16SelectionSort()).main();
+
+        //Step17InsertionSort.main(null);
 
 
     }

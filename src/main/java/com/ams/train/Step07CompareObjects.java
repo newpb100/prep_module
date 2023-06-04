@@ -1,9 +1,9 @@
 package com.ams.train;
 
-public class Step07Compare2 {
+public class Step07CompareObjects {
         public int age;
 
-        public boolean equals(Step07Compare2 obj){
+        public boolean equals(Step07CompareObjects obj){
             return obj.age == this.age;
         }
 
@@ -11,10 +11,10 @@ public class Step07Compare2 {
 
             System.out.println("Inside main() of Compare2");
 
-            Step07Compare2 scObj1 = new Step07Compare2();
+            Step07CompareObjects scObj1 = new Step07CompareObjects();
             scObj1.age = 41;
 
-            Step07Compare2 scObj2 = new Step07Compare2();
+            Step07CompareObjects scObj2 = new Step07CompareObjects();
             scObj2.age = 41;
 
             System.out.println(scObj1 == scObj2 ? "objects are equal" : "objects are NOT equal");
