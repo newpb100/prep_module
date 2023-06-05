@@ -1,1 +1,1 @@
-branch = core;
+branch = rebase2;
