@@ -27,7 +27,7 @@ public class Main {
 
         //Step08CompareFractions.main(null);
 
-        Step09CompareStrings.main(null);
+        //Step09CompareStrings.main(null);
 
         //Step10Cycles.main(null);
 
@@ -43,7 +43,9 @@ public class Main {
 
         //(new Step16SelectionSort()).main();
 
-        //Step17InsertionSort.main(null);
+        Step17InsertionSort.main(null);
+
+        Step18HashSetAndArrayList.main();
 
 
     }

@@ -85,10 +85,5 @@ buildNumber.properties
 
 allure-results/
 build/
-.idea/workspace.xml
 
-
-### Other ####
 test-module-2/src/test/resources/conf.properties
-/.idea/workspace.xml
-.idea/workspace.xml
