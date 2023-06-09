@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39fc1cf9-3c51-48a0-a013-22e00e2957c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step18HashSetFirstLook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ams/train/Step08Fractions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ams/train/Step08CompareFractions.java" afterDir="false" />
@@ -73,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Step09CompareStrings">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ams.train.Main" />
       <module name="prep_module" />
@@ -206,11 +207,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Step09CompareStrings" />
         <item itemvalue="Application.Step17InsertionSort" />
         <item itemvalue="Application.Step10Cycles" />
         <item itemvalue="Application.Step15ArrayBubbleSort" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -296,11 +297,5 @@
     <SUITE FILE_PATH="coverage/prep_module$Step10Cycles.ic" NAME="Step10Cycles Coverage Results" MODIFIED="1684776299644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.ams.train.*</FILTER>
     </SUITE>
-  </component>
-</project>
-</project>
-</project>
-    <expand />
-    <select />
   </component>
 </project>
