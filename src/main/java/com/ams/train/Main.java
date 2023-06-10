@@ -43,9 +43,11 @@ public class Main {
 
         //(new Step16SelectionSort()).main();
 
-        Step17InsertionSort.main(null);
+        //Step17InsertionSort.main(null);
 
-        Step18HashSetAndArrayList.main();
+        //Step18HashSetAndArrayList.main(null);
+
+        Step19CompareCollections.main(null);
 
 
     }

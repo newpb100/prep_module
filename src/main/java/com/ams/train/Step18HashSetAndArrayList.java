@@ -1,10 +1,13 @@
 package com.ams.train;
 
+import org.apache.commons.collections4.CollectionUtils;
+import org.junit.Assert;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Step18HashSetAndArrayList {
-    public static void main() {
+    public static void main(String[] args) {
         // #1
         HashSet<Integer> hs11 = new HashSet<Integer>();
         hs11.add(1);
@@ -61,6 +64,5 @@ public class Step18HashSetAndArrayList {
         System.out.println(al.toString());
         System.out.println("al.get(2) = " + al.get(2));
 
-
-    }
+      }
 }
