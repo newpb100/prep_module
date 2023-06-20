@@ -1,8 +1,5 @@
 package com.ams.train;
 
-import org.apache.commons.collections4.CollectionUtils;
-import org.junit.Assert;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 

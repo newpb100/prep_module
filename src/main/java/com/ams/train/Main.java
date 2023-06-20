@@ -37,7 +37,7 @@ public class Main {
 
         //Step13StrictFP.main(null);
 
-        //Step14Arrays.main(null);
+        Step14Arrays.main(null);
 
         //Step15ArrayBubbleSort.main(null);
 
@@ -47,7 +47,9 @@ public class Main {
 
         //Step18HashSetAndArrayList.main(null);
 
-        Step19CompareCollections.main(null);
+        // Step19CompareCollections.main(null);
+
+        //Step20MergeSort.main(null);
 
 
     }
