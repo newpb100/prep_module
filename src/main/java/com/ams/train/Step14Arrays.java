@@ -18,9 +18,7 @@ public class Step14Arrays {
         a[9] = 122;
 
         System.out.println("b[9] = " + b[9]);
-
         System.out.println();
-
 
         // 2. Default values
 
@@ -62,8 +60,12 @@ public class Step14Arrays {
         //4. Sort, toString and BinarySearch
 
         int[] arr3 = {1, 4, 56, 12, 56, 78, 11, 0, 123, 566};
+        int[] arr31 = Arrays.copyOf(arr3, arr3.length);
 
         Arrays.sort(arr3, 0, arr3.length-1);
+
+        Arrays.sort(arr31,0,4);
+        System.out.println("partly sorted array (from 0 to 4) arr31 = " + Arrays.toString(arr31));
 
         // -9, "-" значит, что элемента нет в массиве, 9 получено как (-8 (куда бы он был вставлен) - 1 = -9 )
         System.out.println("sorted arr3 = " + Arrays.toString(arr3) + " and index of element 56 is " + Arrays.binarySearch(arr3, 0, arr3.length-1, 56) );
@@ -73,13 +75,17 @@ public class Step14Arrays {
         System.out.println("sorted arr3 = " + Arrays.toString(arr3) + " and index of 12 from 1 to 3 is " + Arrays.binarySearch(arr3, 1, 3, 12) ); // -4
 
 
-        // 5. Copy , Equals
+        // 5. copyOf,  copyOfRange, Equals
+        // arr3             = [0, 1, 4, 11, 12, 56, 56, 78, 123, 566]
+
         int[] arr4 = Arrays.copyOf(arr3, arr3.length);
         int[] arr5 = Arrays.copyOfRange(arr3, 3, 5);
+        int[] arr8 = Arrays.copyOfRange(arr3, 5, 15);
         System.out.println();
-        System.out.println("arr3             = " + Arrays.toString(arr3));
-        System.out.println("arr4             = " + Arrays.toString(arr4));
-        System.out.println("arr5 (range 3,5) = " + Arrays.toString(arr5));
+        System.out.println("arr3              = " + Arrays.toString(arr3));
+        System.out.println("arr4              = " + Arrays.toString(arr4));
+        System.out.println("arr5 (range 3,5)  = " + Arrays.toString(arr5));   //11, 12 - включая левую границу и не включая правую
+        System.out.println("arr8 (range 5,15) = " + Arrays.toString(arr8));  // [56, 56, 78, 123, 566, 0, 0, 0, 0, 0]
 
         System.out.println();
         System.out.println("arr3 equals arr4  ? " + Arrays.equals(arr3, arr4));  // true
@@ -103,7 +109,7 @@ public class Step14Arrays {
 
 
 
-        // 6. Multilayer Copy, Equals
+        // 6. Multilayer copyOf, deepToString, deepEquals, equals
         int[][] arrayMult_1 = {
                 {1,2,3,3},
                 {4,5,6,6},
@@ -164,6 +170,13 @@ public class Step14Arrays {
         Arrays.fill(arr_100, 1, 4, -999);
         System.out.println();
         System.out.println("arr_100 after fill : " + Arrays.toString(arr_100));
+
+
+        // 9. Modify FINAL array
+        final int[] data = {1, 2, 3, 4, 5, 6};
+        //data = new int[]{6, 7, 8, 9};  // err! Cannot assign a value to final variable 'data'
+        data[0] = 0; //correct
+        System.out.println("final int[] data = " + Arrays.toString(data));
 
 
     }

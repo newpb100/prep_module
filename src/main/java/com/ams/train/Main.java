@@ -15,7 +15,8 @@ public class Main {
 
         //Step03Readers.doStep03Readers();
 
-        //Step03File.doStep03File();
+        //Step03ReadAndWriteFile.doStep03File();
+        //(new Step03ReadAndWriteFile()).copyFileWithBuffer();
 
         //new Step04KPR();
 
@@ -37,7 +38,7 @@ public class Main {
 
         //Step13StrictFP.main(null);
 
-        Step14Arrays.main(null);
+        //Step14Arrays.main(null);
 
         //Step15ArrayBubbleSort.main(null);
 
@@ -50,6 +51,11 @@ public class Main {
         // Step19CompareCollections.main(null);
 
         //Step20MergeSort.main(null);
+
+        // static and non-static vars
+        //(new Step21StaticAndNonStaticVars()).add(1);
+        //(new Step21StaticAndNonStaticVars()).addStatic(1);
+        //Step21StaticAndNonStaticVars.addStatic(1);
 
 
     }
