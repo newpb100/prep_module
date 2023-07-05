@@ -9,7 +9,9 @@ public class Main {
 
         //Step01.doStep01();
 
-        //Step02Types.doStep02Types();
+        Step02Types.doStep02Types();
+
+        //Step02Types.doNanAndInfinity();
 
         //Step03Scanner.Step03Scanner();
 
