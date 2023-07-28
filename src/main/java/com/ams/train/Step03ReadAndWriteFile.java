@@ -1,10 +1,26 @@
 package com.ams.train;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.util.Date;
 
-public class Step03File {
+public class Step03ReadAndWriteFile {
+
+    public void copyFileWithBuffer() throws IOException {
+        byte[] bytearr = new byte[1024 * 1024];
+
+        var fis = new FileInputStream("testfile.txt");
+        var fos = new FileOutputStream("testfile_out.txt");
+
+        while (true) {
+            int size = fis.read(bytearr);  // побайтовое чтение из потока в массив байт
+            fos.write(bytearr, 0, size);
+
+            if (size < bytearr.length) break;
+        }
+
+        fis.close();
+        fos.close();
+    }
 
     public static void doStep03File() throws IOException {
         /*
@@ -86,3 +102,4 @@ public class Step03File {
 
     }
 }
+

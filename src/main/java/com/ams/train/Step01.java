@@ -5,15 +5,15 @@ import java.util.Date;
 
 public class Step01 {
 
-    public static Sample sm;
+    public static Sample sm2;
 
     public static void doStep01(){
-        sm = new Sample("test string", 1);
+        sm2 = new Sample("test string", 1);
 
-        String s = sm.getF1();
-        sm.setA(100);
+        String s = sm2.getF1();
+        sm2.setA(100);
         System.out.println("f1 value = "+s);
-        System.out.println("a value = "+sm.getA());
+        System.out.println("a value = "+ sm2.getA());
 
         // err here now
         //sm.useOwnerToCreateCfg();

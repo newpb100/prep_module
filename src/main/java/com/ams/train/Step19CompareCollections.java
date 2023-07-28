@@ -6,9 +6,9 @@ import org.junit.Assert;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 
 public class Step19CompareCollections {
+
     public static void main(String[] args) {
 
         // 1. ArrayList
@@ -49,7 +49,18 @@ public class Step19CompareCollections {
 
 
         // 2. HashSet
-        //HashSet
+        HashSet hs1 = new HashSet();
+        hs1.add(1);
+        hs1.add(2);
+        hs1.add(3);
+
+        HashSet hs2 = new HashSet();
+        hs2.add(3);
+        hs2.add(2);
+        hs2.add(1);
+
+        System.out.println("compare hs1 and hs2 :");
+        Assert.assertEquals(hs1, hs2);
 
 
 

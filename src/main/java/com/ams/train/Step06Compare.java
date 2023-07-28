@@ -1,10 +1,5 @@
 package com.ams.train;
 
-import org.jooq.meta.derby.sys.Sys;
-
-import java.util.Locale;
-import java.util.Scanner;
-
 public class Step06Compare {
 
     public static void doStep06Compare(){
