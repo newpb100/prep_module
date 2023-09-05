@@ -10,17 +10,15 @@ public class Main {
         //Step01.doStep01();
 
         //Step02Types.doStep02Types();
-
         //Step02Types.doNanAndInfinity();
+        //Step02Types.doBooleanOperations();
 
         //Step03Scanner.Step03Scanner();
-
         //Step03Readers.doStep03Readers();
-
         //Step03ReadAndWriteFile.doStep03File();
         //(new Step03ReadAndWriteFile()).copyFileWithBuffer();
 
-        //new Step04KPR();
+        // new Step04KPR(); // test spektr sample
 
         //Step05BoolTernar.doStep05();
 
@@ -61,14 +59,13 @@ public class Main {
 
         //Step22DrawSinGraph.main(null);
 
-        ///Step23Math.main(null);
+        //Step23Math.main(null);
 
-        //Step24Random.main(null);
+       //Step24Random.main(null);
 
-        // Step25Sleep.main(null);
+        //Step25Sleep.main(null);
 
         Step26BitOperations.main(null);
-
 
 
     }

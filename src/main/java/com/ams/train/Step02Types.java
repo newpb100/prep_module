@@ -4,6 +4,22 @@ public class Step02Types {
 
     public static void doStep02Types(){
 
+    /* primitive rules */
+    // CHAR
+    // % операция
+    //CASTs
+            // расширение типов
+            // сужение типов
+    // char и short
+    // Неявное преобразование к INT
+    // int to str
+    // operations from left to right
+    // operations from right to left for =
+    // increment/decrement , postfix and prefix
+    // combine += /=
+    // logic , has lower priority as compare ops
+    // доп: интересные операции
+
         /* primitive rules */
         //
         float fl = 1.457f;
@@ -18,7 +34,7 @@ public class Step02Types {
         System.out.println("lg3 = " + lg3 + "; lg4 = " + lg4);
 
 
-        //CHAR
+        // CHAR
         char symb1 = 1078;      //по индексу символа в таблице UTF-8
         char symb2 = 'ж';       //по значению
         char symb3 = '\u0436';  //через шестнадцатеричную форму Unicode (это всё ещё «ж»), для 1078 в 16-ричной системе это 0436
@@ -46,7 +62,7 @@ public class Step02Types {
         //System.out.println("print object = " + str);   // err
 
 
-        //CASTs
+        // CASTs
         // расширение типов
         long lmax = Long.MAX_VALUE;
         long lmin = Long.MIN_VALUE;
@@ -99,7 +115,7 @@ public class Step02Types {
 
 
 
-        //char и short
+        // char и short
         // несмотря на то, что они оба по 2 байта, преобразование обязательно, так как char-беззнаковый
         short shr = 75;
         char sym = (char) shr;
@@ -134,11 +150,11 @@ public class Step02Types {
         short e1 = (short)(d + a);      // операция возможна только с явным кастом
 
 
-        //int to str
+        // int to str
         //String str15 = 15; //err
         String str15 = "" + 15;
 
-        //str to int
+        // str to int
         int a1 = Integer.parseInt(str15);
         System.out.println();
         System.out.println("print a1 = " + a1);
@@ -161,16 +177,26 @@ public class Step02Types {
         System.out.println("postfix y = " + y + " ; a6  = " + a6);  // 10 11
         y = ++a6;
         System.out.println("prefix y = " + y + " ; a6  = " + a6);   // 12 12
+        int aaa = 5;
+        int bbb = ++aaa + ++aaa;
+        System.out.println("bbb = ++aaa + ++aaa; bbb =  " + bbb); //13
 
-        //combine
+        // combine
         y += a6;
         System.out.println("combine add y = " + y);      // 12 + 12 = 24
         y /= a6;
         System.out.println("combine division y = " + y); // 24 / 12 = 2
 
-        //logic , has lower priority as compare ops
+        // logic , has lower priority as compare ops
         System.out.println(" && : " + ( 100 > 2 && 100 < 100 )); // false
         System.out.println(" || : " + ( 100 > 2 || 100 < 100 )); // true
+
+        // доп: интересные операции
+        boolean ad = true;
+        int addd = 2;
+        System.out.println("! ad      = " + !ad);            // false
+        System.out.println("~ addd    = " + ~addd);          // 1111 1101 , в десятичной = -3, т.к. это простая инверсия числа
+        System.out.println(">>>= addd = " + (addd >>>= 1));  // 1
 
     }
 
@@ -189,5 +215,20 @@ public class Step02Types {
         double a  = 1.0/0.0;
         System.out.println("Infinity / Infinity = " + a/a);   // Infinity / Infinity = NaN
 
+    }
+
+    public static void doBooleanOperations() {
+
+        String s = null;
+
+        if (s != null && s.length() > 10){      // && - безопасная форма записи, так как выражение вычисляется ленивым методом
+            System.out.println("s != null , second part of expr won't calcutate");
+        }else{
+            System.out.println("s = null, stop work");
+        }
+
+        //if (s != null & s.length() > 10){       // exception here
+        //    System.out.println("s = null, stop work");
+        //}
     }
 }

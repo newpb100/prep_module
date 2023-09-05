@@ -37,6 +37,15 @@ public class Step23Math {
         System.out.println(Math.log1p(x));       //9.999995000003334E-7
         System.out.println(Math.log(x));         //-13.815510557964274
         System.out.println(Math.log(0));
+
+
+        //Math.pow
+        System.out.println();
+        System.out.println("Возведение в степень и вычисление корня");
+        System.out.println(Math.pow(5, 2));
+        System.out.println(Math.pow(25, 0.5));  //5
+        System.out.println(Math.sqrt(25));      //5
+
     }
 
     private static void MinAndMax() {
