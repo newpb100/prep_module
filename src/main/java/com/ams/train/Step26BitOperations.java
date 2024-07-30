@@ -17,9 +17,12 @@ public class Step26BitOperations {
 
         System.out.println();
         System.out.println("Bit operations");
-        int ab1 = 0b0011;
+        int ab1 = 0b0011;     //0B0011 так тоже можно
         int ab2 = 0b0001;
         byte bb = 0b01111111; // максимальное положительное байт-число
+
+        //long bb1 = 0x1101010110; // ошибка! целочисленный литерал интерпретируется как INT, который выход за границы диапазона и равен 73_031_287_056 (в десятичном виде)
+        long bb1 = 0x1101010110L;  // все ок, явно указали что 16-ти ричный литерал имеет тип long
 
         System.out.println(Integer.toBinaryString((ab1 | ab2))); //or
         //11
