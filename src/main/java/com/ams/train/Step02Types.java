@@ -1,8 +1,28 @@
 package com.ams.train;
 
+import java.util.StringTokenizer;
+
 public class Step02Types {
 
     public static void doStep02Types(){
+
+    /* primitive rules */
+    // CHAR
+        // экарнирование
+        // escape последовательности
+    // % операция
+    //CASTs
+            // расширение типов
+            // сужение типов
+    // char и short
+    // Неявное преобразование к INT
+    // int to str
+    // operations from left to right
+    // operations from right to left for =
+    // increment/decrement , postfix and prefix
+    // combine += /=
+    // logic , has lower priority as compare ops
+    // доп: интересные операции
 
         /* primitive rules */
         //
@@ -17,8 +37,15 @@ public class Step02Types {
         long lg4 = box3;  // неявно вызывается longValue
         System.out.println("lg3 = " + lg3 + "; lg4 = " + lg4);
 
+        // вывод на консоль литералов с плавающей точкой, классический и научный
+        double a12 = 2.718281828459045;
+        double d12 = 4.05E-13;
+        System.out.println();
+        System.out.println("Тип double в классическом виде: " + a12);
+        System.out.println("Тип double в научном виде: " + d12);
 
-        //CHAR
+
+        // CHAR
         char symb1 = 1078;      //по индексу символа в таблице UTF-8
         char symb2 = 'ж';       //по значению
         char symb3 = '\u0436';  //через шестнадцатеричную форму Unicode (это всё ещё «ж»), для 1078 в 16-ричной системе это 0436
@@ -34,6 +61,40 @@ public class Step02Types {
 
         System.out.println("(char) 1079 = " + symb6);  // з
 
+        // экранирование
+        char a_doublq = '\"';
+        char b_doublq = '"';
+
+        System.out.println(" a_doublq = " + a_doublq); // будет выведена 1 двойная кавычка
+        System.out.println(" b_doublq = " + b_doublq); // будет выведена 1 двойная кавычка
+
+        // escape последовательности
+        System.out.println();
+        System.out.println("escape последовательности");
+        System.out.println("\t\t100\t\t200\t\t300");
+        System.out.println("\t\t10\t\t22\t\t33");
+        System.out.println("\t\t1000\t\t2200\t\t3300");
+        System.out.println("Добро пожаловать в \nв систему уважаемый анон");
+        System.out.println("Добро пожаловать в систему уважаемый \b\b\b\b\b\b\b\b\bанон");  // Добро пожаловать в систему уанон
+        System.out.println("Добро пожаловать в систему \rуважаемый анон");                  // уважаемый анон
+        System.out.println("Рекомендуется к прочтению 'Углубленный курс JAVA', \\youtube\\ ");
+        // комбинированная кодировка
+        System.out.println("\uD83D\uDD0A");
+        System.out.println("\uD83E\uDD73");
+        System.out.println("\uD83C\uDF81");
+        System.out.println("Улыбок тебе дед Макар \u263A \u263B");
+        // некоторые символы просто так не интерпертируются в строке, например 0x1F600, если написать \u1F600 ничего не получится
+        // но если так, то ОК
+        // источник:         https://javarush.com/groups/posts/literaly-v-java
+        int smile = 0x1F600; // Здесь шестнадцатеричный код эмоджи
+        StringBuilder sb = new StringBuilder();
+        sb.append(Character.toChars(smile)); // Собираем в StringBuilder
+        System.out.println("Улыбающееся лицо: " + sb.toString()); // Выводим
+        //
+        // из комментов , то же самое без StringBuilder , действительно на фиг его городить тут
+        String asmile = new String(Character.toChars(0x1F600));
+        System.out.println("Улыбающееся лицо через String: " + asmile);
+
 
         // % операция
         System.out.println();
@@ -46,7 +107,7 @@ public class Step02Types {
         //System.out.println("print object = " + str);   // err
 
 
-        //CASTs
+        // CASTS
         // расширение типов
         long lmax = Long.MAX_VALUE;
         long lmin = Long.MIN_VALUE;
@@ -99,7 +160,7 @@ public class Step02Types {
 
 
 
-        //char и short
+        // char и short
         // несмотря на то, что они оба по 2 байта, преобразование обязательно, так как char-беззнаковый
         short shr = 75;
         char sym = (char) shr;
@@ -134,11 +195,11 @@ public class Step02Types {
         short e1 = (short)(d + a);      // операция возможна только с явным кастом
 
 
-        //int to str
+        // int to str
         //String str15 = 15; //err
         String str15 = "" + 15;
 
-        //str to int
+        // str to int
         int a1 = Integer.parseInt(str15);
         System.out.println();
         System.out.println("print a1 = " + a1);
@@ -161,16 +222,26 @@ public class Step02Types {
         System.out.println("postfix y = " + y + " ; a6  = " + a6);  // 10 11
         y = ++a6;
         System.out.println("prefix y = " + y + " ; a6  = " + a6);   // 12 12
+        int aaa = 5;
+        int bbb = ++aaa + ++aaa;
+        System.out.println("bbb = ++aaa + ++aaa; bbb =  " + bbb); //13
 
-        //combine
+        // combine
         y += a6;
         System.out.println("combine add y = " + y);      // 12 + 12 = 24
         y /= a6;
         System.out.println("combine division y = " + y); // 24 / 12 = 2
 
-        //logic , has lower priority as compare ops
+        // logic , has lower priority as compare ops
         System.out.println(" && : " + ( 100 > 2 && 100 < 100 )); // false
         System.out.println(" || : " + ( 100 > 2 || 100 < 100 )); // true
+
+        // доп: интересные операции
+        boolean ad = true;
+        int addd = 2;
+        System.out.println("! ad      = " + !ad);            // false
+        System.out.println("~ addd    = " + ~addd);          // 1111 1101 , в десятичной = -3, т.к. это простая инверсия числа
+        System.out.println(">>>= addd = " + (addd >>>= 1));  // 1
 
     }
 
@@ -188,6 +259,108 @@ public class Step02Types {
         System.out.println((100d/0d + 0.0/0.0));    //Infinity + NaN = NaN
         double a  = 1.0/0.0;
         System.out.println("Infinity / Infinity = " + a/a);   // Infinity / Infinity = NaN
+
+    }
+
+    public static void doBooleanOperations() {
+
+        String s = null;
+
+        if (s != null && s.length() > 10){      // && - безопасная форма записи, так как выражение вычисляется ленивым методом
+            System.out.println("s != null , second part of expr won't calcutate");
+        }else{
+            System.out.println("s = null, stop work");
+        }
+
+        //if (s != null & s.length() > 10){       // exception here
+        //    System.out.println("s = null, stop work");
+        //}
+    }
+
+    public static void doUnixPathToWindowsChars() {
+        String path_in = "/var/user/programm/unit1/";
+
+        char[] pathArr = path_in.toCharArray();
+
+        for (int i = 0; i < pathArr.length; i++) {
+            if (pathArr[i] == '/'){   // обрати внимание , что в случае с чарами сравнение идет не через equals , а в прямую
+                pathArr[i] = '\\';
+            }
+        }
+
+        String path_out = new String(pathArr);
+        System.out.println();
+        System.out.println("Преобразование unix пути " + path_in);
+        System.out.println("в windows " + path_out);
+
+    }
+
+    public static void doUnixPathToWindowsSplitJoin() {
+        String path_in = "/var/user/programm/unit1/";
+
+        String[] pathArr = path_in.split("/");
+
+        String path_out = String.join("\\", pathArr);
+        /* \\var\\user\\programm\\unit1  -- теряется конечный бэкслеш
+        *   и тут в комментах пришлось использовать экранирование бэкслеша потому что вылетает ошибка о_О
+        *   java: illegal unicode escape
+        *   а это происходит из-за комбинации символов <backslash>u  :))
+        * */
+
+        System.out.println();
+        System.out.println("Разделение и сбор пути с помощью Split и Join : " + path_out);
+
+    }
+
+    public static void doUnixPathToWindowsReplace() {
+        String path_in = "/var/user/programm/unit1/";
+
+        String path_out = path_in.replace("/", "\\");
+
+        System.out.println();
+        System.out.println("Замена пути с помощью Replace : " + path_out);
+    }
+
+    public static void doStringOperations() {
+        System.out.println();
+        System.out.println("Лексикографическое сравнение : " + "abcde".compareTo("abcde"));                                     // = 0
+        System.out.println("Лексикографическое сравнение : " + "abcde".compareTo("abcdf"));                                     // < 0
+        System.out.println("Лексикографическое сравнение : " + "abcde".compareTo("abcda"));                                     // > 0
+        System.out.println("Проверка пути : " + "/usr/bin/logstash/logs/access.log".startsWith("/usr"));                        //true
+        System.out.println("Проверка пути : " + "/usr/bin/logstash/logs/access.log".endsWith("/usr"));                          //false
+        System.out.println("Ищем второе вхождение log: " + "/usr/bin/logstash/logs/access.log".indexOf("log",15)); //18 , индекс считает от 0, 18 это номер буквы l в log
+
+        System.out.println("Использование substring : " + "Использование substring : ".substring(0,4));                         //Испо - Как и во всех интервалах в Java, символ с номером endIndex в интервал не входит.
+        System.out.println("Repeat       : " + "repeat".repeat(3));
+        System.out.println("replaceFirst : " + "repeat".replaceFirst("e","X"));                                 //rXpeat
+        System.out.println("replaceAll   : " + "repeat".replaceAll("e","X"));                                   //rXpXat
+        System.out.println("regex more difficult: " + "repeat here is text".replaceFirst("(e)(.+)","X"));       //rX
+
+        System.out.println("Example of using StringTokenizer");
+        String greating = "Good news everyone!";
+        var tokenizer = new StringTokenizer(greating, "ne");  //разделителем считается каждый символ строки, переданный второй строкой в конструктор
+        while (tokenizer.hasMoreTokens()){
+            System.out.println(tokenizer.nextToken());
+        }
+//        Good
+//        ws
+//        v
+//        ryo
+//        !
+
+        String s1 = String.format("Language = %s, MonthPeriod = %d, severity = %c", "java", 7, 'A');
+        String s2 = String.format("Language = %2$s, MonthPeriod = %1$d, severity = %3$c", 1, "python", 'B');
+        System.out.println("Course #1, details : " + s1);
+        System.out.println("Course #2, details : " + s2);
+
+        String aa = new String("Java lesson");
+        String bb = new String("Java lesson");
+        System.out.println("сравним ссылки aa и bb : " + (aa == bb));  // false
+
+        String t1 = aa.intern();
+        String t2 = bb.intern();
+        System.out.println("сравним ссылки t1 и t2 : " + (t1 == t2));  // true
+
 
     }
 }

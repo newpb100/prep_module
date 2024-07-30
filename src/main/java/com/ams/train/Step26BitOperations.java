@@ -3,13 +3,26 @@ package com.ams.train;
 public class Step26BitOperations {
 
     public static void main(String[] args) {
+        // Побитовые логические операции
+        // Подитовые операции сдвиги влево, Беззнаковый сдвиг влево "<<"
+        // Сделаем из положительного отрицательное число
+        // отрицательные числа и Знаковый сдвиг вправо ">>"
+        // отрицательные числа и сдвиг вправо для отрицательного числа
+        // сдвиг вправо для числа некратного 2, например 75
+        // отрицательные числа и Беззнаковый сдвиг вправо ">>>" для отрицательного числа
+        // сдвиг более на более чем разрядов в самом типе данных
+        // XOR-шифрование
+
         //Побитовые логические операции
 
         System.out.println();
         System.out.println("Bit operations");
-        int ab1 = 0b0011;
+        int ab1 = 0b0011;     //0B0011 так тоже можно
         int ab2 = 0b0001;
         byte bb = 0b01111111; // максимальное положительное байт-число
+
+        //long bb1 = 0x1101010110; // ошибка! целочисленный литерал интерпретируется как INT, который выход за границы диапазона и равен 73_031_287_056 (в десятичном виде)
+        long bb1 = 0x1101010110L;  // все ок, явно указали что 16-ти ричный литерал имеет тип long
 
         System.out.println(Integer.toBinaryString((ab1 | ab2))); //or
         //11
@@ -50,7 +63,17 @@ public class Step26BitOperations {
         bbb = (byte)0b0000_0100;         //4
         System.out.println(bbb >> 1);    //2    слева дополнение идет 0-м т.к. тут изначально число положительное
 
+        // сдвиг вправо для числа некратного 2, например 75
+        System.out.println();
+        System.out.println("Сдвиг вправо для положительного числа 75");
+        bbb = (byte)0b0100_1011;         //75
+        System.out.println("равносильно делению на 2 или сколько там, с отбрасыванием любого остатка");
+        System.out.println("(int) 75 / 4 = " + ((int)75 / 4)); // 18
+        System.out.println(bbb >> 2);                          // 18
+
+
         // отрицательные числа и Беззнаковый сдвиг вправо ">>>" для отрицательного числа
+        System.out.println();
         System.out.println("Сдвиг вправо >>> для отрицательного числа -4");
         bbb = (byte)0b11111100;                 //-4
         System.out.println(bbb >>> 1);          //2147483646  получается этот оператор сначала преобразует число к int потом сдвигает биты
@@ -62,10 +85,16 @@ public class Step26BitOperations {
         // сдвиг более на более чем разрядов в самом типе данных
         int i1 = 16;
         System.out.println();
+        System.out.println("i1 = 16");
         System.out.println("i1 >> 33");
         System.out.println(i1 >> 33);           //8
                                                 // расчет по формуле 33 % 32 = 1, т.е. на 1 бит
                                                 //https://javapd.blogspot.com/2008/05/24-7.html
+
+        System.out.println("i1 << 35");
+        System.out.println(i1 << 35);          //при движении влево тоже самое
+        System.out.println("проверим, 35 % 32 = " + (35 % 32));
+        System.out.println("проверим, 16 * 2^(35 % 32) = " + (16 * Math.pow(2,(35 % 32))));
 
 
 
@@ -77,5 +106,15 @@ public class Step26BitOperations {
         System.out.println("secret = " + secret);
         System.out.println("encrypted  = "  + (secret ^ key));
         System.out.println("decrypted = "  + ((secret ^ key) ^ key));
+
+
+        ///
+        int x = 342;
+        System.out.println();
+        System.out.println(~x);
+        System.out.println(Integer.toBinaryString(~x));
+
+        System.out.println(111111111 << 3);
+
     }
 }
