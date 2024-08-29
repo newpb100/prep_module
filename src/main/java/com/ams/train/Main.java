@@ -18,7 +18,7 @@ public class Main {
         //Step02Types.doStringOperations();
 
         //Step03Scanner.Step03Scanner();
-        //Step03Readers.doStep03Readers();
+        Step03Readers.doStep03Readers();
         //Step03ReadAndWriteFile.doStep03File();
         //(new Step03ReadAndWriteFile()).copyFileWithBuffer();
 

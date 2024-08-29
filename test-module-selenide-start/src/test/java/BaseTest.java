@@ -1,8 +1,9 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+
 
 abstract public class BaseTest {
 
@@ -15,13 +16,13 @@ abstract public class BaseTest {
     }
 
 
-    @Before
+    @BeforeAll
     public void init(){
 
         setUp();
     }
 
-    @After
+    @AfterAll
     public void tearDown(){
 
         Selenide.closeWebDriver();
