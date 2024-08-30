@@ -3,11 +3,12 @@ import com.codeborne.selenide.Selenide;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.TestInstance;
 
-
+@TestInstance(TestInstance.Lifecycle.PER_METHOD)
 abstract public class BaseTest {
 
-    public void setUp(){
+    public static void setUp(){
 
         WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
@@ -17,13 +18,13 @@ abstract public class BaseTest {
 
 
     @BeforeAll
-    public void init(){
+    public static void init(){
 
         setUp();
     }
 
     @AfterAll
-    public void tearDown(){
+    public static void tearDown(){
 
         Selenide.closeWebDriver();
     }
