@@ -16,7 +16,7 @@ public class TransitMainPageTest extends BaseTest {
         TransitMainPage tmp = new TransitMainPage();
         tmp.openSite(BASE_URL);
 
-        Thread.sleep(15000);
+        Thread.sleep(10000);
 
     }
 
