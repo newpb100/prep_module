@@ -15,7 +15,7 @@
     <bytecodeTargetLevel>
       <module name="prep_module" target="11" />
       <module name="test-module-2" target="11" />
-      <module name="test-module-selenide-start" target="11" />
+      <module name="test-module-selenide-start" target="22" />
       <module name="test-sandbox" target="11" />
     </bytecodeTargetLevel>
   </component>
