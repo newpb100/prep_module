@@ -16,7 +16,7 @@ public class MailSearchTest {
         mailPage.openSite();
 
         SearchForm sf = mailPage.getSearchForm();
-        //sf.sendData("selenide");
+        sf.sendData("selenide");
 
         Thread.sleep(10000);
     }

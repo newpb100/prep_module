@@ -8,10 +8,12 @@ public class MailMainPage {
     private final static String BASE_URL = "https://mail.ru/";
 
     public SearchForm getSearchForm(){
+
         return new SearchForm();
     }
 
     public void openSite(){
+
         Selenide.open(BASE_URL);
     }
 }
