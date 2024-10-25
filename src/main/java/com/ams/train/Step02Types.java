@@ -1,6 +1,19 @@
 package com.ams.train;
 
+import org.apache.commons.codec.binary.Hex;
+import org.apache.commons.lang3.ArrayUtils;
+
+import javax.xml.bind.DatatypeConverter;
+import java.math.BigInteger;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.StringTokenizer;
+
+import static org.apache.commons.io.ByteOrderMark.UTF_16LE;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Step02Types {
 
@@ -46,7 +59,7 @@ public class Step02Types {
 
 
         // CHAR
-        char symb1 = 1078;      //по индексу символа в таблице UTF-8
+        char symb1 = 1078;      //по индексу символа (его код в 10-м выражении) в таблице Unicode
         char symb2 = 'ж';       //по значению
         char symb3 = '\u0436';  //через шестнадцатеричную форму Unicode (это всё ещё «ж»), для 1078 в 16-ричной системе это 0436
         // 1 line
@@ -95,12 +108,141 @@ public class Step02Types {
         String asmile = new String(Character.toChars(0x1F600));
         System.out.println("Улыбающееся лицо через String: " + asmile);
 
-
-        // % операция
         System.out.println();
-        System.out.println("ostatok = " + (1 % 2));
+        System.out.println("--- Вывод Hex представления символов(кодпоинтов) Unicode ---");
+        System.out.println("для П через String.format, 2-м аргументом должно идти целое значение, чтобы через %x быть преобразованным в hex-значение");
+        // BigInteger(int signum, byte [] magnitude) конструирует BigInteger из знака и величины числа.
+        // Параметры:
+        // signum — знак числа (-1 для отрицательного, 0 для нуля, 1 для положительного);
+        // magnitude — бинарное представление величины числа в BE-порядке (самый значительный байт находится в нулевом элементе)
+        //
+        // сначала покажем, что %x в format занимается преобразованием целых в hex, на вход должно идти именно целое, не строка, не массив байт
+        System.out.println(String.format("0x%010X", 10));
+        // 0x000000000А
+        System.out.printf("0x%010X %n", 10);
+        // 0x000000000А
 
-        //before print it, init it
+        // Дополнительно:
+        // printf() и String.format() — методы для форматирования строк, но у них разные функции.
+        // printf() выводит отформатированную строку в консоль. Для этого на входе должна быть строка формата, которая указывает, что печатать,
+        // и один или несколько последующих аргументов. В строке формата могут быть спецификаторы преобразования (местоholders, начинающиеся с%),
+        // которые указывают, как форматировать последующие аргументы функции.
+        // String.format() возвращает отформатированную строку, которую можно сохранить или использовать по своему усмотрению.
+
+        System.out.println(String.format("0x%010x", new BigInteger(1, "П".getBytes(StandardCharsets.UTF_8))));
+        System.out.println(String.format("0x%010x", new BigInteger(1, "П".getBytes(StandardCharsets.UTF_16BE))));
+        System.out.println(String.format("0x%010x", new BigInteger(1, "П".getBytes(StandardCharsets.UTF_16LE))));
+        System.out.println(String.format("0x%010x", new BigInteger(1, "П".getBytes(StandardCharsets.UTF_16))));
+
+        System.out.println("для П через Hex.encodeHexString");
+        System.out.println(Hex.encodeHexString("П".getBytes(StandardCharsets.UTF_8)));
+        System.out.println(Hex.encodeHexString("П".getBytes(StandardCharsets.UTF_16BE)));
+        System.out.println(Hex.encodeHexString("П".getBytes(StandardCharsets.UTF_16LE)));
+        System.out.println(Hex.encodeHexString("П".getBytes(StandardCharsets.UTF_16)));
+
+        System.out.println("для M(lat) через Hex.encodeHexString");
+        System.out.println(Hex.encodeHexString("M".getBytes(StandardCharsets.UTF_8)));
+        System.out.println(Hex.encodeHexString("M".getBytes(StandardCharsets.UTF_16BE)));
+        System.out.println(Hex.encodeHexString("M".getBytes(StandardCharsets.UTF_16LE)));
+        System.out.println(Hex.encodeHexString("M".getBytes(StandardCharsets.UTF_16)));
+
+        // С символами понятно , а как десятичное число закодировать в UTF16LE например?
+        // - неважно десятично/не десятичное, сначала надо получить строковое представление числа, например "16" или hex представление "10"
+        // - а потом закодировать каждый символ, используя таблицу Unicode, и одну из схем кодирования
+        System.out.println("--- Получить hex представление целого в виде строки ---");
+        System.out.println(Integer.toHexString(16));
+        System.out.println(Integer.toHexString(160));
+
+
+        System.out.println("--- Преобразование int к char ---");
+        // https://www.baeldung.com/java-convert-int-char
+        // Let’s say we have an int variable with value 7 and we want to convert it to its char counterpart '7'.
+        // Simply casting it to char won’t work because this converts it to the character that’s represented in binary as 0111,
+        // which in UTF-16 is U+0007 or the character 'BELL'.
+
+        int a121 = 7;
+        char a121_c = (char)a121;
+        System.out.println("a121_c = " + a121_c);
+        // a121_c =                                                                    // Unicode символ с кодпоинтом \u0007
+        System.out.println(Hex.encodeHexString("".getBytes(StandardCharsets.UTF_16)));
+        // feff0007
+
+        // 1 - способ
+        a121_c = (char)('0' + a121);
+        System.out.println("'0' + a121 = " + a121_c);
+        // '0' + a121 = 7 , происходит сложение код поинта нуля и цифры 7 = '\u0030' + '\u0007' = '\u0030' + '\u0037'
+        System.out.println(Hex.encodeHexString("7".getBytes(StandardCharsets.UTF_16)));
+        // feff0037
+
+        // 2 - способ
+        System.out.println(Character.forDigit(a121 , 10));                          // 10 - основание системы счисления
+        // 7
+        int a123 = 71213;
+        System.out.println(Integer.toString(a123));                                      // converts the given int to its String representation.
+        // 71213
+        System.out.println(Integer.toString(a123).charAt(0));
+        // 7
+
+        System.out.println("--- Преобразование char к int ---");
+        // Преобразование char в int не сработает, поскольку это дает нам десятичное представление кодировки символа UTF-16
+
+        char c123 = '7';
+        System.out.println((int)c123 + ", hex = " + Integer.toHexString((int)c123));
+        // 1 способ
+        System.out.println("Character.getNumericValue = " + Character.getNumericValue(c123) + ", hex = " + Integer.toHexString(Character.getNumericValue(c123)));
+        // 2 способ
+        System.out.println("Integer.parseInt          = " + Integer.parseInt(String.valueOf(c123)) + ", hex = " + Integer.toHexString(Integer.parseInt(String.valueOf(c123))));
+        // 3 способ
+        c123 = '7' - '0';                                                                // Вычитание 0 работает
+        System.out.println("7 - 0 : " + (int)c123 + ", hex = " + Integer.toHexString((int)c123));
+
+
+        System.out.println("--- Кодирование символов (чисел) Unicode 1 ---");
+        char a122 = 48;                                                                  // 0, 48 - это dec-код поинт 0-ля в таблице Unicode
+        System.out.println(a122);
+        a122 = 0x0030;                                                                   // тот же код поинт в 16-ти hex виде
+        System.out.println(a122);
+        System.out.println(Character.toChars(48));                              // печать нуля по код поинтам
+        System.out.println(Character.toChars(0x0030));
+        System.out.println(Character.toChars('\u0030'));
+
+        System.out.println("--- Кодирование символов (чисел) Unicode 2 ---");
+        System.out.println(Hex.encodeHexString("0".getBytes(StandardCharsets.UTF_8)));
+        System.out.println(Hex.encodeHexString("0".getBytes(StandardCharsets.UTF_16BE)));
+        System.out.println(Hex.encodeHexString("0".getBytes(StandardCharsets.UTF_16LE)));
+        System.out.println(Hex.encodeHexString("0".getBytes(StandardCharsets.UTF_16)));
+
+        System.out.println("--- Кодирование смайлика ---");
+        System.out.println(Character.toChars(0x1F600));
+        //System.out.println(Character.toChars('\uD83D\uDE00'));        -- суррогатные пары toChars НЕ принимает
+        System.out.println("\uD83D\uDE00");
+
+        System.out.println("--- Получение любого символа Unicode по его код поинту и кодирование по любой выбранной схеме ---");
+        System.out.println(Character.toChars(0x1234));
+        System.out.println(Hex.encodeHexString("ሴ".getBytes(StandardCharsets.UTF_16BE)));
+        System.out.println(Hex.encodeHexString((new String(Character.toChars(0x1234))).getBytes(StandardCharsets.UTF_16LE)));
+
+
+        // Charset.forName("UTF-16BE").encode("0"))                                      -- результат ByteBuffer
+
+        //ByteBuffer content = Charset.forName("UTF-16LE").encode("П");
+        //byte[] bom = { (byte) 0xff, (byte) 0xfe };
+        ///byte[] tmp = ArrayUtils.addAll(new byte[] {(byte) 0xFF, (byte) 0xFE}, "П".getBytes(StandardCharsets.UTF_8));
+        // Arrays.toString(bom);
+
+        //ByteBuffer bb = ByteBuffer.allocate(4);
+        //bb.order(ByteOrder.LITTLE_ENDIAN);
+        //byte[] anArray = { 0x10 };
+        //bb.order(ByteOrder.BIG_ENDIAN);
+        //bb.putInt(16);
+        //byte[] b11 = {}; //new byte[bb.remaining()];
+        //byte[] b12 = new byte[bb.remaining()];
+        // System.out.println(Arrays.toString(anArray));
+
+        //System.out.println(Hex.encodeHex(anArray));
+
+
+        // before print it, init it
         Sample ts = new Sample("test string",1);
         String str;
         System.out.println("print object = " + ts);      // ok
@@ -157,8 +299,6 @@ public class Step02Types {
                                                //                                                  -1 потому что
 
         System.out.println("short sh123 = (short) 1298390390L;      sh123 = " + sh123);
-
-
 
         // char и short
         // несмотря на то, что они оба по 2 байта, преобразование обязательно, так как char-беззнаковый

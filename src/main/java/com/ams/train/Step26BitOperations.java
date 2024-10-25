@@ -1,5 +1,7 @@
 package com.ams.train;
 
+import java.math.BigInteger;
+
 public class Step26BitOperations {
 
     public static void main(String[] args) {
@@ -17,12 +19,12 @@ public class Step26BitOperations {
 
         System.out.println();
         System.out.println("Bit operations");
-        int ab1 = 0b0011;     //0B0011 так тоже можно
+        int ab1 = 0b0011;           //0B0011 так тоже можно
         int ab2 = 0b0001;
-        byte bb = 0b01111111; // максимальное положительное байт-число
+        byte bb = 0b01111111;       // максимальное положительное байт-число
 
-        //long bb1 = 0x1101010110; // ошибка! целочисленный литерал интерпретируется как INT, который выход за границы диапазона и равен 73_031_287_056 (в десятичном виде)
-        long bb1 = 0x1101010110L;  // все ок, явно указали что 16-ти ричный литерал имеет тип long
+        //long bb1 = 0x1101010110;  // ошибка! целочисленный литерал интерпретируется как INT, который выход за границы диапазона и равен 73_031_287_056 (в десятичном виде)
+        long bb1 = 0x1101010110L;   // все ок, явно указали что 16-ти ричный литерал имеет тип long
 
         System.out.println(Integer.toBinaryString((ab1 | ab2))); //or
         //11
@@ -34,28 +36,35 @@ public class Step26BitOperations {
         //1
 
         // Подитовые операции сдвиги влево, Беззнаковый сдвиг влево "<<"
-
+        System.out.println();
+        System.out.println("Беззнаковый сдвиг влево <<");
         System.out.println(ab1 << 1); // x2 = 6
-        System.out.println(ab1 << 7); // 3 x 128 = 384
+        // 6
+        System.out.println(ab1 << 7);
+        // 384
+        // 0000_0000_0000_0011
+        // 0000_0001_1000_0000   128 + 256 = 384
+        System.out.println(new BigInteger(String.valueOf(ab1)).shiftLeft(7));
+        // 384
 
         System.out.println("Сделаем из положительного отрицательное число");
-        System.out.println(bb);                                 //127
-        System.out.println(Integer.toBinaryString(bb));         //01111111  (0 не печатает)
-        System.out.println(bb << 1);                            //254   тут результат автоматом привелся к int
-        System.out.println(Integer.toBinaryString((bb << 1)));  //11111110    тут на самом деле распечатывается int
-        System.out.println(((byte)(bb << 1)));                  //-2    заставим результат быть все еще byte
-                                                                //возможно, сама операция сначал приводит bb к инту, а потом мы ее обрезаем приведением к byte - Так и есть!
+        System.out.println(bb);                                 // 127
+        System.out.println(Integer.toBinaryString(bb));         // 01111111  (0 не печатает)
+        System.out.println(bb << 1);                            // 254   тут результат автоматом привелся к int
+        System.out.println(Integer.toBinaryString((bb << 1)));  // 11111110    тут на самом деле распечатывается int
+        System.out.println(((byte)(bb << 1)));                  // -2    заставим результат быть все еще byte
+                                                                // возможно, сама операция сначал приводит bb к инту, а потом мы ее обрезаем приведением к byte - Так и есть!
 
-                                                                //подтверждение того, что сдвиги оперируются интом
-                                                                //https://www.examclouds.com/ru/java/java-core-russian/pobitovie-operacii
-                                                                //Типы byte и short продвигаются к типу int при вычислении выражения.
+                                                                // подтверждение того, что сдвиги оперируются интом
+                                                                // https://www.examclouds.com/ru/java/java-core-russian/pobitovie-operacii
+                                                                // Типы byte и short продвигаются к типу int при вычислении выражения.
 
         // отрицательные числа и Знаковый сдвиг вправо ">>"
         System.out.println("Сдвиг вправо для отрицательного числа -4");
-        byte bbb = (byte)0b1111_1100;    //-4
-        System.out.println(bbb >> 1);    //-2
-                                         //1111_1111_1111_1100  - приводит сначала к int
-                                         //1111_1111_1111_1110  - потом сдвигает, сохраняя знак, так как сдвиг Знаковый
+        byte bbb = (byte)0b1111_1100;    // -4
+        System.out.println(bbb >> 1);    // -2
+                                         // 1111_1111_1111_1100  - приводит сначала к int
+                                         // 1111_1111_1111_1110  - потом сдвигает, сохраняя знак, так как сдвиг Знаковый
 
 
         // отрицательные числа и сдвиг вправо для отрицательного числа
