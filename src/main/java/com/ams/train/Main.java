@@ -9,8 +9,8 @@ public class Main {
 
         //Step01.doStep01();
 
-        //Step02Types.doStep02Types();
-        Step02TypesBigInteger.doStep02TypesBigInteger();
+        Step02Types.doStep02Types();
+        //Step02TypesBigInteger.doStep02TypesBigInteger();
         //Step02TypesOstatok.doStep02TypesOstatok();
 
         //Step02Types.doNanAndInfinity();

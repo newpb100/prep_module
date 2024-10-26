@@ -4,11 +4,15 @@ import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang3.ArrayUtils;
 
 import javax.xml.bind.DatatypeConverter;
+import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.MathContext;
+import java.math.RoundingMode;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
@@ -19,23 +23,23 @@ public class Step02Types {
 
     public static void doStep02Types(){
 
-    /* primitive rules */
-    // CHAR
+        /* primitive rules */
+        // CHAR
         // экарнирование
         // escape последовательности
-    // % операция
-    //CASTs
-            // расширение типов
-            // сужение типов
-    // char и short
-    // Неявное преобразование к INT
-    // int to str
-    // operations from left to right
-    // operations from right to left for =
-    // increment/decrement , postfix and prefix
-    // combine += /=
-    // logic , has lower priority as compare ops
-    // доп: интересные операции
+        // % операция
+        //CASTs
+        // расширение типов
+        // сужение типов
+        // char и short
+        // Неявное преобразование к INT
+        // int to str
+        // operations from left to right
+        // operations from right to left for =
+        // increment/decrement , postfix and prefix
+        // combine += /=
+        // logic , has lower priority as compare ops
+        // доп: интересные операции
 
         /* primitive rules */
         //
@@ -287,16 +291,16 @@ public class Step02Types {
         byte b128 = (byte)128;
         System.out.println();
         System.out.println("byte b128 = (byte)128;                   b128 = " + b128);
-                    // результат -128
-                    // Обоснование
-                    // 128 - 127 (максимальное в диапазоне) = 1; - это остаток, который нужно "проматывать" с другого конца
-                    // идем с другого конца
-                    // -128 + 1 - 1 = -128  , -1 делаем, потому что за 127 сразу идет -128, которое надо учитывать
+        // результат -128
+        // Обоснование
+        // 128 - 127 (максимальное в диапазоне) = 1; - это остаток, который нужно "проматывать" с другого конца
+        // идем с другого конца
+        // -128 + 1 - 1 = -128  , -1 делаем, потому что за 127 сразу идет -128, которое надо учитывать
 
         //#3
         long l123 = 1298390390L;               //01001101 01100011 11011101 01110110 = 1298390390 dec
         short sh123 = (short) l123;            //                  11011101 01110110 = 56694 dec ; 56694 - 32767 = 23927; -32768 + 23927 -1 = -8842
-                                               //                                                  -1 потому что
+        //                                                  -1 потому что
 
         System.out.println("short sh123 = (short) 1298390390L;      sh123 = " + sh123);
 
@@ -383,6 +387,101 @@ public class Step02Types {
         System.out.println("~ addd    = " + ~addd);          // 1111 1101 , в десятичной = -3, т.к. это простая инверсия числа
         System.out.println(">>>= addd = " + (addd >>>= 1));  // 1
 
+        // BigDecimal
+        System.out.println();
+        System.out.println("BigDecimal");
+
+        BigDecimal bdthirdValue = new BigDecimal(3445.125, MathContext.DECIMAL32);
+        System.out.println(bdthirdValue);
+        // 3445.125
+        bdthirdValue = new BigDecimal(3445.1255, MathContext.DECIMAL32);
+        System.out.println(bdthirdValue);
+        // 3445.126
+        bdthirdValue = new BigDecimal(3445.1265, MathContext.DECIMAL32);
+        System.out.println(bdthirdValue);
+        // 3445.126
+        bdthirdValue = new BigDecimal(3445.1275, MathContext.DECIMAL32);
+        System.out.println(bdthirdValue);
+        // 3445.128
+
+        System.out.println();
+        bdthirdValue = new BigDecimal(3445.1455, MathContext.DECIMAL32);
+        System.out.println(bdthirdValue);
+        // 3445.146
+        bdthirdValue = new BigDecimal(3445.1465, MathContext.DECIMAL32);
+        System.out.println(bdthirdValue);
+        // 3445.146
+
+        System.out.println();
+        System.out.println("------------ LL --------------------------------");
+        bdthirdValue = new BigDecimal(3445.5545, MathContext.DECIMAL32);
+        System.out.println(new BigDecimal(3445.5545));
+        System.out.println(bdthirdValue);
+        // 3445.555   ???????
+        DecimalFormat decimalFormat = new DecimalFormat("####.###");
+        String result = decimalFormat.format(3445.5545);
+        System.out.println((result));
+        // 3445,555
+        bdthirdValue = new BigDecimal(3445.5445, MathContext.DECIMAL32);
+        System.out.println(new BigDecimal(3445.5445));
+        System.out.println(bdthirdValue);
+        // 3445.544
+        decimalFormat = new DecimalFormat("####.###");
+        result = decimalFormat.format(3445.5445);
+        System.out.println((result));
+        // 3445,544
+        System.out.println("------------ LLEND--------------------------------");
+
+        System.out.println();
+        bdthirdValue = new BigDecimal("2222.2225");
+        System.out.println(bdthirdValue.setScale( 3,  RoundingMode.HALF_EVEN )) ;
+        // 2222.222
+        bdthirdValue = new BigDecimal("2222.22255");
+        System.out.println(bdthirdValue.setScale( 3,  RoundingMode.HALF_EVEN )) ;
+        // 2222.223
+        bdthirdValue = new BigDecimal("3445.5445");
+        System.out.println(bdthirdValue.setScale( 3,  RoundingMode.HALF_EVEN )) ;
+        // 3445.544
+
+
+        // Внимание! Различие в округлении!
+        System.out.println();
+        bdthirdValue = new BigDecimal("3445.5545");
+        System.out.println(bdthirdValue.setScale( 3,  RoundingMode.HALF_EVEN )) ;
+        // 3445.554
+
+        bdthirdValue = new BigDecimal(3445.5545);
+        System.out.println(bdthirdValue);
+        decimalFormat = new DecimalFormat("####.###");
+        System.out.println(decimalFormat.format(bdthirdValue.setScale(3, RoundingMode.HALF_EVEN)));
+        // 3445.554
+
+
+        decimalFormat = new DecimalFormat("####.###");
+        result = decimalFormat.format(3445.5545);
+        System.out.println((result));
+        // 3445,555
+        double ddd1 = 3445.5545;
+        decimalFormat = new DecimalFormat("####.###");
+        result = decimalFormat.format(ddd1);
+        System.out.println((result));
+        // 3445,555
+
+        bdthirdValue = new BigDecimal(3445.5545, MathContext.DECIMAL32);
+        System.out.println(bdthirdValue);
+        // 3445.555
+        bdthirdValue = new BigDecimal(ddd1, MathContext.DECIMAL32);
+        System.out.println(bdthirdValue);
+        // 3445.555
+
+        ddd1 = 3445.5545;
+        decimalFormat = new DecimalFormat("####.###");
+        // Если предыдущее число чётное, округление производится:
+        result = decimalFormat.format(ddd1);
+        System.out.println(result);
+        // 3445,555 - верно
+        ddd1 = 3445.5545;
+
     }
 
     public static void doNanAndInfinity() {
@@ -442,10 +541,10 @@ public class Step02Types {
 
         String path_out = String.join("\\", pathArr);
         /* \\var\\user\\programm\\unit1  -- теряется конечный бэкслеш
-        *   и тут в комментах пришлось использовать экранирование бэкслеша потому что вылетает ошибка о_О
-        *   java: illegal unicode escape
-        *   а это происходит из-за комбинации символов <backslash>u  :))
-        * */
+         *   и тут в комментах пришлось использовать экранирование бэкслеша потому что вылетает ошибка о_О
+         *   java: illegal unicode escape
+         *   а это происходит из-за комбинации символов <backslash>u  :))
+         * */
 
         System.out.println();
         System.out.println("Разделение и сбор пути с помощью Split и Join : " + path_out);
@@ -482,11 +581,11 @@ public class Step02Types {
         while (tokenizer.hasMoreTokens()){
             System.out.println(tokenizer.nextToken());
         }
-//        Good
-//        ws
-//        v
-//        ryo
-//        !
+        //        Good
+        //        ws
+        //        v
+        //        ryo
+        //        !
 
         String s1 = String.format("Language = %s, MonthPeriod = %d, severity = %c", "java", 7, 'A');
         String s2 = String.format("Language = %2$s, MonthPeriod = %1$d, severity = %3$c", 1, "python", 'B');
