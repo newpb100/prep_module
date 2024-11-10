@@ -9,8 +9,15 @@ public class Main {
 
         //Step01.doStep01();
 
-        Step02Types.doStep02Types();
+
+        //  Step02Types
+        //Step02Types.doStep02Types();
+        Step02TypesUnicode.doStep02TypesUnicode();
+
+        //Step02TypesBigDecimal.doStep02TypesBigDecimal();
         //Step02TypesBigInteger.doStep02TypesBigInteger();
+        //Step02TypesMoneta.doStep02TypesMoneta();
+
         //Step02TypesOstatok.doStep02TypesOstatok();
 
         //Step02Types.doNanAndInfinity();
@@ -19,6 +26,7 @@ public class Main {
         //Step02Types.doUnixPathToWindowsSplitJoin();
         //Step02Types.doUnixPathToWindowsReplace();
         //Step02Types.doStringOperations();
+
 
         //Step03Scanner.Step03Scanner();
         //Step03Readers.doStep03Readers();

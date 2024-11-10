@@ -11,8 +11,27 @@ public class Step03ReadAndWriteFile {
         var fis = new FileInputStream("testfile.txt");
         var fos = new FileOutputStream("testfile_out.txt");
 
+        // В одном из примеров
+        // File fileOut = new File(fileOutName);
+        // FileChannel wChannel = new FileOutputStream(fileOut, true).getChannel();
+        /**
+         * FileChannel — это класс в языке программирования Java, который предоставляет канальный подход для выполнения
+         * операций ввода-вывода с файлом.
+         * Он является частью пакета Java NIO и был представлен в Java 1.4 в качестве альтернативы
+         * традиционному API ввода-вывода для выполнения операций с файлами.
+         *
+         * FileChannel предоставляет методы для:
+         * — чтения и записи данных из файла;
+         * — отображения файла в памяти;
+         * — блокировки части файла;
+         * — передачи данных между каналами.
+         *
+         * Канальный подход, предоставляемый FileChannel, является более эффективным и гибким, чем традиционный API ввода-вывода,
+         * так как он позволяет выполнять асинхронные операции ввода-вывода и лучше контролировать управление буферами.
+         */
+
         while (true) {
-            int size = fis.read(bytearr);  // побайтовое чтение из потока в массив байт
+            int size = fis.read(bytearr);       // побайтовое чтение из потока в массив байт
             fos.write(bytearr, 0, size);
 
             if (size < bytearr.length) break;

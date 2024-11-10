@@ -77,6 +77,10 @@ public class Step10Cycles {
         // 7. foreach
         String[] cars = {"audi", "haval", "lada", "ford"};
 
+        // String s = "";
+        // переменная внутри скобок цикла for НЕ является изолированной
+        // в ее область видимости входит и то, что лежит за ее пределами
+        // поэтому если разкомментить String s = ""; в скобках s будет подсвечена, т.к. s уже defined in the scope
         for(String s: cars){
             System.out.println("foreach: car is " + s);
         }
