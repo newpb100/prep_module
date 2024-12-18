@@ -6,23 +6,23 @@ public class Step02Types {
 
     public static void doStep02Types(){
 
-    /* primitive rules */
-    // CHAR
+        /* primitive rules */
+        // CHAR
         // экарнирование
         // escape последовательности
-    // % операция
-    //CASTs
-            // расширение типов
-            // сужение типов
-    // char и short
-    // Неявное преобразование к INT
-    // int to str
-    // operations from left to right
-    // operations from right to left for =
-    // increment/decrement , postfix and prefix
-    // combine += /=
-    // logic , has lower priority as compare ops
-    // доп: интересные операции
+        // % операция
+        //CASTs
+        // расширение типов
+        // сужение типов
+        // char и short
+        // Неявное преобразование к INT
+        // int to str
+        // operations from left to right
+        // operations from right to left for =
+        // increment/decrement , postfix and prefix
+        // combine += /=
+        // logic , has lower priority as compare ops
+        // доп: интересные операции
 
         /* primitive rules */
         //
@@ -46,7 +46,7 @@ public class Step02Types {
 
 
         // CHAR
-        char symb1 = 1078;      //по индексу символа в таблице UTF-8
+        char symb1 = 1078;      //по индексу символа (его код в 10-м выражении) в таблице Unicode
         char symb2 = 'ж';       //по значению
         char symb3 = '\u0436';  //через шестнадцатеричную форму Unicode (это всё ещё «ж»), для 1078 в 16-ричной системе это 0436
         // 1 line
@@ -82,29 +82,23 @@ public class Step02Types {
         System.out.println("\uD83D\uDD0A");
         System.out.println("\uD83E\uDD73");
         System.out.println("\uD83C\uDF81");
-        System.out.println("Улыбок тебе дед Макар \u263A \u263B");
+        System.out.println("Улыбок тебе дед Макар \u263A \u263B");  // Улыбок тебе дед Макар ☺ ☻
+
         // некоторые символы просто так не интерпертируются в строке, например 0x1F600, если написать \u1F600 ничего не получится
-        // но если так, то ОК
+        // надо использовать конструкцию Character.toChars(0x1F600)
         // источник:         https://javarush.com/groups/posts/literaly-v-java
-        int smile = 0x1F600; // Здесь шестнадцатеричный код эмоджи
+        // также есть пояснение:
+        // Casting valid int code points to char will work for code points in the basic multilingual plane just due to how UTF-16
+        // was defined.
+        // To convert anything above U+FFFF you should use Character.toChars(int) to convert to UTF-16 code units.
+        int smile = 0x1F600;                         // Здесь шестнадцатеричный код эмоджи
         StringBuilder sb = new StringBuilder();
-        sb.append(Character.toChars(smile)); // Собираем в StringBuilder
-        System.out.println("Улыбающееся лицо: " + sb.toString()); // Выводим
-        //
-        // из комментов , то же самое без StringBuilder , действительно на фиг его городить тут
+        sb.append(Character.toChars(smile));         // Собираем в StringBuilder
+        System.out.println("Улыбающееся лицо              : " + sb.toString());
+
+        // из комментов, то же самое без StringBuilder, действительно на фиг его городить тут
         String asmile = new String(Character.toChars(0x1F600));
-        System.out.println("Улыбающееся лицо через String: " + asmile);
-
-
-        // % операция
-        System.out.println();
-        System.out.println("ostatok = " + (1 % 2));
-
-        //before print it, init it
-        Sample ts = new Sample("test string",1);
-        String str;
-        System.out.println("print object = " + ts);      // ok
-        //System.out.println("print object = " + str);   // err
+        System.out.println("Улыбающееся лицо через String : " + asmile);
 
 
         // CASTS
@@ -145,20 +139,18 @@ public class Step02Types {
         byte b128 = (byte)128;
         System.out.println();
         System.out.println("byte b128 = (byte)128;                   b128 = " + b128);
-                    // результат -128
-                    // Обоснование
-                    // 128 - 127 (максимальное в диапазоне) = 1; - это остаток, который нужно "проматывать" с другого конца
-                    // идем с другого конца
-                    // -128 + 1 - 1 = -128  , -1 делаем, потому что за 127 сразу идет -128, которое надо учитывать
+        // результат -128
+        // Обоснование
+        // 128 - 127 (максимальное в диапазоне) = 1; - это остаток, который нужно "проматывать" с другого конца
+        // идем с другого конца
+        // -128 + 1 - 1 = -128  , -1 делаем, потому что за 127 сразу идет -128, которое надо учитывать
 
         //#3
         long l123 = 1298390390L;               //01001101 01100011 11011101 01110110 = 1298390390 dec
         short sh123 = (short) l123;            //                  11011101 01110110 = 56694 dec ; 56694 - 32767 = 23927; -32768 + 23927 -1 = -8842
-                                               //                                                  -1 потому что
+        //                                                  -1 потому что
 
         System.out.println("short sh123 = (short) 1298390390L;      sh123 = " + sh123);
-
-
 
         // char и short
         // несмотря на то, что они оба по 2 байта, преобразование обязательно, так как char-беззнаковый
@@ -302,10 +294,10 @@ public class Step02Types {
 
         String path_out = String.join("\\", pathArr);
         /* \\var\\user\\programm\\unit1  -- теряется конечный бэкслеш
-        *   и тут в комментах пришлось использовать экранирование бэкслеша потому что вылетает ошибка о_О
-        *   java: illegal unicode escape
-        *   а это происходит из-за комбинации символов <backslash>u  :))
-        * */
+         *   и тут в комментах пришлось использовать экранирование бэкслеша потому что вылетает ошибка о_О
+         *   java: illegal unicode escape
+         *   а это происходит из-за комбинации символов <backslash>u  :))
+         * */
 
         System.out.println();
         System.out.println("Разделение и сбор пути с помощью Split и Join : " + path_out);
@@ -342,11 +334,11 @@ public class Step02Types {
         while (tokenizer.hasMoreTokens()){
             System.out.println(tokenizer.nextToken());
         }
-//        Good
-//        ws
-//        v
-//        ryo
-//        !
+        //        Good
+        //        ws
+        //        v
+        //        ryo
+        //        !
 
         String s1 = String.format("Language = %s, MonthPeriod = %d, severity = %c", "java", 7, 'A');
         String s2 = String.format("Language = %2$s, MonthPeriod = %1$d, severity = %3$c", 1, "python", 'B');

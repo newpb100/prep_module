@@ -1,5 +1,6 @@
 package com.ams.train;
 
+import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.security.Security;
 import java.util.Arrays;
@@ -18,17 +19,20 @@ public class Step24Random {
 
         //   Math.random
         for (int i = 0; i < 10; i++) {
-            System.out.print(Math.random() + " ; ");
+            System.out.print(Math.random() + " ; ");          // 0.2580076591594421 ; 0.9464908093622099 ; 0.4704744284447343 ...
         }
 
         // Random
         var rand = new Random();
         byte[] btarr = new byte[10];
+
         System.out.println();
         System.out.println("Using Random()");
         System.out.println(rand.nextDouble());
-        System.out.println(rand.nextInt(10)); // with bound-not inclusive
+        System.out.println(rand.nextInt(10));           // with bound-not inclusive, т.е. до 10
         System.out.println(rand.nextInt());
+        System.out.println("генерация случайного целого через BigInteger");
+        System.out.println("BigInteger.probablePrime(8,rand) = " + BigInteger.probablePrime(8, rand));
 
         // например рандом для случайного бросания кубика
         System.out.println();
@@ -37,7 +41,7 @@ public class Step24Random {
 
 
         System.out.println();
-        rand.nextBytes(btarr);                      // заполнение псевдо-случайными числами массива
+        rand.nextBytes(btarr);                                 // заполнение псевдо-случайными числами массива
         System.out.println(Arrays.toString(btarr));
 
         System.out.println("nextGaussian 3 values:");

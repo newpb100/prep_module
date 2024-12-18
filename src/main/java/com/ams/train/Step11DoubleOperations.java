@@ -1,5 +1,8 @@
 package com.ams.train;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Step11DoubleOperations {
     public static void main(String[] args) {
 
@@ -28,15 +31,32 @@ public class Step11DoubleOperations {
         System.out.println("res = " + (q * 1.0/ w));   // * 1.0 :) = 2.5
 
         // 5. Rounds
+        System.out.println();
         System.out.println("Math.round(2.7) = " + Math.round(2.7));
+        // 3
+        System.out.println();
         System.out.println("Math.round(2.5) = " + Math.round(2.5));
-        System.out.println("Math.round(2.4) = " + Math.round(2.4));
+        // 3 , т.е. можно сказать, что классический round() работает как RoundingMode.HALF_UP
+        // причем именно HALF_UP, а не HALF_EVEN, потому что
+        // HALF_EVEN, например, округлит "2.5" к 2, а "3.5" к 4
+        System.out.println("round 2.5f with = RoundingMode.HALF_UP   = " + new BigDecimal("2.5").setScale(0, RoundingMode.HALF_UP));
+        System.out.println("round 2.4f with = RoundingMode.HALF_UP   = " + new BigDecimal("2.4").setScale(0, RoundingMode.HALF_UP));
+        System.out.println("round 2.5f with = RoundingMode.HALF_EVEN = " + new BigDecimal("2.5").setScale(0, RoundingMode.HALF_EVEN));
+        System.out.println("round 3.5f with = RoundingMode.HALF_EVEN = " + new BigDecimal("3.5").setScale(0, RoundingMode.HALF_EVEN));
 
+        System.out.println();
+        System.out.println("Math.round(2.4) = " + Math.round(2.4));
+        // 2
         System.out.println("Math.ceil(2.1) = " + Math.ceil(2.1));
+        // 3
         System.out.println("Math.ceil(2.9) = " + Math.ceil(2.9));
+        // 3
         System.out.println("Math.floor(2.1) = " + Math.floor(2.1));
+        // 2
         System.out.println("Math.floor(2.9) = " + Math.floor(2.9));
+        // 2
         System.out.println("(int)2.7 = " + ((int)2.7));
+        // 2
 
 
     }
