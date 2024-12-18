@@ -5,8 +5,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class Step30Lambdas {
-    public static void doLambdas() {
+public class Step30LambdasAndStreams {
+    public static void doLambdasAndStreams() {
 
         // Примеры объявления стримов
         Stream<Integer> varStream = Stream.of(1, 2, 3, 4, 9);
@@ -39,11 +39,17 @@ public class Step30Lambdas {
         String[] array = {"Java", "Ruuuuussshhh"};
         Stream<String> streamOfArray = Arrays.stream(array);
 
-        streamOfArray.map(s->s.split("")) 				  // типа каждый элемент массива разбиваем на буквы..?
+/*        streamOfArray.map(s->s.split("")) 				      // типа каждый элемент массива разбиваем на буквы..?
                 .flatMap(Arrays::stream)                          // ???
                 .distinct()
                 .collect(Collectors.toList())
-                .forEach(System.out::println);
+                .forEach(System.out::println);*/
+
+        System.out.println("==========");
+        streamOfArray.map(s -> s.toUpperCase())
+                     .forEach(System.out::println);
+        // JAVA
+        // RUUUUUSSSHHH
 
 
     }
