@@ -6,6 +6,7 @@ import java.util.HashSet;
 public class Step18HashSetAndArrayList {
     public static void main(String[] args) {
         // #1
+        System.out.println("-- HashSet --");
         HashSet<Integer> hs11 = new HashSet<Integer>();
         hs11.add(1);
         hs11.add(2);
@@ -13,6 +14,7 @@ public class Step18HashSetAndArrayList {
         hs11.add(4);
         hs11.add(5);
         hs11.add(5);
+        System.out.println("HashSet<Integer> hs11 = " + hs11);
 
         HashSet<Integer> hs12 = new HashSet<Integer>();
         hs12.add(1);
@@ -46,6 +48,8 @@ public class Step18HashSetAndArrayList {
         System.out.println("SUBTRACT  result : " + hs13.toString());  // 1, 2, 3
 
         // #2
+        System.out.println("");
+        System.out.println("-- ArrayList --");
         ArrayList<Integer> al = new ArrayList<Integer>();
         al.add(1);
         al.add(2);

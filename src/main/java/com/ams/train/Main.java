@@ -12,7 +12,7 @@ public class Main {
 
         //  Step02Types
         //Step02Types.doStep02Types();
-        Step02TypesUnicode.doStep02TypesUnicode();
+        //Step02TypesUnicode.doStep02TypesUnicode();
 
         //Step02TypesBigDecimal.doStep02TypesBigDecimal();
         //Step02TypesBigInteger.doStep02TypesBigInteger();
@@ -61,7 +61,7 @@ public class Main {
 
         //Step17InsertionSort.main(null);
 
-        //Step18HashSetAndArrayList.main(null);
+        Step18HashSetAndArrayList.main(null);
 
         //Step19CompareCollections.main(null);
 
@@ -81,9 +81,15 @@ public class Main {
 
         //Step26BitOperations.main(null);
 
-        // Step27DateTimeOperations.main(null);
+        //Step27DateTimeOperations.main(null);
 
+        //Step28AddLogging.doStep28AddLogging();
 
+        // Step29StringFormat.doStringFormat();        // основан на запусках @Test
+
+        //Step30LambdasAndStreams.doLambdasAndStreams();
+
+        //Step31LambdasAndFuncInterfaces.doLambdasAndFuncInterfaces();
 
     }
 

@@ -101,13 +101,6 @@ public class Step02Types {
         System.out.println("Улыбающееся лицо через String : " + asmile);
 
 
-        // before print it, init it
-        Sample ts = new Sample("test string",1);
-        String str;
-        System.out.println("print object = " + ts);      // ok
-        //System.out.println("print object = " + str);   // err
-
-
         // CASTS
         // расширение типов
         long lmax = Long.MAX_VALUE;

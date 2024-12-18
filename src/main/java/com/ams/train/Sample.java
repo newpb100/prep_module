@@ -6,7 +6,9 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import org.aeonbits.owner.ConfigFactory;
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -17,7 +19,9 @@ import static org.hamcrest.Matchers.is;
 @Getter
 @lombok.Data
 public class Sample {
-    public static Logger logger = Logger.getLogger(Sample.class);
+    public static Logger logger = Logger.getLogger(Sample.class);       // org.apache.log4j.Logger;
+    // String log4jConfPath = "/src/main/resources/log4j.properties";
+
     private String f1;
     public int a;
     public ObjectMapper om;
@@ -28,7 +32,10 @@ public class Sample {
         om = new ObjectMapper();
 
         //log4j slf4j
-        logger.info("inside constructor");
+        //BasicConfigurator.configure();
+        logger.info("inside constructor with info level");
+        logger.debug("inside constructor with debug level");
+
         //hamcrest
         assertThat(this.f1, is(equalTo("test string")));
     }

@@ -1,6 +1,10 @@
 package com.ams.train;
 
 import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Date;
 
 public class Step03ReadAndWriteFile {
@@ -61,7 +65,7 @@ public class Step03ReadAndWriteFile {
 
         //попробуем вывести теперь каждый символ и его в формате <code><char>";"
         System.out.println("");
-        System.out.println("---read from file FileInputStream and print it in format : <code><char>; ");
+        System.out.println("--- read from file FileInputStream and print it in format : <code><char>; ");
         String s = "";
         fl2 = new FileInputStream("testfile.txt");
         while ((i = fl2.read()) != -1){
@@ -73,8 +77,10 @@ public class Step03ReadAndWriteFile {
 
 
         System.out.println("");
-        System.out.println("---read from file BufferedInputStream---");
+        System.out.println("--- read from file BufferedInputStream ---");
+
         var fl3 = new BufferedInputStream(new FileInputStream("testfile.txt"));
+
         while ((i = fl3.read()) != -1){
             System.out.print((char)i);
         }
@@ -82,8 +88,10 @@ public class Step03ReadAndWriteFile {
 
         //как же в итоге прочитать файл с русскими буквами
         System.out.println("");
-        System.out.println("---read from file russians and english letters---");
+        System.out.println("--- read from file russians and english letters ---");
+
         fl2 = new FileInputStream("testfile.txt");
+
         //переделываем файл-стрим в просто инпут-стрим
         InputStreamReader isr = new InputStreamReader(fl2);
         var br = new BufferedReader(isr);
@@ -94,6 +102,21 @@ public class Step03ReadAndWriteFile {
         fl2.close();
         isr.close();
         br.close();
+
+
+        System.out.println("");
+        System.out.println("--- read from file with nio.File ---");
+        try {
+            var uri = ClassLoader.getSystemResource("testfile.txt").toURI();    // файл в ресурсах
+
+            byte[] bytesFile = Files.readAllBytes(Paths.get(uri));
+
+            System.out.println("Строка из файла : " + new String(bytesFile));
+
+        } catch (URISyntaxException e) {
+            System.out.println("Ошибка! Не нашел такой файл");
+            throw new RuntimeException(e);
+        }
 
 
         // calc speed
