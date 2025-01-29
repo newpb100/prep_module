@@ -1,5 +1,7 @@
 package com.ams.train;
 
+import com.ams.train.supply.Sample;
+
 public class Step28AddLogging {
 
     public static void doStep28AddLogging(){

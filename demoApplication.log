@@ -1,4 +1,4 @@
-2023-03-03 14:06:04 INFO  com.ams.train.Sample:29 - inside constructor
+2023-03-03 14:06:04 INFO  com.ams.train.supply.Sample:29 - inside constructor
 2023-03-03 14:06:04 INFO  WebDriverThreadLocalContainer:138 - No webdriver is bound to current thread: 1 - let's create a new webdriver
 2023-03-03 14:06:04 INFO  FileHelper:56 - Creating folder: C:\repo\prep_module\build\downloads\1677841564654_19160_1
 2023-03-03 14:06:05 INFO  WebDriverManager:606 - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
@@ -8,7 +8,7 @@
 2023-03-03 14:06:07 INFO  WebDriverFactory:78 - Selenide v. 5.19.0
 2023-03-03 14:06:07 INFO  WebDriverFactory:129 - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
 2023-03-03 14:06:07 INFO  CreateDriverCommand:70 - Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (3e5c0fc6153382d902e8fabb7df36c7c)
-2023-03-03 14:06:12 INFO  com.ams.train.Sample:24 - shifted value of a = 4
+2023-03-03 14:06:12 INFO  com.ams.train.supply.Sample:24 - shifted value of a = 4
 2023-03-03 14:06:13 INFO  CloseDriverCommand:30 - Close webdriver: 31 -> ChromeDriver: chrome on WINDOWS (3e5c0fc6153382d902e8fabb7df36c7c)...
 2023-03-03 14:06:13 INFO  FileHelper:81 - Deleted empty folder: C:\repo\prep_module\build\downloads\1677841564654_19160_1
 2023-03-03 14:06:14 INFO  CloseDriverCommand:32 - Closed webdriver 31 in 913 ms

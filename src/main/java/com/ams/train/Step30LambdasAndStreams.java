@@ -13,7 +13,22 @@ public class Step30LambdasAndStreams {
         IntStream intStream = IntStream.of(120, 410, 85, 32, 314, 12);
 
 
+        // Чтобы использовать внешние переменные в лямбда-выражениях они должны быть
+        // final или effectivly final
+        System.out.println();
+        final int aa = 10;
+        int cc = 1000;
+        // c++;  //тогда в лямбда-выражение будет ошибка: var in lambda expr should be final or effectivly final
+
+        Stream.of(1, 2).forEach(s-> System.out.println(s + aa));
+        Stream.of(1, 2).forEach(s-> System.out.println(s + cc));
+        //11
+        //12
+        //1001
+        //1002
+
         // 11 + 2 + 3 + 4 + 5 = 25
+        System.out.println();
         System.out.println("Проверка reduce()");
         int sum = Stream.of(1, 2, 3, 4, 5).reduce(10, (acc, x) -> acc + x);
 

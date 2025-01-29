@@ -1,5 +1,7 @@
 package com.ams.train;
 
+import com.ams.train.supply.Sample;
+
 import java.text.MessageFormat;
 import java.util.Date;
 

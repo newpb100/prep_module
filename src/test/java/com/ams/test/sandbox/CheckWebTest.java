@@ -1,6 +1,6 @@
 package com.ams.test.sandbox;
 
-import com.ams.train.Sample;
+import com.ams.train.supply.Sample;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Description;
 import io.qameta.allure.Story;

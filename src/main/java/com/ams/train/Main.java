@@ -61,7 +61,7 @@ public class Main {
 
         //Step17InsertionSort.main(null);
 
-        Step18HashSetAndArrayList.main(null);
+        // Step18HashSetAndArrayList.main(null);
 
         //Step19CompareCollections.main(null);
 
@@ -85,9 +85,9 @@ public class Main {
 
         //Step28AddLogging.doStep28AddLogging();
 
-        // Step29StringFormat.doStringFormat();        // основан на запусках @Test
+        // Step29StringFormat.doStringFormat();        // основан на запусках @Test JUnit5
 
-        //Step30LambdasAndStreams.doLambdasAndStreams();
+        Step30LambdasAndStreams.doLambdasAndStreams();
 
         //Step31LambdasAndFuncInterfaces.doLambdasAndFuncInterfaces();
 

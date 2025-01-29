@@ -143,5 +143,18 @@ public class Step10Cycles {
 
          */
 
+        System.out.println();
+        System.out.println("Долг по практике");
+        i = 0;
+        int[] arr224 = new int[5];
+        while (i++ < arr224.length){
+            System.out.println(i);      //1, 2, 3, 4, 5
+        }
+        i = 0;
+        System.out.println();
+        while (++i < arr224.length){
+            System.out.println(i);      //1, 2, 3, 4
+        }
+
     }
 }

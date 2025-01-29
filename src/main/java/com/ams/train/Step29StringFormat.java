@@ -93,6 +93,8 @@ public class Step29StringFormat {
      *
      *  Соответственно, если мы передадим Exception.class в качестве ожидаемого типа исключения, любое исключение,
      *  выброшенное из исполняемого блока, сделает результат assertion равным PASS, поскольку Exception является супертипом для всех исключений.
+     *
+     *  В JUnit4 для проверки исключений используется рул ExpectedException
      * */
     @Test
     public void whenIllegalCodePointForConversion_thenError() {
