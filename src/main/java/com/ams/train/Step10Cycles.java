@@ -1,22 +1,44 @@
 package com.ams.train;
 
+import javax.sound.midi.Soundbank;
+
 public class Step10Cycles {
     public static final String a = "";
 
     public static void main(String[] args) {
 
+        // Области видимости
+        System.out.println("Области видимости, значения итератора перед входом в цикл и после выхода из него");
+        int i = 0;                          // i будет видна в заголовке цикла, внутри него и за пределами
+        for (i = 0; i < 1000; i++) {
+            int j = 0;
+        }
+        System.out.println(i);              // i = 1000
+        //System.out.println(j);            // err! Cannot resolve symbol j , за пределами цикла ее НЕ видно
+
+        for (int i1 = 0; i1 < 1000; i1++) {
+            int j = i1;
+        }
+        //System.out.println(i1);            // err! Cannot resolve symbol i1 , за пределами цикла ее НЕ видно
+
+
+        System.out.println();
+        System.out.println("Инициация k-итератора за пределами цикла");
         int k = 0;
         for (; k < 4; k++) {
             if (k == 13) break;
         }
-        System.out.println(" k = " + k);
+        System.out.println("k = " + k);
 
-        int i = 0;
+
+        System.out.println();
+        System.out.println("Примеры бесконечных циклов с прерыванием внутри");
+        int i2 = 0;
         // 1. For with bool
         for(boolean flag=true; flag;){
-            i++;
-            System.out.println("cycle i = " + i);
-            if (i == 5){
+            i2++;
+            System.out.println("cycle i2 = " + i2);
+            if (i2 == 5){
                 flag = false;
             }
         }
@@ -29,6 +51,7 @@ public class Step10Cycles {
             }
         }
 
+
         // 3. For with continue
         for (i = 1; i <= 10; i++) {
             if ( (i % 7) == 0) {
@@ -39,6 +62,7 @@ public class Step10Cycles {
 
         System.out.println();
 
+
         // 4. For with step more than 1
         for (i = 1; i <= 10; i+=2) {
             if ( (i % 7) == 0) {
@@ -46,6 +70,7 @@ public class Step10Cycles {
             }
             System.out.print(i + " ");
         }
+
 
         // 5. Calc factorial
         System.out.println();
@@ -55,6 +80,7 @@ public class Step10Cycles {
             fact = fact * i;
         }
         System.out.println("factorial of "+ num + " = " + fact);
+
 
         // 6. Embedded cycles
         int x = 10;
@@ -91,6 +117,7 @@ public class Step10Cycles {
 
         System.out.println();
 
+
         // 8. for for multilayer arrays
         int[][] array = {
                 {1,2,3},
@@ -104,6 +131,7 @@ public class Step10Cycles {
             System.out.println();
         }
 
+
         // 9. Trick
         //for (i = 0 ; i > -1; i++){
         //    if (i % 1e7 == 0) System.out.println(i);
@@ -111,6 +139,7 @@ public class Step10Cycles {
         //System.out.println("will this string reached? i = " + i); // will this string reached? i = -2147483648
 
         System.out.println();
+
 
         // 10. More than 1 counter/argument
         int j;

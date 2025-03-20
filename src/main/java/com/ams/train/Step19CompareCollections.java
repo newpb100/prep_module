@@ -1,7 +1,7 @@
 package com.ams.train;
 
 import org.apache.commons.collections4.CollectionUtils;
-import org.junit.Assert;
+import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.Arrays;

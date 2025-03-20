@@ -7,6 +7,7 @@
     <artifactId>prep_module</artifactId>
     <groupId>org.example</groupId>
     <version>1.0-SNAPSHOT</version>
+
     <!-- modules>
         <module>test-sandbox</module>
         <module>test-module-2</module>
@@ -14,11 +15,11 @@
     </modules -->
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
 
         <guava.version>30.1.1-jre</guava.version>
-        <allure-junit5>2.13.8</allure-junit5>
+        <allure-junit5>2.29.1</allure-junit5>
         <jackson-databind>2.12.2</jackson-databind>
         <aspectjweaver>1.9.6</aspectjweaver>
         <assertj-core>3.19.0</assertj-core>
@@ -38,24 +39,16 @@
     </properties>
 
     <dependencies>
-        <!-- dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit}</version>
-        </dependency -->
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit-jupiter-engine}</version>
         </dependency>
-
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
             <version>${junit-vintage-engine}</version>
         </dependency>
-
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
@@ -64,64 +57,70 @@
         </dependency>
 
         <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <!-- scope>test</scope -->
+        </dependency>
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok}</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
             <version>${hamcrest-all}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.aeonbits.owner</groupId>
             <artifactId>owner</artifactId>
             <version>${owner}</version>
         </dependency>
-
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>${selenide}</version>
         </dependency>
-
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>${assertj-core}</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- no example inside code-->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectjweaver}</version>
         </dependency>
-
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson-databind}</version>
         </dependency>
 
-        <!-- Cannot resolve com.nexign.gpn.qa:uata-core:1.0-SNAPSHOT -->
         <dependency>
             <groupId>com.nexign.gpn.qa</groupId>
             <artifactId>uata-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
+        <dependency>    <!-- comment: в uata-core тоже есть, но вер. 2.13 -->
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit5</artifactId>
             <version>${allure-junit5}</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4 -->
+        <!-- dependency>  <comment: нельзя подключать одновременно с 5-й версией - не запустятся обе!>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit4</artifactId>
+            <version>2.29.1</version>
+            <scope>test</scope>
+        </dependency -->
 
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -129,25 +128,22 @@
             <scope>compile</scope>
             <version>${guava.version}</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.javamoney/moneta -->
         <dependency>
             <groupId>org.javamoney</groupId>
             <artifactId>moneta</artifactId>
             <version>1.4.4</version>
             <type>pom</type>
         </dependency>
-
-
-
-
-
-
-
-
     </dependencies>
 
+
     <build>
+        <resources>
+            <resource>
+                <directory>src/test/resources</directory>
+                <!-- filtering>true</filtering -->
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -183,8 +179,8 @@
             </plugin>
 
         </plugins>
-
-
     </build>
+
+
 
 </project>

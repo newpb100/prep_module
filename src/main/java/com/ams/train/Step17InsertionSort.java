@@ -2,6 +2,7 @@ package com.ams.train;
 
 import java.util.Arrays;
 
+// Напрашивается более понятное название сортировки "Со сдвигом влево наименьшего" ?
 public class Step17InsertionSort {
 
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class Step17InsertionSort {
 
         System.out.println(Arrays.toString(arr));
 
-        // 1. двигаем направа левую границу
+        // 1. двигаем направо левую границу
         for (int left = 0; left < arr.length; left++) {
 
             value = arr[left];

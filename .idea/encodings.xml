@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/test-new-playwright/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-playwright/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-playwright/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-sandbox/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-sandbox/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-simple-playwright/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-simple-playwright/src/main/resources" charset="UTF-8" />
   </component>

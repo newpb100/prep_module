@@ -2,21 +2,25 @@ package com.ams.train;
 
 import java.util.StringTokenizer;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotSame;
+
 public class Step02Types {
 
-    public static void doStep02Types(){
 
-        /* primitive rules */
+    public static void main(String[] args){
+
+        // Primitive rules
         // CHAR
-        // экарнирование
-        // escape последовательности
-        // % операция
+        // Экранирование
+        // Escape последовательности
+        // String и CharSequence
         //CASTs
         // расширение типов
         // сужение типов
         // char и short
         // Неявное преобразование к INT
-        // int to str
+        // int to String
         // operations from left to right
         // operations from right to left for =
         // increment/decrement , postfix and prefix
@@ -24,12 +28,15 @@ public class Step02Types {
         // logic , has lower priority as compare ops
         // доп: интересные операции
 
-        /* primitive rules */
-        //
+
+        // primitive rules
+        System.out.println();
+        System.out.println("Primitive rules");
+
         float fl = 1.457f;
         long lg = -9223372036854L;
         Long boxl1 = Long.valueOf(lg);
-        Long boxl2 = lg;   // неявно вызывается valueOf
+        Long boxl2 = lg;                    // неявно вызывается valueOf
         System.out.println("boxl1 = " + boxl1 + "; boxl2 = " + boxl2);
 
         Long box3 = 1234567L;
@@ -46,6 +53,8 @@ public class Step02Types {
 
 
         // CHAR
+        System.out.println();
+        System.out.println("CHAR");
         char symb1 = 1078;      //по индексу символа (его код в 10-м выражении) в таблице Unicode
         char symb2 = 'ж';       //по значению
         char symb3 = '\u0436';  //через шестнадцатеричную форму Unicode (это всё ещё «ж»), для 1078 в 16-ричной системе это 0436
@@ -61,16 +70,17 @@ public class Step02Types {
 
         System.out.println("(char) 1079 = " + symb6);  // з
 
-        // экранирование
+        // Экранирование
+        System.out.println();
+        System.out.println("Экранирование");
         char a_doublq = '\"';
         char b_doublq = '"';
-
         System.out.println(" a_doublq = " + a_doublq); // будет выведена 1 двойная кавычка
         System.out.println(" b_doublq = " + b_doublq); // будет выведена 1 двойная кавычка
 
-        // escape последовательности
+        // Escape последовательности
         System.out.println();
-        System.out.println("escape последовательности");
+        System.out.println("Escape последовательности");
         System.out.println("\t\t100\t\t200\t\t300");
         System.out.println("\t\t10\t\t22\t\t33");
         System.out.println("\t\t1000\t\t2200\t\t3300");
@@ -187,14 +197,20 @@ public class Step02Types {
         short e1 = (short)(d + a);      // операция возможна только с явным кастом
 
 
-        // int to str
-        //String str15 = 15; //err
+        // int to String
+        int aaa1 = 1;
+        //String str15 = 15;            // err!
+        //String str16 = aaa;           // err!
+        //String str15 = (String)15;    // err! Cannot cast int to String
         String str15 = "" + 15;
+        String str16 = String.valueOf(aaa1);
 
-        // str to int
+
+        // String to int
         int a1 = Integer.parseInt(str15);
         System.out.println();
         System.out.println("print a1 = " + a1);
+
 
         // operations from left to right
         int a2 = 5;

@@ -7,6 +7,7 @@ public class Discriminant {
         this.a = a;
         this.b = b;
         this.c = c;
+        System.out.println("in the constructor");
     }
 
     public int getDiscriminant(){

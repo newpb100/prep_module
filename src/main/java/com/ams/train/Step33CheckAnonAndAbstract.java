@@ -1,6 +1,6 @@
 package com.ams.train;
 
-import com.ams.train.supply.SampleAbstract;
+import com.ams.train.abstr.SampleAbstract;
 import com.ams.train.supply.SampleInterface;
 
 public class Step33CheckAnonAndAbstract {
@@ -28,7 +28,7 @@ public class Step33CheckAnonAndAbstract {
                 int a = a1;
 
                // @Override
-                public void doSomething(){
+                public void doSomething1(){
                     System.out.println("doSomething from new SampleAbstract()");
                 }
 
@@ -38,7 +38,7 @@ public class Step33CheckAnonAndAbstract {
 
         };
 
-        v1.doSomething();
+        v1.doSomething1();
 
         // v1.doSomething2();   вот так нельзя.. срабатывает только если написать: var v1 ,
         // а почему тогда дает без проблем определить внутри анонимного класса  doSomething2() , если потом не дает его использовать?
@@ -48,7 +48,7 @@ public class Step33CheckAnonAndAbstract {
         // вот так тоже можно вызвать doSomething2()
         new SampleAbstract(){
             // @Override
-            public void doSomething(){
+            public void doSomething1(){
                 System.out.println("doSomething from new SampleAbstract()");
             }
 
@@ -60,7 +60,7 @@ public class Step33CheckAnonAndAbstract {
 
         SampleInterface i1 = new SampleInterface(){
             @Override
-            public void doSomethingInInterface() {
+            public void doSomethingInInterface1() {
                 System.out.println("doSomethingInInterface from new SampleInterface()");
             }
 
@@ -69,7 +69,7 @@ public class Step33CheckAnonAndAbstract {
             }
         };
 
-        i1.doSomethingInInterface();
+        i1.doSomethingInInterface1();
         // i1.doSomethingInInterface2();
         // i1.doSomethingInInterface2();  также нет доступа
 

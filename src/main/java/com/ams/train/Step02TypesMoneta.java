@@ -3,7 +3,6 @@ package com.ams.train;
 import org.javamoney.moneta.FastMoney;
 import org.javamoney.moneta.Money;
 import org.javamoney.moneta.format.CurrencyStyle;
-import org.junit.Assert;
 import org.opentest4j.AssertionFailedError;
 
 import javax.money.*;
@@ -11,8 +10,6 @@ import javax.money.convert.*;
 import javax.money.format.AmountFormatQueryBuilder;
 import javax.money.format.MonetaryAmountFormat;
 import javax.money.format.MonetaryFormats;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.math.RoundingMode;
 import java.util.Locale;
 

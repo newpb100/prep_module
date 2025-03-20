@@ -9,6 +9,8 @@ public class Step14Arrays {
     public static void main(String[] args) {
 
         // 1. Simple
+        System.out.println();
+        System.out.println("Простые примеры инициализации массива");
 
         int[] a = new int[10];
         int[] b;
@@ -16,34 +18,50 @@ public class Step14Arrays {
         b = a;
 
         a[9] = 122;
-
         System.out.println("b[9] = " + b[9]);
+        // b[9] = 122
+
+        int[] simpArr = {1,2,3,4,5,6,7};
+        System.out.println(simpArr);    // в отличие от списков (List) массивы нельзя так распечатывать до значений элементов
+        // [I@59f95c5d
+        System.out.println(Arrays.toString(simpArr));
+        // [1, 2, 3, 4, 5, 6, 7]
+
         System.out.println();
 
         // 2. Default values
-
         boolean[] bb = new boolean[3];
         for (int i = 0; i < bb.length; i++) {
-            System.out.println(bb[i]);
+            System.out.print(bb[i] + " ; ");
         }
+        System.out.println();
+        //false ; false ; false ;
+
         int[] ii = new int[3];
         for (int i = 0; i < ii.length; i++) {
-            System.out.println(ii[i]);
+            System.out.print(ii[i] + " ; ");
         }
+        System.out.println();
+        // 0 ; 0 ; 0 ;
+
         double[] dd = new double[3];
         for (int i = 0; i < dd.length; i++) {
-            System.out.println(dd[i]);
+            System.out.print(dd[i] + " ; ");
         }
+        System.out.println();
+        // 0.0 ; 0.0 ; 0.0 ;
+
         String[] ss = new String[3];
         for (int i = 0; i < ss.length; i++) {
-            System.out.println(ss[i]);
+            System.out.print(ss[i] + " ; ");
         }
-
         System.out.println();
+        // null ; null ; null ;
 
 
-        // 3. Multilayer(2x) array
-
+        // Multilayer(2x) array
+        System.out.println();
+        System.out.println("Инициализация двумерного массива");
         int[][] array = {
                 {1,2,3,3},
                 {4,5,6,6},
@@ -54,10 +72,17 @@ public class Step14Arrays {
         int[][] array2 = new int[10][2];
         System.out.println("multi layer array2 length = " + array2.length);
 
+        Object[][] myObj = new Object [][] {
+                {1, 2, 3, 5},
+                {1},
+                {"ssstttrrr", true}
+        };
+        System.out.println("myObj[0][1] = " +  myObj[0][1]);
+
+
+        //Sort, toString and BinarySearch
         System.out.println();
-
-
-        //4. Sort, toString and BinarySearch
+        System.out.println("Сортировки и поиск");
 
         int[] arr3 = {1, 4, 56, 12, 56, 78, 11, 0, 123, 566};
         int[] arr31 = Arrays.copyOf(arr3, arr3.length);
@@ -75,8 +100,8 @@ public class Step14Arrays {
         System.out.println("sorted arr3 = " + Arrays.toString(arr3) + " and index of 12 from 1 to 3 is " + Arrays.binarySearch(arr3, 1, 3, 12) ); // -4
 
 
-        // 5. copyOf,  copyOfRange, Equals
-        // arr3             = [0, 1, 4, 11, 12, 56, 56, 78, 123, 566]
+        //copyOf,  copyOfRange, Equals
+        //arr3             = [0, 1, 4, 11, 12, 56, 56, 78, 123, 566]
 
         int[] arr4 = Arrays.copyOf(arr3, arr3.length);
         int[] arr5 = Arrays.copyOfRange(arr3, 3, 5);
@@ -106,7 +131,6 @@ public class Step14Arrays {
         int[] arr7;
         arr7 = Arrays.copyOf(arr3, 15);
         System.out.println("arr7 requested more values that arr3 has, arr7 = " + Arrays.toString(arr7));
-
 
 
         // 6. Multilayer copyOf, deepToString, deepEquals, equals
@@ -175,7 +199,7 @@ public class Step14Arrays {
         // 9. Modify FINAL array
         final int[] data = {1, 2, 3, 4, 5, 6};
         //data = new int[]{6, 7, 8, 9};  // err! Cannot assign a value to final variable 'data'
-        data[0] = 0; //correct
+        data[0] = 0;                     //correct
         System.out.println("final int[] data = " + Arrays.toString(data));
 
 

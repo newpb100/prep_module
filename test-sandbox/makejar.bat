@@ -1,0 +1,1 @@
+jar -cmf manifest.mf discriminant-jar.jar -C .\target\classes\ .

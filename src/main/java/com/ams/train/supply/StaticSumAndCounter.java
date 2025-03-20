@@ -1,6 +1,6 @@
-package com.ams.train;
+package com.ams.train.supply;
 
-public class Step21StaticAndNonStaticVars {
+public class StaticSumAndCounter {
 
     public static int count = 0;
     public static int sum = 0;
@@ -8,7 +8,7 @@ public class Step21StaticAndNonStaticVars {
     public void add(int data)
     {
         int sum = data * 2;
-        Step21StaticAndNonStaticVars.sum = Step21StaticAndNonStaticVars.sum + data;
+        StaticSumAndCounter.sum = StaticSumAndCounter.sum + data;
         count++;
 
         printVars(sum);
@@ -17,7 +17,7 @@ public class Step21StaticAndNonStaticVars {
     public static void addStatic(int data)
     {
         int sum = data * 2;
-        Step21StaticAndNonStaticVars.sum = Step21StaticAndNonStaticVars.sum + data;
+        StaticSumAndCounter.sum = StaticSumAndCounter.sum + data;
 
         count++;
         printVars(sum);
@@ -25,8 +25,8 @@ public class Step21StaticAndNonStaticVars {
 
     private static void printVars(int sum) {
         System.out.println();
-        System.out.println("public static int sum = " + Step21StaticAndNonStaticVars.sum);
-        System.out.println("public static int count = " + Step21StaticAndNonStaticVars.count);
+        System.out.println("public static int sum = " + StaticSumAndCounter.sum);
+        System.out.println("public static int count = " + StaticSumAndCounter.count);
         System.out.println("local sum = " + sum);
     }
 

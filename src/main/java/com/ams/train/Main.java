@@ -11,7 +11,7 @@ public class Main {
 
 
         //  Step02Types
-        //Step02Types.doStep02Types();
+        //Step02Types.main(null);
         //Step02TypesUnicode.doStep02TypesUnicode();
 
         //Step02TypesBigDecimal.doStep02TypesBigDecimal();
@@ -33,7 +33,7 @@ public class Main {
         //Step03ReadAndWriteFile.doStep03File();
         //(new Step03ReadAndWriteFile()).copyFileWithBuffer();
 
-        // new Step04KPR(); // test spektr sample
+        // new Step04KPR();                                     // test spektr sample
 
         //Step05BoolTernar.doStep05();
 
@@ -67,9 +67,7 @@ public class Main {
 
         //Step20MergeSort.main(null);
 
-        //(new Step21StaticAndNonStaticVars()).add(1);
-        //(new Step21StaticAndNonStaticVars()).addStatic(1);
-        //Step21StaticAndNonStaticVars.addStatic(1);
+        //Step21CheckStaticAndNonStaticVars.main(null);
 
         //Step22DrawSinGraph.main(null);
 
@@ -85,9 +83,9 @@ public class Main {
 
         //Step28AddLogging.doStep28AddLogging();
 
-        // Step29StringFormat.doStringFormat();        // основан на запусках @Test JUnit5
+        //Step29StringFormat.doStringFormat();        // основан на запусках @Test JUnit5
 
-        Step30LambdasAndStreams.doLambdasAndStreams();
+        //Step30LambdasAndStreams.doLambdasAndStreams();
 
         //Step31LambdasAndFuncInterfaces.doLambdasAndFuncInterfaces();
 
