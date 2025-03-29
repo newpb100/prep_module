@@ -85,7 +85,7 @@ public class Main {
 
         //Step29StringFormat.doStringFormat();        // основан на запусках @Test JUnit5
 
-        //Step30LambdasAndStreams.doLambdasAndStreams();
+        Step30LambdasAndStreams.doLambdasAndStreams();
 
         //Step31LambdasAndFuncInterfaces.doLambdasAndFuncInterfaces();
 

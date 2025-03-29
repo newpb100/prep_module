@@ -27,6 +27,19 @@ public class Step30LambdasAndStreams {
         //1001
         //1002
 
+        // Печать массива с помощью стримов и лямбда-выражений
+        System.out.println();
+        String[] myarr = {"enums", "lambda expr", "stream api"};
+        Integer[] myarrInt = {1, 2, 3};
+        int[] myarrIntPrim = {10, 20, 30};
+        System.out.println("Печать массивов ссылочных типов с помощью стримов и лямбда-выражений:");
+        Arrays.asList(myarr).stream().forEach(System.out::println);
+        Arrays.asList(myarrInt).stream().forEach(System.out::println);
+        System.out.println("Печать массива примитивов с помощью стримов и лямбда-выражений:");
+        Arrays.asList(myarrIntPrim).stream().forEach(System.out::println);  // не может распечатать по значениям
+        // [I@59f95c5d
+
+
         // 11 + 2 + 3 + 4 + 5 = 25
         System.out.println();
         System.out.println("Проверка reduce()");

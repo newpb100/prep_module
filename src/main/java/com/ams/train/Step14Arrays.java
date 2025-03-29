@@ -22,14 +22,20 @@ public class Step14Arrays {
         // b[9] = 122
 
         int[] simpArr = {1,2,3,4,5,6,7};
+
+        // Печать
         System.out.println(simpArr);    // в отличие от списков (List) массивы нельзя так распечатывать до значений элементов
         // [I@59f95c5d
         System.out.println(Arrays.toString(simpArr));
         // [1, 2, 3, 4, 5, 6, 7]
+        // Печать любого массива с помощью стримов и лямбда-выражений
+        System.out.println("Печать массива примитивов с помощью стримов и лямбда-выражений:");
+        Arrays.asList(simpArr).stream().forEach(System.out::println);
+        // [I@59f95c5d      - не может распечатать массив примитивов, а вот массив ссылочных типов - сможет. Вынесено в задачник
 
-        System.out.println();
 
         // 2. Default values
+        System.out.println();
         boolean[] bb = new boolean[3];
         for (int i = 0; i < bb.length; i++) {
             System.out.print(bb[i] + " ; ");
