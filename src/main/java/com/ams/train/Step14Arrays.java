@@ -1,6 +1,7 @@
 package com.ams.train;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static java.util.Arrays.sort;
 
@@ -207,6 +208,12 @@ public class Step14Arrays {
         //data = new int[]{6, 7, 8, 9};  // err! Cannot assign a value to final variable 'data'
         data[0] = 0;                     //correct
         System.out.println("final int[] data = " + Arrays.toString(data));
+
+        // 10. To List from Array
+        System.out.println();
+        System.out.println("Init list from array");
+        List<String> lst  = Arrays.asList("item1","item2","item3");
+        System.out.println(lst);
 
 
     }

@@ -30,7 +30,7 @@ public enum BrowserFactory {
     public abstract Browser createInstance (final Playwright playwright);
 
     public BrowserType.LaunchOptions options(){
-        return new BrowserType.LaunchOptions().setHeadless(config().headless()).setSlowMo(config().slowMotion());
+        return (new BrowserType.LaunchOptions()).setHeadless(config().headless()).setSlowMo(config().slowMotion());
     }
 
 }
