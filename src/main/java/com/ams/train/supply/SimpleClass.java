@@ -8,4 +8,8 @@ public class SimpleClass {
 
         assert age >= 18 : "AssertionError в вызываемом классе SimpleClass";
     }
+
+    public void printSome(){
+        System.out.println("printSome() from SimpleClass");
+    }
 }
