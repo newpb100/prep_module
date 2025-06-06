@@ -1,7 +1,12 @@
 package com.ams.train;
 
+import com.ams.train.supply.WideBoxed;
+import com.ams.train.supply.WideVarArgs;
+
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+import static com.ams.train.supply.WideVarArgs.methodWideVar;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotSame;
 
@@ -10,12 +15,15 @@ public class Step02Types {
 
     public static void main(String[] args){
 
-        // Primitive rules
+        // Примитивы long Long boolean Boolean. Из обертки в примитив
+        // Автоупаковка и Автораспаковка
+        // Преобразование объектных типов. Parent и Child. Операции cast() и (Type)
+        // Вывод на консоль литералов с плавающей точкой, классический и научный
         // CHAR
         // Экранирование
         // Escape последовательности
         // String и CharSequence
-        //CASTs
+        // CASTs
         // расширение типов
         // сужение типов
         // char и short
@@ -29,27 +37,127 @@ public class Step02Types {
         // доп: интересные операции
 
 
-        // primitive rules
+        // Примитивы long Long boolean Boolean. Из обертки в примитив и из примитива в обертку
         System.out.println();
-        System.out.println("Primitive rules");
+        System.out.println("Примитивы long Long boolean Boolean. Из обертки в примитив и из примитива в обертку");
 
-        float fl = 1.457f;
-        long lg = -9223372036854L;
-        Long boxl1 = Long.valueOf(lg);
-        Long boxl2 = lg;                    // неявно вызывается valueOf
-        System.out.println("boxl1 = " + boxl1 + "; boxl2 = " + boxl2);
+        // long к Long
+        long lg_prim = -9223372036854L;
+        Long boxl1_wrap = Long.valueOf(lg_prim);
+        Long boxl2_wrap = lg_prim;                        // неявно вызывается valueOf
+        System.out.println("из примитива в обертку; boxl1_wrap = " + boxl1_wrap + "; boxl2_wrap = " + boxl2_wrap);
 
-        Long box3 = 1234567L;
-        long lg3 = box3.longValue();
-        long lg4 = box3;  // неявно вызывается longValue
-        System.out.println("lg3 = " + lg3 + "; lg4 = " + lg4);
+        // Long к long
+        Long box3_wrap = 1234567L;
+        long lg3_prim = box3_wrap.longValue();
+        long lg4_prim = box3_wrap;               // неявно вызывается longValue
+        System.out.println("из обертки в примитив;  lg3_prim = " + lg3_prim + "; lg4_prim = " + lg4_prim);
 
-        // вывод на консоль литералов с плавающей точкой, классический и научный
+        // а с другими типами?
+        Integer int_wrap = 12;
+        int int_prim = int_wrap;
+        System.out.println("int_prim = int_wrap;    int_prim = " + int_prim);
+
+        // преобразование Object к boolean
+        Boolean bl_wrap = true;
+        Object obj = bl_wrap;
+        //boolean bl_prim = (Boolean) obj;      // можно кастануть как через Boolean
+        boolean bl_prim = (boolean) obj;        // так и напрямую в примитивный тип!!
+        System.out.println("cast Object to boolean through Boolean,          bl_prim = " + bl_prim);
+
+        // более продвинутый пример с использованием instanceof
+        obj = "true";
+        if (obj instanceof Boolean){
+            bl_prim = (Boolean) obj;
+        }else{
+            System.out.println("obj НЕ содержит ссылку на тип Boolean, преобразование не делаем");
+        }
+
+        boolean bl_prim2 = false;
+        bl_prim2 = bl_wrap;  // неявно вызывается bl_wrap.booleanValue()
+        System.out.println("из обертки в примитив;  bl_prim2 = bl_wrap;      bl_prim2 = " + bl_prim);
+
+
+        // Автоупаковка и Автораспаковка
+        System.out.println();
+        System.out.println("Автоупаковка в арифмических вывражениях");
+        Integer iOb1 = 100;
+        Integer iOb2 = 100;
+        System.out.println(iOb1 == iOb2);
+        // true
+
+        Integer iOb3 = new Integer(120);
+        Integer iOb4 = new Integer(120);
+        System.out.println(iOb3 == iOb4);
+        // false
+
+        Integer iOb5 = 200;
+        Integer iOb6 = 200;
+        System.out.println(iOb5 == iOb6);
+        // false
+
+        // Расширение типа и Автоупаковка
+        System.out.println("- Расширение типа имеет более высокий приоритет, чем Упаковка типа");
+        short shVal = 25;
+        WideBoxed.methodWide(shVal);
+
+        System.out.println("- Расширение типа также имеет более высокий приоритет, чем Упаковка типа для перечня параметров");
+        short shVal1 = 25;
+        short shVal2 = 35;
+        WideVarArgs.methodWideVar( shVal1, shVal2 );
+        /**
+        *  Хорошее замечание:
+         *  Если закомментить метод static void methodWideVar(int i1, int i2)
+         *  выдаст ошибку (java.lang.Integer...) cannot be applied to (short, short).
+         *
+         *  и тут, скорее вего как, срабатывает ограничение на передачу массива
+         *
+         *  когда компилятор встречает вызов метода со списком параметров переменной длины, то он упаковывает эти элементы в массив.
+         *  Т.е. на входе должен быть массив Integer[]. Мы подаем short[]. При этом для массивов
+         * autoboxing не работает:
+         *
+        * */
+
+        System.out.println("- Если передали Объекты, то приоритет имеет метод в сигнатуре которого прописаны именно эти типы объектов");
+        Integer shVal1Obj = 25;
+        Integer shVal2Obj = 35;
+        WideVarArgs.methodWideVar( shVal1Obj, shVal2Obj );
+
+        System.out.println("Используем распаковку для удаления элемента по индексу (ожидается int, закидываем Integer)");
+        ArrayList<Integer> alInt = new ArrayList<>();
+        alInt.add(1);
+        alInt.add(2);
+        alInt.add(3);
+        alInt.remove(0);
+        Integer intObj = 1;
+        alInt.remove(intObj);
+        System.out.println("alInt = " + alInt);
+        // alInt = [2, 3]
+
+        // Несмотря на то, что входной параметр объявлен как Object в метод можно передать примитив int
+        int app = 1;
+        castIntToObject(app);
+        // Преобразование int к Object:1
+
+
+        // Преобразование объектных типов. Parent и Child. Операции cast() и (Type)
+        // см. в практике
+        // com/ams/train/Step39ClassCast.java	(prep_module)
+
+        System.out.println();
+        System.out.println(Boolean.TYPE);
+        String aa111 = "true";
+        System.out.println(aa111.getClass());
+        //<T> T = "true".equals(aaa);
+
+
+        // Вывод на консоль литералов с плавающей точкой, классический и научный
+        System.out.println();
+        System.out.println("Вывод на консоль литералов с плавающей точкой, классический и научный");
         double a12 = 2.718281828459045;
         double d12 = 4.05E-13;
-        System.out.println();
         System.out.println("Тип double в классическом виде: " + a12);
-        System.out.println("Тип double в научном виде: " + d12);
+        System.out.println("Тип double в научном виде     : " + d12);
 
 
         // CHAR
@@ -371,4 +479,10 @@ public class Step02Types {
 
 
     }
+
+    public static void castIntToObject(Object ob){
+        System.out.println("Преобразование int к Object:" + ob);
+    }
+
+
 }
