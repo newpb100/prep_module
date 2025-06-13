@@ -47,19 +47,22 @@ public class Step39ClassCast {
 
         ///  Без всяких кастов ссылку на объект можно присваивать только РОДИТЕЛЬСКИМ классам (неявное преобразование ссылки Вверх или Апкастинг), если в обратную сторону,
         ///  то возможны баги см. ниже
-        a = chl;
         a = prn;
-        prn = chl;
+
         if (a instanceof Child){
             System.out.println("a is instance of Child");
         }else if (a instanceof Parent){
             System.out.println("a is instance of Parent");
         }
+        // a is instance of Parent
 
+        prn = chl;
+        /// Внимание! неважно, что ты присваивал prn = chl;
+        /// Тип ссылки prn от того, что ей присвоили ссылку типа Child - не поменялся
         /// prn = a;        Err: Required Parent provided Object
         /// chl = prn;      Err: Required Child provided Parent
 
-        /// Понижение (Даункастинг) типов с присваиванием не работает
+        /// Понижение (Даункастинг) типов с присваиванием "=" не работает
         /// chl = (Child) a;                 // Err: class com.ams.train.supply.Parent cannot be cast to class com.ams.train.supply.Child
         /// chl = ((Child) a);               // Err: class com.ams.train.supply.Parent cannot be cast to class com.ams.train.supply.Child
         /// chl = Child.class.cast(a);       // аналогично
@@ -69,6 +72,7 @@ public class Step39ClassCast {
 
 
         /// Но работает:
+        System.out.println();
         System.out.println("Эти конструкции для понижения типа работают:");
         ((Child) prn).doPrintInChild();
         /// или
@@ -82,6 +86,12 @@ public class Step39ClassCast {
         var chlVar2 = (Child) a;
         chlVar2.doPrintInChild();
 
+        //doPrintInChild..
+        //doPrintInChild..
+        //doPrintInChild..
+        //doPrintInChild..
+
+
 
         /// https://www.geeksforgeeks.org/class-cast-method-in-java-with-examples/
         Class<?> myClass = null;
@@ -91,11 +101,15 @@ public class Step39ClassCast {
             throw new RuntimeException(e);
         }
         Object a1 = myClass.cast(chl);
-        // a1 = chl;                    можно и так написать
+        // a1 = chl;                    можно и проще
 
         System.out.println();
         System.out.println(a1.getClass());
-        // class com.ams.train.supply.Child             Почему Child ???
+        // class com.ams.train.supply.Child
+
+        /// Почему Child ???
+        /// Потому что возвращается НЕ тип переменной , а ТИП объекта на который она указывается
+
     }
 
 }

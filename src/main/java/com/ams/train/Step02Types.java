@@ -15,57 +15,59 @@ public class Step02Types {
 
     public static void main(String[] args){
 
-        // Примитивы long Long boolean Boolean. Из обертки в примитив
-        // Автоупаковка и Автораспаковка
-        // Преобразование объектных типов. Parent и Child. Операции cast() и (Type)
-        // Вывод на консоль литералов с плавающей точкой, классический и научный
-        // CHAR
-        // Экранирование
-        // Escape последовательности
-        // String и CharSequence
-        // CASTs
-        // расширение типов
-        // сужение типов
-        // char и short
-        // Неявное преобразование к INT
-        // int to String
-        // operations from left to right
-        // operations from right to left for =
-        // increment/decrement , postfix and prefix
-        // combine += /=
-        // logic , has lower priority as compare ops
-        // доп: интересные операции
+        /// Примитивы long Long boolean Boolean. Из обертки в примитив
+        /// Автоупаковка и Автораспаковка
+        /// Преобразование объектных типов. Parent и Child. Операции cast() и (Type). Апкастинг и Даункастинг объектных типов
+        /// Вывод на консоль литералов с плавающей точкой, классический и научный
+        /// CHAR
+        /// Экранирование
+        /// Escape последовательности
+        /// String и CharSequence
+        /// CASTs
+        /// расширение типов
+        /// сужение типов
+        /// char и short
+        /// Неявное преобразование к INT
+        /// int to String
+        /// String to int
+        /// Boolean to String
+        /// operations from left to right
+        /// operations from right to left for =
+        /// increment/decrement , postfix and prefix
+        /// combine += /=
+        /// logic , has lower priority as compare ops
+        /// доп: интересные операции
 
 
-        // Примитивы long Long boolean Boolean. Из обертки в примитив и из примитива в обертку
+        /// Примитивы long Long boolean Boolean. Из обертки в примитив и из примитива в обертку
         System.out.println();
         System.out.println("Примитивы long Long boolean Boolean. Из обертки в примитив и из примитива в обертку");
 
-        // long к Long
+        /// long к Long
         long lg_prim = -9223372036854L;
         Long boxl1_wrap = Long.valueOf(lg_prim);
         Long boxl2_wrap = lg_prim;                        // неявно вызывается valueOf
         System.out.println("из примитива в обертку; boxl1_wrap = " + boxl1_wrap + "; boxl2_wrap = " + boxl2_wrap);
 
-        // Long к long
+        /// Long к long
         Long box3_wrap = 1234567L;
         long lg3_prim = box3_wrap.longValue();
         long lg4_prim = box3_wrap;               // неявно вызывается longValue
         System.out.println("из обертки в примитив;  lg3_prim = " + lg3_prim + "; lg4_prim = " + lg4_prim);
 
-        // а с другими типами?
+        /// а с другими типами?
         Integer int_wrap = 12;
         int int_prim = int_wrap;
         System.out.println("int_prim = int_wrap;    int_prim = " + int_prim);
 
-        // преобразование Object к boolean
+        /// преобразование Object к boolean
         Boolean bl_wrap = true;
         Object obj = bl_wrap;
         //boolean bl_prim = (Boolean) obj;      // можно кастануть как через Boolean
         boolean bl_prim = (boolean) obj;        // так и напрямую в примитивный тип!!
         System.out.println("cast Object to boolean through Boolean,          bl_prim = " + bl_prim);
 
-        // более продвинутый пример с использованием instanceof
+        /// более продвинутый пример с использованием instanceof
         obj = "true";
         if (obj instanceof Boolean){
             bl_prim = (Boolean) obj;
@@ -78,7 +80,7 @@ public class Step02Types {
         System.out.println("из обертки в примитив;  bl_prim2 = bl_wrap;      bl_prim2 = " + bl_prim);
 
 
-        // Автоупаковка и Автораспаковка
+        /// Автоупаковка и Автораспаковка
         System.out.println();
         System.out.println("Автоупаковка в арифмических вывражениях");
         Integer iOb1 = 100;
@@ -96,7 +98,7 @@ public class Step02Types {
         System.out.println(iOb5 == iOb6);
         // false
 
-        // Расширение типа и Автоупаковка
+        /// Расширение типа и Автоупаковка
         System.out.println("- Расширение типа имеет более высокий приоритет, чем Упаковка типа");
         short shVal = 25;
         WideBoxed.methodWide(shVal);
@@ -134,24 +136,27 @@ public class Step02Types {
         System.out.println("alInt = " + alInt);
         // alInt = [2, 3]
 
-        // Несмотря на то, что входной параметр объявлен как Object в метод можно передать примитив int
+        /// Несмотря на то, что входной параметр метода объявлен как Object в метод можно передать примитив int
         int app = 1;
         castIntToObject(app);
-        // Преобразование int к Object:1
+        /// Преобразование int к Object:1
 
 
-        // Преобразование объектных типов. Parent и Child. Операции cast() и (Type)
-        // см. в практике
-        // com/ams/train/Step39ClassCast.java	(prep_module)
+        /// Преобразование объектных типов. Parent и Child. Операции cast() и (Type). Апкастинг и Даункастинг объектных типов
+        /// см. в практике
+        /// com/ams/train/Step39ClassCast.java	(prep_module)
 
+
+        /// Преобразование Boolean и boolean через метод с generic-типом
+        /// см. в практике
+        /// com/ams/train/Step39ClassCastObjectAndPrimitive.java
+        /// кстати:
         System.out.println();
         System.out.println(Boolean.TYPE);
-        String aa111 = "true";
-        System.out.println(aa111.getClass());
-        //<T> T = "true".equals(aaa);
+        // boolean
 
 
-        // Вывод на консоль литералов с плавающей точкой, классический и научный
+        /// Вывод на консоль литералов с плавающей точкой, классический и научный
         System.out.println();
         System.out.println("Вывод на консоль литералов с плавающей точкой, классический и научный");
         double a12 = 2.718281828459045;
@@ -160,7 +165,7 @@ public class Step02Types {
         System.out.println("Тип double в научном виде     : " + d12);
 
 
-        // CHAR
+        /// CHAR
         System.out.println();
         System.out.println("CHAR");
         char symb1 = 1078;      //по индексу символа (его код в 10-м выражении) в таблице Unicode
@@ -178,7 +183,7 @@ public class Step02Types {
 
         System.out.println("(char) 1079 = " + symb6);  // з
 
-        // Экранирование
+        /// Экранирование
         System.out.println();
         System.out.println("Экранирование");
         char a_doublq = '\"';
@@ -186,7 +191,7 @@ public class Step02Types {
         System.out.println(" a_doublq = " + a_doublq); // будет выведена 1 двойная кавычка
         System.out.println(" b_doublq = " + b_doublq); // будет выведена 1 двойная кавычка
 
-        // Escape последовательности
+        /// Escape последовательности
         System.out.println();
         System.out.println("Escape последовательности");
         System.out.println("\t\t100\t\t200\t\t300");
@@ -219,8 +224,8 @@ public class Step02Types {
         System.out.println("Улыбающееся лицо через String : " + asmile);
 
 
-        // CASTS
-        // расширение типов
+        /// CASTS
+        /// расширение типов
         long lmax = Long.MAX_VALUE;
         long lmin = Long.MIN_VALUE;
         float f = lmax;
@@ -241,8 +246,7 @@ public class Step02Types {
         System.out.println("long longRes = (long)intA + 1; longRes1 = " + longRes1);   //2147483648
 
 
-
-        // сужение типов
+        /// сужение типов
         //#1
         long lmil = 1000000L;               //
         int lMilInt = (int)lmil;            // 00000000 00001111 01000010 01000000 = 1 000 000 dec
@@ -284,7 +288,7 @@ public class Step02Types {
         System.out.println("((short)32768)                       = " + ((short)32768)); //-32768    диапазон:-32768    32767
         System.out.println("char sym2 = (char)-1; (int)sym2      = " + (int)sym2);      //65535     диапазон:0         65535
 
-        // Неявное преобразование к INT
+        /// Неявное преобразование к INT
         byte a = 120;
         byte b = 120;
         // byte c = a + b;              // err! result is INT
@@ -305,7 +309,7 @@ public class Step02Types {
         short e1 = (short)(d + a);      // операция возможна только с явным кастом
 
 
-        // int to String
+        /// int to String
         int aaa1 = 1;
         //String str15 = 15;            // err!
         //String str16 = aaa;           // err!
@@ -314,25 +318,36 @@ public class Step02Types {
         String str16 = String.valueOf(aaa1);
 
 
-        // String to int
+        /// String to int
         int a1 = Integer.parseInt(str15);
         System.out.println();
         System.out.println("print a1 = " + a1);
 
 
-        // operations from left to right
+        /// Boolean to String
+        Boolean bb = true;
+        String str;
+        //String str = bb;        // Err: Required String, provided Boolean (неявно такие операции делать запрещено, неявно можно только между родств. типами)
+                                  // int Integer, boolean Boolean ..
+        str = "true";
+        //bb = str;               // Err: Required Boolean, provided String
+
+
+        /// operations from left to right
         int a2 = 5;
         String str5 = a2 + a2 + "" + a2;
         System.out.println("print str5 = " + str5);   // 105 !
 
-        // operations from right to left for =
+
+        /// operations from right to left for =
         a2 = 5;
         int a3 = 6;
         int a4 = 7;
         int a5 = a2 = a3 = a4;
         System.out.println("a5 = " + a5 + " a4 = " + a4 +" a3 = " + a3 +" a2 = " + a2);   // 7 7 7 7
 
-        // increment/decrement , postfix and prefix
+
+        /// increment/decrement , postfix and prefix
         int a6 = 10;
         int y = a6++;
         System.out.println("postfix y = " + y + " ; a6  = " + a6);  // 10 11
@@ -342,17 +357,20 @@ public class Step02Types {
         int bbb = ++aaa + ++aaa;
         System.out.println("bbb = ++aaa + ++aaa; bbb =  " + bbb); //13
 
-        // combine
+
+        /// combine
         y += a6;
         System.out.println("combine add y = " + y);      // 12 + 12 = 24
         y /= a6;
         System.out.println("combine division y = " + y); // 24 / 12 = 2
 
-        // logic , has lower priority as compare ops
+
+        /// logic , has lower priority as compare ops
         System.out.println(" && : " + ( 100 > 2 && 100 < 100 )); // false
         System.out.println(" || : " + ( 100 > 2 || 100 < 100 )); // true
 
-        // доп: интересные операции
+
+        /// доп: интересные операции
         boolean ad = true;
         int addd = 2;
         System.out.println("! ad      = " + !ad);            // false
