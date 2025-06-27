@@ -10,8 +10,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="test-new-playwright" />
         <module name="test-sandbox" />
+        <module name="test-new-playwright" />
+        <module name="test-retrofit" />
         <module name="prep_module" />
       </profile>
     </annotationProcessing>
