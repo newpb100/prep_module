@@ -1,13 +1,10 @@
 package com.ams.train;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Formatter;
-import java.util.IllegalFormatCodePointException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
 public class Step29StringFormat {

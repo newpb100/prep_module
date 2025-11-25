@@ -63,9 +63,6 @@ public class Step06Compare {
         { System.out.println("its equal!"); }
         else
         { System.out.println("not equal!"); }
-
-
-
     }
 
     public static void compTwo(double x, double y){
